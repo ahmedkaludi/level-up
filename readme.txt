@@ -3,7 +3,7 @@ Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
 Tested up to: 4.9.7
-Stable tag: 1.3
+Stable tag: 1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
@@ -80,15 +80,6 @@ Source: https://unsplash.com/photos/ODua_Pc7VQY
 
 
 == Changelog ==
-= 1.3 - September 6 2018 =
-* Excerpt bug fixed
-* UX bug fixed
 
-= 1.2 - July 18 2018 =
-* License updated
-
-= 1.1 - July 18 2018 =
-* Few Bug Fixes
-
-= 1.0 - May 18 2018 =
+= 1.0 - Sep 10 2018 =
 * Initial release
