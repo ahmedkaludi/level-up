@@ -1,13 +1,13 @@
 <?php
 /**
- * Bridge functions and definitions
+ * designblocks functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package bridge
+ * @package designblocks
  */
 
-if ( ! function_exists( 'bridge_setup' ) ) :
+if ( ! function_exists( 'designblocks_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'bridge_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function bridge_setup() {
+	function designblocks_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Bridge, use a find and replace
-		 * to change 'bridge' to the name of your theme in all the template files.
+		 * If you're building a theme based on designblocks, use a find and replace
+		 * to change 'designblocks' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'bridge', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'designblocks', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -41,13 +41,13 @@ if ( ! function_exists( 'bridge_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-			add_image_size('bridge-img-1', 347, 189, true);
+			add_image_size('designblocks-img-1', 347, 189, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'header-menu' => esc_html__( 'Header Menu', 'bridge' ),
-			'primary-menu' => esc_html__( 'Primary', 'bridge' ),
-			'footer-menu' => esc_html__( 'Footer', 'bridge' ),
+			'header-menu' => esc_html__( 'Header Menu', 'designblocks' ),
+			'primary-menu' => esc_html__( 'Primary', 'designblocks' ),
+			'footer-menu' => esc_html__( 'Footer', 'designblocks' ),
 		) );
 
 		/*
@@ -63,7 +63,7 @@ if ( ! function_exists( 'bridge_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'bridge_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'designblocks_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -84,7 +84,7 @@ if ( ! function_exists( 'bridge_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'bridge_setup' );
+add_action( 'after_setup_theme', 'designblocks_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -93,48 +93,48 @@ add_action( 'after_setup_theme', 'bridge_setup' );
  *
  * @global int $content_width
  */
-function bridge_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'bridge_content_width', 640 );
+function designblocks_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'designblocks_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'bridge_content_width', 0 );
+add_action( 'after_setup_theme', 'designblocks_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function bridge_widgets_init() {
+function designblocks_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Widget', 'bridge' ),
+		'name'          => esc_html__( 'Footer Widget', 'designblocks' ),
 		'id'            => 'footer-widget',
-		'description'   => esc_html__( 'Add widgets here.', 'bridge' ),
+		'description'   => esc_html__( 'Add widgets here.', 'designblocks' ),
 		'before_widget' => '<div class="w-bl">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 }
-add_action( 'widgets_init', 'bridge_widgets_init' );
+add_action( 'widgets_init', 'designblocks_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function bridge_scripts() {
-	wp_enqueue_style( 'bridge-style', get_stylesheet_uri() );
+function designblocks_scripts() {
+	wp_enqueue_style( 'designblocks-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bridge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'designblocks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
      
-    wp_enqueue_script( 'drawer-min', get_template_directory_uri() . '/js/drawer.min.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'iscroll', get_template_directory_uri() . '/js/iscroll.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', false );
-	wp_enqueue_script( 'bridge-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_enqueue_script( 'designblocks-drawer-min', get_template_directory_uri() . '/js/drawer.min.js', array( 'jquery' ), '', false );
+    wp_enqueue_script( 'designblocks-iscroll', get_template_directory_uri() . '/js/iscroll.js', array( 'jquery' ), '', false );
+    wp_enqueue_script( 'designblocks-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', false );
+	wp_enqueue_script( 'designblocks-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'bridge_scripts' );
+add_action( 'wp_enqueue_scripts', 'designblocks_scripts' );
 
 /**
  * Custom template tags for this theme.
@@ -158,10 +158,10 @@ require get_template_directory() . '/inc/customizer.php';
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
  */
-function bridge_custom_excerpt_length( $length ) {
+function designblocks_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'bridge_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'designblocks_custom_excerpt_length', 999 );
 
 
 /**
@@ -170,7 +170,7 @@ add_filter( 'excerpt_length', 'bridge_custom_excerpt_length', 999 );
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 
-add_action( 'tgmpa_register', 'bridge_register_required_plugins' );
+add_action( 'tgmpa_register', 'designblocks_register_required_plugins' );
 /**
  * Register the required plugins for this theme.
  * The variable passed to tgmpa_register_plugins() should be an array of plugin
@@ -179,7 +179,7 @@ add_action( 'tgmpa_register', 'bridge_register_required_plugins' );
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function bridge_register_required_plugins() {
+function designblocks_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -220,11 +220,11 @@ function bridge_register_required_plugins() {
 }
 
 
-add_action( 'init', 'bridge_add_editor_styles' );
+add_action( 'init', 'designblocks_add_editor_styles' );
 /**
  * Apply theme's stylesheet to the visual editor.
   * @uses add_editor_style() Links a stylesheet to visual editor
  */
-function bridge_add_editor_styles() {
+function designblocks_add_editor_styles() {
 	add_editor_style( 'custom-editor-style.css');
 }

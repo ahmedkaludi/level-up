@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package bridge
+ * @package designblocks
  */
 
 get_header(); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 					<header class="page-header">
 						<h1 class="page-title archive-title"><?php
 							/* translators: %s: search query. */
-							printf( esc_html__( 'Search Results for: %s', 'bridge' ), '<span>' . get_search_query() . '</span>' );
+							printf( esc_html__( 'Search Results for: %s', 'designblocks' ), '<span>' . get_search_query() . '</span>' );
 						?></h1>
 					</header><!-- .page-header -->
 					<div class="loop-wrapper">

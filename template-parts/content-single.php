@@ -33,11 +33,11 @@
 					the_content();
 
 					wp_link_pages( array(
-						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bridge' ) . '</span>',
+						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'designblocks' ) . '</span>',
 						'after'       => '</div>',
 						'link_before' => '<span>',
 						'link_after'  => '</span>',
-						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'bridge' ) . ' </span>%',
+						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'designblocks' ) . ' </span>%',
 						'separator'   => '<span class="screen-reader-text">, </span>',
 					) );
 
@@ -57,7 +57,7 @@
 			</div>
 			<?php the_post_navigation(); ?>
 			<div class="cmts">
-				<span class="view-cmts"><?php esc_attr_e( 'View Comments', 'bridge' ); ?></span>
+				<span class="view-cmts"><?php esc_attr_e( 'View Comments', 'designblocks' ); ?></span>
 				<?php if ( comments_open() || get_comments_number() ) :
 						comments_template();
 					endif; ?>
@@ -65,12 +65,12 @@
 		</div>
 		<div class="left-part">
 			<div class="post-athr">
-				<span class="pb-txt"><?php esc_attr_e( 'Published by', 'bridge' ); ?></span>
+				<span class="pb-txt"><?php esc_attr_e( 'Published by', 'designblocks' ); ?></span>
 				<span class="pb-athr"><?php the_author_posts_link(); ?></span>
 			</div>
             <?php if(has_tag()) { ?>
             <div class="tgs">
-				<span class="pb-txt"><?php esc_attr_e( 'Tags', 'bridge' ); ?></span>
+				<span class="pb-txt"><?php esc_attr_e( 'Tags', 'designblocks' ); ?></span>
 				<?php the_tags('',''); ?> 
 			</div>
             <?php } ?>
@@ -96,7 +96,7 @@
 						<div class="rp-list">
 							<?php if ( has_post_thumbnail()) { ?>
 							<div class="rp-img">
-								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('bridge-img-1'); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('designblocks-img-1'); ?></a>
 							</div><!-- / latest-post -->
 							<?php } ?>
 							<div class="rp-tlt">				

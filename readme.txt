@@ -1,4 +1,4 @@
-=== Bridge ===
+=== designblocks ===
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
@@ -9,7 +9,7 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-Bridge WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+designblocks WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
 
 == Installation ==
 
@@ -27,8 +27,8 @@ The AMP compatibility will be added with you install the AMP for WP plugin.
 
 == Copyright ==
 
-Bridge WordPress Theme, Copyright 2018 xtheme.net
-Bridge is distributed under the terms of the GNU GPL.
+designblocks WordPress Theme, Copyright 2018 
+designblocks is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -74,10 +74,10 @@ Font Poppins, Copyright Indian Type Foundry
 License: SIL Open Font License, Version 1.1
 Source: http://scripts.sil.org/OFL_web
 
-Image used in screenshot.png, by Sarah Götze
-License: CC0 license (https://unsplash.com/license)
-Source: https://unsplash.com/photos/ODua_Pc7VQY
-
+Image used in screenshot:
+https://pixabay.com/en/girl-smartphone-iphone-1192032/
+https://pixabay.com/en/office-notes-notepad-entrepreneur-620817/
+https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
 

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package bridge
+ * @package designblocks
  */
 
 ?>
@@ -36,8 +36,8 @@
 				</div>
 				<?php } ?>
 				<div class="rr">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bridge' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'bridge' ), 'bridge' ); ?>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'designblocks' ) ); ?>" class="imprint">
+					<?php printf( __( 'Proudly powered by %s', 'designblocks' ), 'WordPress' ); ?>
 				</a>
 				</div>
 			</div>

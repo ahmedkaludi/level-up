@@ -4,16 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package bridge
+ * @package designblocks
  */
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('fsp'); ?>>
 	<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
-		<span class="sticky-post"><?php _e( 'Featured', 'bridge' ); ?></span>
+		<span class="sticky-post"><?php _e( 'Featured', 'designblocks' ); ?></span>
 	<?php endif; ?>
 	<div class="fsp-img">
-		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('bridge-img-1'); ?></a>
+		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('designblocks-img-1'); ?></a>
 	</div>
 	<div class="fsp-cnt">
 		<div class="category-lists">

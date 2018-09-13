@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package bridge
+ * @package designblocks
  */
 
 ?>
@@ -22,14 +22,14 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bridge' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'designblocks' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="head">
 				<div class="hamburger-menu drawer drawer--left">
 	                <button type="button" class="drawer-toggle drawer-hamburger">
-	                  <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'bridge' ); ?></span>
+	                  <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'designblocks' ); ?></span>
 	                  <span class="drawer-hamburger-icon"></span>
 	                </button>
 	                <nav class="drawer-nav" role="navigation">
