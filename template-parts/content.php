@@ -4,16 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package designblocks
+ * @package levelup
  */
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('fsp'); ?>>
 	<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
-		<span class="sticky-post"><?php _e( 'Featured', 'designblocks' ); ?></span>
+		<span class="sticky-post"><?php _e( 'Featured', 'level-up' ); ?></span>
 	<?php endif; ?>
 	<div class="fsp-img">
-		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('designblocks-img-1'); ?></a>
+		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('levelup-img-1'); ?></a>
 	</div>
 	<div class="fsp-cnt">
 		<div class="category-lists">

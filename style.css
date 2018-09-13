@@ -1,19 +1,19 @@
 /*
-Theme Name: Design Blocks
+Theme Name: Level UP
 Theme URI: https://amp-wp-theme.com
 Author: Ahmed Kaludi
 Author URI: http://ahmedkaludi.com/
 Description: A Minimal Theme that makes your AMP and Non-AMP version look same.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: designblocks
+Text Domain: level-up
 Tags: custom-logo, custom-menu, featured-images
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-designblocks is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+levelup is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1392,7 +1392,7 @@ body a, .rp-list{
     top:4px;
     right:13px;
 }
-.hamburger-menu .designblocks-menu li:hover li:hover>a{background:transparent;}
+.hamburger-menu .levelup-menu li:hover li:hover>a{background:transparent;}
 .hamburger-menu li:hover a {background: transparent none repeat scroll 0 0;}
 
 /*** Primary Menu ***/

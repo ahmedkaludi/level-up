@@ -2,10 +2,9 @@
 /**
  * The template part for displaying single posts
  *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package levelup */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -33,11 +32,11 @@
 					the_content();
 
 					wp_link_pages( array(
-						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'designblocks' ) . '</span>',
+						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'level-up' ) . '</span>',
 						'after'       => '</div>',
 						'link_before' => '<span>',
 						'link_after'  => '</span>',
-						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'designblocks' ) . ' </span>%',
+						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'level-up' ) . ' </span>%',
 						'separator'   => '<span class="screen-reader-text">, </span>',
 					) );
 
@@ -57,7 +56,7 @@
 			</div>
 			<?php the_post_navigation(); ?>
 			<div class="cmts">
-				<span class="view-cmts"><?php esc_attr_e( 'View Comments', 'designblocks' ); ?></span>
+				<span class="view-cmts"><?php esc_attr_e( 'View Comments', 'level-up' ); ?></span>
 				<?php if ( comments_open() || get_comments_number() ) :
 						comments_template();
 					endif; ?>
@@ -65,12 +64,12 @@
 		</div>
 		<div class="left-part">
 			<div class="post-athr">
-				<span class="pb-txt"><?php esc_attr_e( 'Published by', 'designblocks' ); ?></span>
+				<span class="pb-txt"><?php esc_attr_e( 'Published by', 'level-up' ); ?></span>
 				<span class="pb-athr"><?php the_author_posts_link(); ?></span>
 			</div>
             <?php if(has_tag()) { ?>
             <div class="tgs">
-				<span class="pb-txt"><?php esc_attr_e( 'Tags', 'designblocks' ); ?></span>
+				<span class="pb-txt"><?php esc_attr_e( 'Tags', 'level-up' ); ?></span>
 				<?php the_tags('',''); ?> 
 			</div>
             <?php } ?>
@@ -96,7 +95,7 @@
 						<div class="rp-list">
 							<?php if ( has_post_thumbnail()) { ?>
 							<div class="rp-img">
-								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('designblocks-img-1'); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('levelup-img-1'); ?></a>
 							</div><!-- / latest-post -->
 							<?php } ?>
 							<div class="rp-tlt">				

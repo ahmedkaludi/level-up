@@ -1,15 +1,15 @@
-=== designblocks ===
+=== Level UP ===
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
 Tested up to: 4.9.7
-Stable tag: 1.0
+Stable tag: 1.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-designblocks WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+levelup WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
 
 == Installation ==
 
@@ -27,8 +27,8 @@ The AMP compatibility will be added with you install the AMP for WP plugin.
 
 == Copyright ==
 
-designblocks WordPress Theme, Copyright 2018 
-designblocks is distributed under the terms of the GNU GPL.
+levelup WordPress Theme, Copyright 2018 
+levelup is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -53,6 +53,18 @@ Source: https://underscores.me
 icomoon Icon Font, Copyright Keyamoon
 License: GPL / CC BY 4.0
 Source: https://github.com/Keyamoon/IcoMoon-Free/
+
+Icons Complied with Iconmoon are Font Awesome Font Awesome Free is free, open source, and GPL friendly. You can use it for
+commercial projects, open source projects, or really almost whatever you want.
+Full Font Awesome Free license: https://fontawesome.com/license/free.
+
+Font Awesome Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
+packaged as SVG and JS file types.
+
+Font Awesome Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL)
+In the Font Awesome Free download, the SIL OLF license applies to all icons
+packaged as web and desktop font files.
 
 TGM Plugin Activation, Copyright LukyVj
 License: GPL-2.0 or later
@@ -80,6 +92,10 @@ https://pixabay.com/en/office-notes-notepad-entrepreneur-620817/
 https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
+
+= 1.1 - Sep 10 2018 =
+* TGMPA automatic is set to false
+* Icomoon source icon fonts are added
 
 = 1.0 - Sep 10 2018 =
 * Initial release

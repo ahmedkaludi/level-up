@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package designblocks
+ * @package levelup
  */
 
 get_header(); ?>

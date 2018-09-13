@@ -1,4 +1,4 @@
-=== designblocks ===
+=== levelup ===
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
@@ -9,7 +9,7 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-designblocks WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+levelup WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
 
 == Installation ==
 
@@ -27,8 +27,8 @@ The AMP compatibility will be added with you install the AMP for WP plugin.
 
 == Copyright ==
 
-designblocks WordPress Theme, Copyright 2018 xtheme.net
-designblocks is distributed under the terms of the GNU GPL.
+levelup WordPress Theme, Copyright 2018 xtheme.net
+levelup is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

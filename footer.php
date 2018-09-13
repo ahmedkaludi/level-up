@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package designblocks
+ * @package levelup
  */
 
 ?>
@@ -36,8 +36,8 @@
 				</div>
 				<?php } ?>
 				<div class="rr">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'designblocks' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'designblocks' ), 'WordPress' ); ?>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'level-up' ) ); ?>" class="imprint">
+					<?php printf( __( 'Proudly powered by %s', 'level-up' ), 'WordPress' ); ?>
 				</a>
 				</div>
 			</div>

@@ -1,13 +1,13 @@
 <?php
 /**
- * designblocks functions and definitions
+ * levelup functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package designblocks
+ * @package levelup
  */
 
-if ( ! function_exists( 'designblocks_setup' ) ) :
+if ( ! function_exists( 'levelup_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'designblocks_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function designblocks_setup() {
+	function levelup_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on designblocks, use a find and replace
-		 * to change 'designblocks' to the name of your theme in all the template files.
+		 * If you're building a theme based on levelup, use a find and replace
+		 * to change 'level-up' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'designblocks', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'level-up', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -41,13 +41,13 @@ if ( ! function_exists( 'designblocks_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-			add_image_size('designblocks-img-1', 347, 189, true);
+			add_image_size('levelup-img-1', 347, 189, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'header-menu' => esc_html__( 'Header Menu', 'designblocks' ),
-			'primary-menu' => esc_html__( 'Primary', 'designblocks' ),
-			'footer-menu' => esc_html__( 'Footer', 'designblocks' ),
+			'header-menu' => esc_html__( 'Header Menu', 'level-up' ),
+			'primary-menu' => esc_html__( 'Primary', 'level-up' ),
+			'footer-menu' => esc_html__( 'Footer', 'level-up' ),
 		) );
 
 		/*
@@ -63,7 +63,7 @@ if ( ! function_exists( 'designblocks_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'designblocks_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'levelup_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -84,7 +84,7 @@ if ( ! function_exists( 'designblocks_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'designblocks_setup' );
+add_action( 'after_setup_theme', 'levelup_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -93,48 +93,48 @@ add_action( 'after_setup_theme', 'designblocks_setup' );
  *
  * @global int $content_width
  */
-function designblocks_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'designblocks_content_width', 640 );
+function levelup_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'levelup_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'designblocks_content_width', 0 );
+add_action( 'after_setup_theme', 'levelup_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function designblocks_widgets_init() {
+function levelup_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Widget', 'designblocks' ),
+		'name'          => esc_html__( 'Footer Widget', 'level-up' ),
 		'id'            => 'footer-widget',
-		'description'   => esc_html__( 'Add widgets here.', 'designblocks' ),
+		'description'   => esc_html__( 'Add widgets here.', 'level-up' ),
 		'before_widget' => '<div class="w-bl">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 }
-add_action( 'widgets_init', 'designblocks_widgets_init' );
+add_action( 'widgets_init', 'levelup_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function designblocks_scripts() {
-	wp_enqueue_style( 'designblocks-style', get_stylesheet_uri() );
+function levelup_scripts() {
+	wp_enqueue_style( 'levelup-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'designblocks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'levelup-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
      
-    wp_enqueue_script( 'designblocks-drawer-min', get_template_directory_uri() . '/js/drawer.min.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'designblocks-iscroll', get_template_directory_uri() . '/js/iscroll.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'designblocks-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', false );
-	wp_enqueue_script( 'designblocks-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_enqueue_script( 'levelup-drawer-min', get_template_directory_uri() . '/js/drawer.min.js', array( 'jquery' ), '', false );
+    wp_enqueue_script( 'levelup-iscroll', get_template_directory_uri() . '/js/iscroll.js', array( 'jquery' ), '', false );
+    wp_enqueue_script( 'levelup-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', false );
+	wp_enqueue_script( 'levelup-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'designblocks_scripts' );
+add_action( 'wp_enqueue_scripts', 'levelup_scripts' );
 
 /**
  * Custom template tags for this theme.
@@ -158,10 +158,10 @@ require get_template_directory() . '/inc/customizer.php';
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
  */
-function designblocks_custom_excerpt_length( $length ) {
+function levelup_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'designblocks_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'levelup_custom_excerpt_length', 999 );
 
 
 /**
@@ -170,7 +170,7 @@ add_filter( 'excerpt_length', 'designblocks_custom_excerpt_length', 999 );
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 
-add_action( 'tgmpa_register', 'designblocks_register_required_plugins' );
+add_action( 'tgmpa_register', 'levelup_register_required_plugins' );
 /**
  * Register the required plugins for this theme.
  * The variable passed to tgmpa_register_plugins() should be an array of plugin
@@ -179,7 +179,7 @@ add_action( 'tgmpa_register', 'designblocks_register_required_plugins' );
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function designblocks_register_required_plugins() {
+function levelup_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -211,7 +211,7 @@ function designblocks_register_required_plugins() {
 		'has_notices'  => true,                    // Show admin notices or not.
 		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
 		'message'      => '',                      // Message to output right before the plugins table.
 
 	);
@@ -220,11 +220,11 @@ function designblocks_register_required_plugins() {
 }
 
 
-add_action( 'init', 'designblocks_add_editor_styles' );
+add_action( 'init', 'levelup_add_editor_styles' );
 /**
  * Apply theme's stylesheet to the visual editor.
   * @uses add_editor_style() Links a stylesheet to visual editor
  */
-function designblocks_add_editor_styles() {
+function levelup_add_editor_styles() {
 	add_editor_style( 'custom-editor-style.css');
 }
