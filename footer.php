@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 	<?php do_action( 'levelup_foot'); ?>
-	<?php if(!levelup_check_hf_builder('foot')){ ?>
+	<?php if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('foot'))) { ?>
 	<footer id="colophon" class="site-footer">
 		<?php if ( is_active_sidebar( 'footer-widget' )  ) : ?>
 		<div class="footer-widgets">

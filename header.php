@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<?php do_action( 'levelup_head');
 
-	if(!levelup_check_hf_builder('head')){  ?>
+	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'level-up' ); ?></a>
 
 	<header id="masthead" class="site-header">
