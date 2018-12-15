@@ -12,7 +12,8 @@
 ?>
 
 	</div><!-- #content -->
-
+	<?php do_action( 'levelup_foot'); ?>
+	<?php if(!levelup_check_hf_builder('foot')){ ?>
 	<footer id="colophon" class="site-footer">
 		<?php if ( is_active_sidebar( 'footer-widget' )  ) : ?>
 		<div class="footer-widgets">
@@ -43,6 +44,7 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+<?php } ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
