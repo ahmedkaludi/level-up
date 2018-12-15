@@ -228,3 +228,101 @@ add_action( 'init', 'levelup_add_editor_styles' );
 function levelup_add_editor_styles() {
 	add_editor_style( 'custom-editor-style.css');
 }
+
+
+
+
+/*****
+* Levelup theme upload
+*****/
+function levelup_make_html_attributes( $attrs = array() ){
+
+    if( ! is_array( $attrs ) ){
+        return '';
+    }
+
+    $attributes_string = '';
+
+    foreach ( $attrs as $attr => $value ) {
+        $value = is_array( $value ) ? join( ' ', array_unique( $value ) ) : $value;
+        $attributes_string .= sprintf( '%s="%s" ', $attr, esc_attr( trim( $value ) ) );
+    }
+
+    return $attributes_string;
+}
+if( ! function_exists( 'levelup_is_plugin_active' ) ){
+    function levelup_is_plugin_active( $plugin_basename ){
+        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+        return is_plugin_active( $plugin_basename );
+    }
+}
+function levelup_get_plugin_install_link( $plugin_slug ){
+
+    // sanitize the plugin slug
+    $plugin_slug = esc_attr( $plugin_slug );
+
+    $install_link  = wp_nonce_url(
+        add_query_arg(
+            array(
+                'action' => 'install-plugin',
+                'plugin' => $plugin_slug,
+            ),
+            network_admin_url( 'update.php' )
+        ),
+        'install-plugin_' . $plugin_slug
+    );
+
+    return $install_link;
+}
+function levelup_get_plugin_activation_link( $plugin_base_name, $slug, $plugin_filename ) {
+    $activate_nonce = wp_create_nonce( 'activate-plugin_' . $slug .'/'. $plugin_filename );
+    return self_admin_url( 'plugins.php?_wpnonce=' . $activate_nonce . '&action=activate&plugin='. str_replace( '/', '%2F', $plugin_base_name ) );
+}
+function levelup_core_plugin_notice(){
+	if(!current_user_can('install_plugins')){
+		return false;
+	}
+    $plugin_base_name = 'levelup/levelup.php';
+    $plugin_slug      = 'levelup';
+    $plugin_filename  = 'levelup.php';
+    $plugin_title     = __('Levelup', 'levelup');
+
+    $links_attrs = array(
+        'class'                 => array( 'button', 'button-primary', 'levelup-install-now', 'levelup-not-installed' ),
+        'data-plugin-slug'      => $plugin_slug,
+
+        'data-activating-label' => __('Activating ..', 'level-up'),
+        'data-activate-url'     => levelup_get_plugin_activation_link( $plugin_base_name, $plugin_slug, $plugin_filename ),
+        'data-activate-label'   => sprintf( __('Activate %s', 'level-up'), $plugin_title ),
+
+        'data-install-url'      => levelup_get_plugin_install_link( $plugin_slug ),
+        'data-install-label'    => sprintf( __('Install %s', 'level-up' ), $plugin_title ),
+
+        'data-redirect-url'     => self_admin_url( 'admin.php?page=levelup' )
+    );
+
+    $installed_plugins  = get_plugins();
+
+    if( ! isset( $installed_plugins[ $plugin_base_name ] ) ){
+        $links_attrs['data-action'] = 'install';
+        $links_attrs['href'] = $links_attrs['data-install-url'];
+        $button_label = sprintf( esc_html__( 'Install %s', 'level-up' ), $plugin_title );
+    } elseif( ! levelup_is_plugin_active( $plugin_base_name ) ) {
+        $links_attrs['data-action'] = 'activate';
+        $links_attrs['href'] = $links_attrs['data-activate-url'];
+        $button_label = sprintf( esc_html__( 'Activate %s', 'level-up' ), $plugin_title );
+    } else {
+        return;
+    }
+?>
+    <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
+        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUp' ); ?></h3>
+        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of level-up theme and enabling demo importer, please install %s.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
+        <p class="submit">
+            <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
+            <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
+        </p>
+    </div>
+<?php
+}
+add_action( 'admin_notices', 'levelup_core_plugin_notice' );
