@@ -230,7 +230,16 @@ function levelup_add_editor_styles() {
 }
 
 
-
+/**
+* Add Admin styles
+*
+* @return void
+*/
+function levelup_custom_wp_admin_style() {
+        wp_register_style( 'levelup_admin_style', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
+        wp_enqueue_style( 'levelup_admin_style' );
+}
+add_action( 'admin_enqueue_scripts', 'levelup_custom_wp_admin_style' );
 
 /*****
 * Levelup theme upload
@@ -310,14 +319,14 @@ function levelup_core_plugin_notice(){
     } elseif( ! levelup_is_plugin_active( $plugin_base_name ) ) {
         $links_attrs['data-action'] = 'activate';
         $links_attrs['href'] = $links_attrs['data-activate-url'];
-        $button_label = sprintf( esc_html__( 'Activate %s', 'level-up' ), $plugin_title );
+        $button_label = sprintf( esc_html__( 'Activate %s Core Plugin', 'level-up' ), $plugin_title );
     } else {
         return;
     }
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
         <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUp' ); ?></h3>
-        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of level-up theme and enabling demo importer, please install %s.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
+        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
         <p class="submit">
             <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
             <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
