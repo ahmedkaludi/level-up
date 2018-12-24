@@ -243,6 +243,7 @@ add_action( 'admin_enqueue_scripts', 'levelup_custom_wp_admin_style' );
 
 /*****
 * Levelup theme upload
+* Start
 *****/
 function levelup_make_html_attributes( $attrs = array() ){
 
@@ -335,3 +336,6 @@ function levelup_core_plugin_notice(){
 <?php
 }
 add_action( 'admin_notices', 'levelup_core_plugin_notice' );
+/*****
+* END Levelup theme upload
+*****/
