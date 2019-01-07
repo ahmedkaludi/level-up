@@ -94,6 +94,7 @@ function levelup_customize_register( $wp_customize ) {
 	            'settings'       => 'levelup_body_font_variants',
 	            'description'    => '',
 	            'type'           => 'select',
+	            'transport' 	=> 'postMessage',
 	            'choices'        => array()
 	        )
 	    )
