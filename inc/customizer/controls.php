@@ -135,8 +135,8 @@ class Customizer_Select2_Multiselect extends WP_Customize_Control {
 	}
 
 	public function render_content() {
-		if( empty( $this->choices ) )
-			return;
+		/*if( empty( $this->choices ) )
+			return;*/
 		?>
 		<label>
 			<?php if( !empty( $this->label ) ) : ?>

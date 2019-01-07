@@ -85,7 +85,7 @@ function levelup_customize_register( $wp_customize ) {
         'capability'    => 'edit_theme_options',
     ));
     $wp_customize->add_control(
-	    new WP_Customize_Control(
+	    new Customizer_Select2_Multiselect(
 	        $wp_customize,
 	        'levelup_body_font_variants',
 	        array(
@@ -93,7 +93,7 @@ function levelup_customize_register( $wp_customize ) {
 	            'section'        => 'theme_field_settings',
 	            'settings'       => 'levelup_body_font_variants',
 	            'description'    => '',
-	            'type'           => 'select',
+	            'type'           => 'select2_multiselect',
 	            'transport' 	=> 'postMessage',
 	            'choices'        => array()
 	        )
