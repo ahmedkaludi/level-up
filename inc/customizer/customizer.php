@@ -48,18 +48,7 @@ function levelup_customize_register( $wp_customize ) {
 	'panel'		=> 'levelup_panel_main'
 	) );
 
-    // 1. Range Selector
-	$wp_customize->add_setting(
-		'theme_feild_type_range',
-		array(
-			'default'       => $defaults['theme_feild_type_range'],
-			'capability'    => 'edit_theme_options',
-			'transport' => 'postMessage',
-			'sanitize_callback' => 'levelup_sanitize_integer',
-		)
-	);
-
-	//Body Font Family
+    //Body Font Family
     $wp_customize->add_setting( 'levelup_body_font_family', array(
         'default'           => $defaults['levelup_body_font_family'],
         'capability'    => 'edit_theme_options',
@@ -79,10 +68,11 @@ function levelup_customize_register( $wp_customize ) {
 	  ) )
 	);
 
-    $wp_customize->add_setting( 'levelup_body_font_variants', array(
+    $wp_customize->add_setting( 'levelup_font_variants', array(
         'default'           => '',
-        'sanitize_callback' => 'sanitize_text_field',
         'capability'    => 'edit_theme_options',
+        'transport' => 'postMessage',
+		'sanitize_callback' => 'levelup_multi_types_sanitize',
     ));
     $wp_customize->add_control(
 	    new Customizer_Select2_Multiselect(
@@ -91,7 +81,7 @@ function levelup_customize_register( $wp_customize ) {
 	        array(
 	            'label'          => __( 'Levelup Body Font Variants', 'level-up' ),
 	            'section'        => 'theme_field_settings',
-	            'settings'       => 'levelup_body_font_variants',
+	            'settings'       => 'levelup_font_variants',
 	            'description'    => '',
 	            'type'           => 'select2_multiselect',
 	            'transport' 	=> 'postMessage',
@@ -100,7 +90,7 @@ function levelup_customize_register( $wp_customize ) {
 	    )
 	);
 
-	$wp_customize->add_setting( 'levelup_body_font_subsets', array(
+	$wp_customize->add_setting( 'levelup_font_subsets', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
         'capability'    => 'edit_theme_options',
@@ -112,7 +102,7 @@ function levelup_customize_register( $wp_customize ) {
 	        array(
 	            'label'          => __( 'Levelup Body Font Subsets', 'level-up' ),
 	            'section'        => 'theme_field_settings',
-	            'settings'       => 'levelup_body_font_subsets',
+	            'settings'       => 'levelup_font_subsets',
 	            'description'    => '',
 	            'type'           => 'select',
 	            'choices'        => array()
@@ -200,7 +190,7 @@ add_action( 'customize_preview_init', 'levelup_customize_preview_js' );
  */
 function levelup_admin_js() {
 	wp_enqueue_script( 'levelup-admin', get_template_directory_uri() . '/inc/customizer/assets/admin/js/admin.js', array( 'jquery' ), '', true );
-
+//	print_r(get_theme_mod( 'levelup_body_font_variants', true ));die;
 	$levelup_settings = array(
 		'ajax_url' => admin_url('admin-ajax.php'),
 		'levelup_blog_content_display' => get_theme_mod( 'levelup_blog_content_display', true ),
@@ -273,3 +263,8 @@ function levelup_google_font_search($array, $key, $value) {
     return $results;
 }
 
+function levelup_multi_types_sanitize( $input ) {
+	
+
+	return $input;
+}

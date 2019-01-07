@@ -149,7 +149,7 @@
 
        /* levelup_customizer_font_variants_generator( 'heading_font_family', '#customize-control-heading_font_variants', '#customize-control-heading_font_subsets', 'heading_google_font', 'heading_font_variants', 'heading_font_subsets' );*/
         //Custom Font Options
-        levelup_customizer_font_variants_generator( 'levelup_body_font_family', '#customize-control-levelup_body_font_variants', '#customize-control-levelup_body_font_subsets', 'levelup_google_font', 'levelup_body_font_variants', 'levelup_body_font_subsets' );
+        levelup_customizer_font_variants_generator( 'levelup_body_font_family', '#customize-control-levelup_body_font_variants', '#customize-control-levelup_body_font_subsets', 'levelup_google_font', 'levelup_font_variants', 'levelup_font_subsets' );
 
         /*levelup_customizer_font_variants_generator( 'levelup_heading_font_family', '#customize-control-levelup_heading_font_variants', '#customize-control-levelup_heading_font_subsets', 'levelup_google_font', 'levelup_heading_font_variants', 'levelup_heading_font_subsets' );*/
     });
@@ -165,15 +165,14 @@
                 type: 'POST',
                 success: function( data ) {
                     var data = $.parseJSON(data);
-
                     $(data.variants).each(function(i,val) {
-                        $.each(val,function(key,val) {
-                            if( key == levelup_settings[font_variant_field_localize_name] ) {
+                        $.each(val,function(key,value) {
+                            if(-1!=$.inArray( key, levelup_settings[font_variant_field_localize_name] ) ) {
                                 var selected = 'selected';
                             }else {
                                 var selected = '';
                             }
-                            $(variant_field_id+' select').append('<option value="'+key+'" '+selected+'>'+val+'</option>')
+                            $(variant_field_id+' select').append('<option value="'+key+'" '+selected+'>'+value+'</option>')
                         });
                     });
 

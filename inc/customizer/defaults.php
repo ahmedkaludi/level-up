@@ -22,8 +22,8 @@ function levelup_get_option_defaults() {
 		'amp_page_title_bg' => '#ff5544',
 
 		'levelup_body_font_family' => "Poppins",
-		'levelup_body_font_variants' => '100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic',
-  		'levelup_body_font_subsets' => 'cyrillic',
+		'levelup_font_variants' => array('400','600'),
+  		'levelup_font_subsets' => 'latin-ext',
 
   		
         
@@ -76,7 +76,6 @@ if( ! function_exists( 'levelup_generate_defaults' ) ) :
 
 		$default_options = levelup_get_option_defaults();
 		$saved_options = get_theme_mods();
-
 		$returned = [];
 
 		foreach( $default_options as $key => $option ) {
