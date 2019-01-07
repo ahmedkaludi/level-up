@@ -340,3 +340,20 @@ add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 /*****
 * END Levelup theme upload
 *****/
+
+
+/*****
+* Start Levelup theme AMP
+*****/
+
+add_action( 'amp_post_template_css', 'levelup_body_font_amp_design_styling' );
+function levelup_body_font_amp_design_styling(){
+	$defaults = levelup_generate_defaults();
+	echo 'body {
+		font-family: "'. $defaults['levelup_body_font_family'] .'", sans-serif;
+	
+	}';
+}
+/*****
+* END Levelup theme AMP
+*****/

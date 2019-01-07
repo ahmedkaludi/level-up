@@ -46,6 +46,7 @@ function levelup_customizer_style() {
 endif;
 
 add_action('wp_head', 'levelup_nonamp_fonts');
+add_action('ampforwp_before_head', 'levelup_nonamp_fonts');
 function levelup_nonamp_fonts(){
 	$defaults = levelup_generate_defaults();
 	 $google_fonts = $defaults['levelup_body_font_family'];
@@ -58,6 +59,9 @@ function levelup_nonamp_fonts(){
 	 $google_fonts .= '&subset='.$defaults['levelup_font_subsets'];
 
 	$fonts_url = sprintf( 'https://fonts.googleapis.com/css?family=%s',  $google_fonts  );
+
+	//for amp only
+	echo "<link rel='stylesheet' id='google-fonts'  href='$fonts_url' type='text/css' media='all' />";
 	
 	wp_enqueue_style( 'levelup-google-fonts', $fonts_url, array(), rand() );
 }
