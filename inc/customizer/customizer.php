@@ -55,7 +55,7 @@ function levelup_customize_register( $wp_customize ) {
         'sanitize_callback' => 'sanitize_text_field',
     ));
 
-    $wp_customize->add_control( new Customizer_Select2_Google_Fonts(
+    $wp_customize->add_control( new Levelup_Customizer_Select2_Google_Fonts(
 		$wp_customize,
 		'levelup_body_font_family',
 		array(
@@ -75,7 +75,7 @@ function levelup_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'levelup_multi_types_sanitize',
     ));
     $wp_customize->add_control(
-	    new Customizer_Select2_Multiselect(
+	    new Levelup_Customizer_Select2_Multiselect(
 	        $wp_customize,
 	        'levelup_body_font_variants',
 	        array(
@@ -128,7 +128,7 @@ function levelup_customize_register( $wp_customize ) {
 			'sanitize_callback' => 'levelup_sanitize_checkbox',
 	) );
 	$wp_customize->add_control(
-		new Customizer_Toggle_Control(
+		new Levelup_Customizer_Toggle_Control(
 			$wp_customize,
 			'levelup_page_breadcrumb',
 			array(
@@ -190,21 +190,21 @@ add_action( 'customize_preview_init', 'levelup_customize_preview_js' );
  */
 function levelup_admin_js() {
 	wp_enqueue_script( 'levelup-admin', get_template_directory_uri() . '/inc/customizer/assets/admin/js/admin.js', array( 'jquery' ), '', true );
-//	print_r(get_theme_mod( 'levelup_body_font_variants', true ));die;
+	$default = levelup_generate_defaults();
+	$levelup_font_variants = get_theme_mod( 'levelup_font_variants', true );
+	if($levelup_font_variants==''){
+		$levelup_font_variants = $default['levelup_font_variants'];
+	}
+	$levelup_font_subsets = get_theme_mod( 'levelup_font_subsets', true );
+	if($levelup_font_subsets==''){
+		$levelup_font_subsets = $default['levelup_font_subsets'];
+	}
 	$levelup_settings = array(
 		'ajax_url' => admin_url('admin-ajax.php'),
-		'levelup_blog_content_display' => get_theme_mod( 'levelup_blog_content_display', true ),
-		'levelup_navbar' => get_theme_mod( 'levelup_navbar', true ),
-		'body_google_font' => get_theme_mod( 'body_font_family', true ),
-		'body_font_variants' => get_theme_mod( 'body_font_variants', true ),
-		'body_font_subsets' => get_theme_mod( 'body_font_subsets', true ),
-		'heading_google_font' => get_theme_mod( 'heading_font_family', true ),
-		'heading_font_variants' => get_theme_mod( 'heading_font_variants', true ),
-		'heading_font_subsets' => get_theme_mod( 'heading_font_subsets', true ),
-
+		
 		'levelup_google_font' => get_theme_mod( 'levelup_body_font_family', true ),
-		'levelup_font_variants' => get_theme_mod( 'levelup_body_font_variants', true ),
-		'levelup_font_subsets' => get_theme_mod( 'levelup_body_font_subsets', true ),
+		'levelup_font_variants' => $levelup_font_variants,
+		'levelup_font_subsets' => $levelup_font_subsets,
 	);
 
 	wp_localize_script( 'levelup-admin', 'levelup_settings', $levelup_settings );

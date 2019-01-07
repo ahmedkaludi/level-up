@@ -22,7 +22,7 @@ function levelup_get_option_defaults() {
 		'amp_page_title_bg' => '#ff5544',
 
 		'levelup_body_font_family' => "Poppins",
-		'levelup_font_variants' => array('400','600'),
+		'levelup_font_variants' => array('400','600','700'),
   		'levelup_font_subsets' => 'latin-ext',
 
   		

@@ -3,7 +3,7 @@
 // No direct access, please
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class Customizer_Range_Value_Control extends WP_Customize_Control {
+class Levelup_Customizer_Range_Value_Control extends WP_Customize_Control {
 	public $type = 'range-value';
 
 	/**
@@ -40,7 +40,7 @@ class Customizer_Range_Value_Control extends WP_Customize_Control {
 }
 
 
-class Customizer_Toggle_Control extends WP_Customize_Control {
+class Levelup_Customizer_Toggle_Control extends WP_Customize_Control {
 	public $type = 'ios';
 
 	/**
@@ -106,7 +106,7 @@ class Customizer_Toggle_Control extends WP_Customize_Control {
 
 /* Custom Title */
 
-class Separator_Custom_control extends WP_Customize_Control{
+class Levelup_Separator_Custom_control extends WP_Customize_Control{
 	public $type = 'separator';
 	public function render_content(){
 		?>
@@ -124,7 +124,7 @@ class Separator_Custom_control extends WP_Customize_Control{
 /**
  * Select2 Multi-Select
  */
-class Customizer_Select2_Multiselect extends WP_Customize_Control {
+class Levelup_Customizer_Select2_Multiselect extends WP_Customize_Control {
 
 	public $type = 'select2_multiselect';
 
@@ -165,7 +165,7 @@ class Customizer_Select2_Multiselect extends WP_Customize_Control {
 /**
  * Select2 Multi-Select
  */
-class Customizer_Select2_Google_Fonts extends WP_Customize_Control {
+class Levelup_Customizer_Select2_Google_Fonts extends WP_Customize_Control {
 
 	public $type = 'select2_google_fonts';
 
