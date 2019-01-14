@@ -299,7 +299,7 @@ function levelup_core_plugin_notice(){
     $plugin_title     = __('Levelup', 'levelup');
 
     $links_attrs = array(
-        'class'                 => array( 'button', 'button-primary', 'levelup-install-now', 'levelup-not-installed' ),
+        'class'                 => array( 'button', 'button-primary','level-up-recommended-plugin' ),
         'data-plugin-slug'      => $plugin_slug,
 
         'data-activating-label' => __('Activating ..', 'level-up'),
@@ -313,18 +313,22 @@ function levelup_core_plugin_notice(){
     );
 
     $installed_plugins  = get_plugins();
+    $anyShow = $show = false;
 
     if( ! isset( $installed_plugins[ $plugin_base_name ] ) ){
         $links_attrs['data-action'] = 'install';
         $links_attrs['href'] = $links_attrs['data-install-url'];
         $button_label = sprintf( esc_html__( 'Install %s', 'level-up' ), $plugin_title );
+        $anyShow = $show = true;
     } elseif( ! levelup_is_plugin_active( $plugin_base_name ) ) {
         $links_attrs['data-action'] = 'activate';
         $links_attrs['href'] = $links_attrs['data-activate-url'];
         $button_label = sprintf( esc_html__( 'Activate %s Core Plugin', 'level-up' ), $plugin_title );
-    } else {
+        $anyShow = $show = true;
+    } /*else {
         return;
-    }
+    }*/
+    if($show){
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
         <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUp' ); ?></h3>
@@ -334,7 +338,113 @@ function levelup_core_plugin_notice(){
             <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
         </p>
     </div>
+<?php } ?>
+   <?php 
+    //AMP plugin installer
+    $plugin_base_name = 'accelerated-mobile-pages/accelerated-moblie-pages.php';
+    $plugin_slug      = 'accelerated-mobile-pages';
+    $plugin_filename  = 'accelerated-moblie-pages.php';
+    $plugin_title     = esc_html__('Accelerated Mobile Pages', 'levelup');
+
+    $links_attrs = array(
+        'class'                 => array( 'button', 'button-primary','level-up-recommended-plugin' ),
+        'data-plugin-slug'      => $plugin_slug,
+
+        'data-activating-label' => esc_html__('Activating ..', 'level-up'),
+        'data-activate-url'     => levelup_get_plugin_activation_link( $plugin_base_name, $plugin_slug, $plugin_filename ),
+        'data-activate-label'   => sprintf( esc_html__('Activate %s', 'level-up'), $plugin_title ),
+
+        'data-install-url'      => levelup_get_plugin_install_link( $plugin_slug ),
+        'data-install-label'    => sprintf( esc_html__('Install %s', 'level-up' ), $plugin_title ),
+
+        'data-redirect-url'     => self_admin_url( 'admin.php?page=levelup' )
+    );
+
+    $installed_plugins  = get_plugins();
+    $show = false;
+
+    if( ! isset( $installed_plugins[ $plugin_base_name ] ) ){
+        $links_attrs['data-action'] = 'install';
+        $links_attrs['href'] = $links_attrs['data-install-url'];
+        $button_label = sprintf( esc_html__( 'Install %s', 'level-up' ), $plugin_title );
+        $anyShow = $show = true;
+    } elseif( ! levelup_is_plugin_active( $plugin_base_name ) ) {
+        $links_attrs['data-action'] = 'activate';
+        $links_attrs['href'] = $links_attrs['data-activate-url'];
+        $button_label = sprintf( esc_html__( 'Activate %s Core Plugin', 'level-up' ), $plugin_title );
+        $anyShow = $show = true;
+    } /*else {
+        return;
+    }*/
+    if($show){
+?>
+	    <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
+	        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUp' ); ?></h3>
+	        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
+	        <p class="submit">
+	            <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
+	            <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
+	        </p>
+	    </div>
+	<?php } 
+	if($anyShow){
+	?>
+    <script>
+            jQuery(document).ready(function(){
+
+               jQuery(".level-up-recommended-plugin").click(function(e){
+                    e.preventDefault();
+                    var url = jQuery(this).attr("href");
+                    var redirect_url = jQuery(this).attr("data-redirect-url");
+                    var slug = jQuery(this).attr("data-plugin-slug");
+                    jQuery(this).text("Please wait Downloading...");
+                    var self = jQuery(this); 
+                    wp.updates.installPlugin(
+                        {
+                            slug: slug,
+                            success: function(pluginresponse){
+                                //wp.updates.installPluginSuccess(pluginresponse);
+                                //wpActivateModulesUpgrage(, self, response, nonce)
+                                self.text("Activating...")
+                                var url = pluginresponse.activateUrl;
+                                jQuery.ajax({
+                                    async: true,
+                                    type: 'GET',
+                                    url: url,
+                                    success: function () {
+                                        self.removeClass('updating-message');
+                                        self.text('Activated Successfully..');
+                                        window.location.href = redirect_url;
+                                    }
+                                });
+                            },
+                            error : function(response){
+                                if(response.errorCode=="folder_exists"){
+                                     self.text("Activating...");
+                                     jQuery.ajax({
+                                        async: true,
+                                        type: 'GET',
+                                        url: url,
+                                        success: function () {
+                                            self.removeClass('updating-message');
+                                            self.text('Activated Successfully..');
+                                            window.location.href = redirect_url;
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                    );
+
+                    
+                    
+                    return false;
+                })
+            });
+
+            </script>
 <?php
+	}
 }
 add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 /*****
