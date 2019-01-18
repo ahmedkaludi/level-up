@@ -33,6 +33,9 @@ function levelup_customize_register( $wp_customize ) {
 
 	// Customize title and tagline sections and labels
 	
+	if(!function_exists('is_plugin_active')){
+		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	}
 
   	// Field Type Theme Options
 	if(!is_plugin_active( 'levelup/levelup.php' )){
