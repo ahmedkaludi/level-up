@@ -76,7 +76,7 @@ if( ! function_exists( 'levelup_generate_defaults' ) ) :
 
 		$default_options = levelup_get_option_defaults();
 		$saved_options = get_theme_mods();
-		$returned = [];
+		$returned = array();
 
 		foreach( $default_options as $key => $option ) {
 			if( array_key_exists( $key, $saved_options ) ) {
