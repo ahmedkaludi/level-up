@@ -2,8 +2,8 @@
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
-Tested up to: 4.9.7
-Stable tag: 1.1
+Tested up to: 5.0.3
+Stable tag: 1.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
@@ -23,12 +23,12 @@ levelup WordPress theme is a minimal and fast theme that makes your AMP and Non-
 We have tested this theme with majority of the plugins and it works flawlessly with them. If you face any compatibility issues with our theme, then let us know, we will help you fix them.
 
 = How to display the AMP version of this theme? =
-The AMP compatibility will be added with you install the AMP for WP plugin.
+The AMP compatibility will be added with you install the LevelUP and AMP for WP plugin.
 
 == Copyright ==
 
-levelup WordPress Theme, Copyright 2018 
-levelup is distributed under the terms of the GNU GPL.
+Levelup WordPress Theme, Copyright 2018 
+Levelup is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -92,6 +92,12 @@ https://pixabay.com/en/office-notes-notepad-entrepreneur-620817/
 https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
+
+= 1.2 - Feb 12 2019 =
+* LevelUP Plugin Compatibility added
+* Elementor Compatibility added
+* AMP Compatibility added
+
 
 = 1.1 - Sep 10 2018 =
 * TGMPA automatic is set to false
