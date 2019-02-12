@@ -239,7 +239,7 @@ function levelup_core_plugin_notice(){
     $plugin_base_name = 'levelup/levelup.php';
     $plugin_slug      = 'levelup';
     $plugin_filename  = 'levelup.php';
-    $plugin_title     = __('Levelup', 'levelup');
+    $plugin_title     = __('Levelup', 'level-up');
 
     $links_attrs = array(
         'class'                 => array( 'button', 'button-primary','level-up-recommended-plugin' ),
@@ -274,7 +274,7 @@ function levelup_core_plugin_notice(){
     if($show){
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
-        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUp' ); ?></h3>
+        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUP' ); ?></h3>
         <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
         <p class="submit">
             <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>

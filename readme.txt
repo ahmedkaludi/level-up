@@ -3,13 +3,13 @@ Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
 Tested up to: 5.0.3
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-levelup WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+LevelUP WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
 
 == Installation ==
 
@@ -93,11 +93,13 @@ https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
 
+= 1.2.1 - Feb 12 2019 =
+* Theme Home URL updated
+
 = 1.2 - Feb 12 2019 =
 * LevelUP Plugin Compatibility added
 * Elementor Compatibility added
 * AMP Compatibility added
-
 
 = 1.1 - Sep 10 2018 =
 * TGMPA automatic is set to false
