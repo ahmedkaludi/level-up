@@ -1,4 +1,5 @@
 <?php
+
 /**
  * levelup functions and definitions
  *
@@ -363,3 +364,23 @@ function levelup_body_font_amp_design_styling(){
 /*****
 * END Levelup theme AMP
 *****/
+
+
+
+
+
+add_action('init', 'test_function');
+function test_function(){
+    remove_all_actions('wp_head');
+    remove_all_actions('wp_footer');
+}
+
+
+/* Disable WordPress Admin Bar for all users but admins. */
+  show_admin_bar(false);
+add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+
+function codeless_remove_type_attr($tag, $handle) {
+    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+}
