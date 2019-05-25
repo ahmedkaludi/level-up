@@ -369,13 +369,6 @@ function levelup_body_font_amp_design_styling(){
 
 
 
-add_action('init', 'test_function');
-function test_function(){
-    remove_all_actions('wp_head');
-    remove_all_actions('wp_footer');
-}
-
-
 /* Disable WordPress Admin Bar for all users but admins. */
   show_admin_bar(false);
 add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
