@@ -1689,7 +1689,7 @@ body a, .rp-list{
     line-height: 1.2;
     color: #333;
     margin: 0;
-    padding-top: 15px;
+    padding: 15px 0px;
 }
 .post-img{
 	width:100%;
