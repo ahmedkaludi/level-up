@@ -1097,23 +1097,24 @@ object {
 .drawer-hamburger-icon:after {
     top: 7px
 }
-.drawer-open .drawer-hamburger-icon {
+/*.drawer-open .drawer-hamburger-icon {
     background-color: transparent
-}
-.drawer-open .drawer-hamburger-icon:after,
+}*/
+/*.drawer-open .drawer-hamburger-icon:after,
 .drawer-open .drawer-hamburger-icon:before {
     top: 0
-}
-.drawer-open .drawer-hamburger-icon:before {
-    /*-webkit-transform: rotate(45deg);
-    transform: rotate(45deg)*/
+
+}*/
+/*.drawer-open .drawer-hamburger-icon:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
     background-color: transparent;
-}
-.drawer-open .drawer-hamburger-icon:after {
-   /* -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg)*/
+}*/
+/*.drawer-open .drawer-hamburger-icon:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
     background-color: transparent;
-}
+}*/
 .sr-only {
     position: absolute;
     overflow: hidden;
@@ -2240,4 +2241,15 @@ blockquote p:last-child {
 	    line-height: 1.65;
 	}
 
+}
+.drawer-open .drawer-nav{
+	z-index:99;
+}
+ .checkbox-menu,.drawer-open .drawer-nav, .drawer-open .drawer-toggle{
+	display:none;
+	left:-20;
+}
+.toggle:checked + .drawer-open > .drawer-nav,.toggle:checked + .drawer-open > .drawer-toggle{
+	/*display:block;*/
+	left:0;
 }

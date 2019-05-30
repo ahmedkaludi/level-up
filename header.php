@@ -11,31 +11,28 @@
 
 ?>
 <!doctype html>
-<html amp <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
-
-	<?php do_action( 'levelup_head'); ?>
-	<?php do_action('levelup_css'); ?>
-
+	<?php wp_head(); 
+	ampforwp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<?php
 	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'level-up' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="head">
-				<div class="hamburger-menu drawer drawer--left">
-	                <button type="button" class="drawer-toggle drawer-hamburger">
+				<input type="checkbox" id="offcanvas-menu" class="toggle checkbox-menu" />
+				<div class="hamburger-menu drawer drawer--left drawer-open">
+	                <label for="offcanvas-menu" class="drawer-toggle-class drawer-hamburger">
 	                  <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'level-up' ); ?></span>
 	                  <span class="drawer-hamburger-icon"></span>
-	                </button>
+	                </label>
 	                <nav class="drawer-nav" role="navigation">
 	                  <div class="drawer-menu">
 	                    <?php
@@ -46,8 +43,9 @@
 	                    ));
 	                    } ?>
 	                  </div>
-	                  <span class="icon-close drawer-toggle"></span>
+	                  <label for="offcanvas-menu" class="icon-close drawer-toggle-class"></label>
 	                </nav>
+	                <div class="drawer-overlay drawer-toggle"></div>
                 </div><!-- /.mobile-menu -->
 				<div class="logo">
 	              <a href="<?php echo esc_url( home_url() ); ?>">
