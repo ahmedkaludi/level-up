@@ -1852,12 +1852,11 @@ blockquote p:last-child {
 .post-aurhor-image{
     float: left;
 }
-.post-aurhor-image img {
+.post-aurhor-image amp-img {
     border-radius: 50%;
     margin: 0px 12px 10px 0px;
     display: block;
-    width: 60px;
-    height:60px;
+    max-width: 70px;
 }
 .post-author-desc p {
     margin: 0;
