@@ -1285,7 +1285,7 @@ body a, .rp-list{
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
 /** Header **/
-header{
+.site-header{
     box-shadow: 0px 0px 8px rgba(221, 221, 221, 0.4);
 }
 .head{
