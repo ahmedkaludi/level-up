@@ -1702,6 +1702,7 @@ body a, .rp-list{
 .post-img amp-img{
 	width:100%;
 	height: auto;
+    margin: 0 auto
 }
 .post-img .featured_caption {
     width: 1100px;
