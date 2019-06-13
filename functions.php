@@ -1,5 +1,6 @@
 <?php
 add_theme_support( "amp-template-mode" );
+
 /**
  * levelup functions and definitions
  *
@@ -7,6 +8,39 @@ add_theme_support( "amp-template-mode" );
  *
  * @package levelup
  */
+define("LEVELUP_INC_DIR", get_template_directory() . '/inc');
+global $wpdb;
+define( 'TRAV_ACCOMMODATION_VACANCIES_TABLE', $wpdb->prefix . 'trav_accommodation_vacancies' );
+define( 'TRAV_ACCOMMODATION_BOOKINGS_TABLE', $wpdb->prefix . 'trav_accommodation_bookings' );
+define( 'TRAV_CURRENCIES_TABLE', $wpdb->prefix . 'trav_currencies' );
+define( 'TRAV_REVIEWS_TABLE', $wpdb->prefix . 'trav_reviews' );
+define( 'TRAV_MODE', 'product' );
+define( 'TRAV_TOUR_SCHEDULES_TABLE', $wpdb->prefix . 'trav_tour_schedule' );
+define( 'TRAV_TOUR_BOOKINGS_TABLE', $wpdb->prefix . 'trav_tour_bookings' );
+define( 'TRAV_CAR_BOOKINGS_TABLE', $wpdb->prefix . 'trav_car_bookings' );
+define( 'TRAV_CRUISE_SCHEDULES_TABLE', $wpdb->prefix . 'trav_cruise_schedules' );
+define( 'TRAV_CRUISE_BOOKINGS_TABLE', $wpdb->prefix . 'trav_cruise_bookings' );
+define( 'TRAV_CRUISE_VACANCIES_TABLE', $wpdb->prefix . 'trav_cruise_vacancies' );
+
+
+require_once( get_template_directory() . '/inc/custom-post-types.php');
+require_once( get_template_directory() . '/inc/metaboxes.php');
+require_once(get_template_directory() . '/inc/lib/multiple_sidebars.php');
+require_once( get_template_directory() . '/inc/tour-function-functions.php');
+require_once( get_template_directory() . '/inc/tour-helper-functions.php');
+require_once( get_template_directory() . '/inc/wpml.php');
+
+require_once( get_template_directory() . '/inc/frontend/accommodation/main.php');
+require_once( get_template_directory() . '/inc/frontend/tour/main.php');
+require_once( get_template_directory() . '/inc/frontend/car/main.php');
+require_once( get_template_directory() . '/inc/frontend/cruise/main.php');
+
+
+
+require_once get_template_directory() . '/inc/lib/meta-box/meta-box.php';
+/*require_once get_template_directory() . '/inc/lib/class-tgm-plugin-activation.php';
+include_once get_template_directory() . '/inc/lib/multiple_sidebars.php';*/
+//require_once get_template_directory() . '/inc/lib/payment/main.php';
 
 if ( ! function_exists( 'levelup_setup' ) ) :
 	/**
