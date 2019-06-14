@@ -27,26 +27,6 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="head">
-				<input type="checkbox" id="offcanvas-menu" class="toggle checkbox-menu" />
-				<div class="hamburger-menu drawer drawer--left drawer-open">
-	                <label for="offcanvas-menu" class="drawer-toggle-class drawer-hamburger">
-	                  <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'level-up' ); ?></span>
-	                  <span class="drawer-hamburger-icon"></span>
-	                </label>
-	                <nav class="drawer-nav" role="navigation">
-	                  <div class="drawer-menu">
-	                    <?php
-	                    if ( has_nav_menu( 'header-menu' ) ) {
-	                      wp_nav_menu(array(
-	                    	'theme_location' => 'header-menu',
-							'menu_class'        => 'header-menu',
-	                    ));
-	                    } ?>
-	                  </div>
-	                  <label for="offcanvas-menu" class="icon-close drawer-toggle-class"></label>
-	                </nav>
-	                <div class="drawer-overlay drawer-toggle"></div>
-                </div><!-- /.mobile-menu -->
 				<div class="logo">
 	              <a href="<?php echo esc_url( home_url() ); ?>">
 	                <?php 
@@ -62,28 +42,22 @@
 	                } ?>
 	              </a>
 	            </div><!-- /.logo -->
-                <div class="h-srch h-ic">
-                    <a class="lb icon-search2" href="#search"></a>
-                    <div class="lb-btn"> 
-                        <div class="lb-t" id="search">
-                            <?php get_search_form(); ?>
-                        </div> 
-                    </div>
-                </div><!-- /.search -->
+                <div class="h-menu">
+                	<a href="#">Mobile</a>
+                </div>
 		    </div><!-- /.head -->
 		</div><!-- /.container -->
+		<div class="desk-menu">
+			<div class="container">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'primary-menu',
+						'menu_class'        => 'd-menu',
+					) );
+				 ?>
+			</div><!-- /.container -->
+		</div><!-- /.desk-menu -->
 	</header><!-- #masthead -->
-	<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
-	<div class="p-m-fl">
-		<div class="p-menu">
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'primary-menu',
-					'menu_id'        => 'primary-menu',
-				) );
-			 ?>
-		</div><!-- /.p-menu -->
-	</div><!-- /.p-m-fl -->
-	<?php } ?>
+	
 	<?php } ?>
 	<div id="content" class="site-content">

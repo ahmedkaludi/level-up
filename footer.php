@@ -24,18 +24,22 @@
 			</div>
 		</div>
 		<?php endif; ?>
+		<div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <?php dynamic_sidebar( 'sidebar-footer-1' );?>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <?php dynamic_sidebar( 'sidebar-footer-2' );?>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <?php dynamic_sidebar( 'sidebar-footer-3' );?>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <?php dynamic_sidebar( 'sidebar-footer-4' );?>
+                    </div>
+                </div>
 		<div class="site-info">
 			<div class="container">
-				<?php if ( has_nav_menu( 'footer-menu' ) ) { ?>
-				<div class="footer-menu">
-					<?php
-	                      wp_nav_menu(array(
-	                    	'theme_location' 	=> 'footer-menu',
-							'menu_class'        => 'header-menu',
-	                    ));
-	                     ?>
-				</div>
-				<?php } ?>
 				<div class="rr">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'level-up' ) ); ?>" class="imprint">
 					<?php printf( __( 'Proudly powered by %s', 'level-up' ), 'WordPress' ); ?>

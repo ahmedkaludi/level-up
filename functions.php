@@ -30,11 +30,15 @@ require_once( get_template_directory() . '/inc/tour-function-functions.php');
 require_once( get_template_directory() . '/inc/tour-helper-functions.php');
 require_once( get_template_directory() . '/inc/wpml.php');
 require_once get_template_directory() . '/inc/currency.php';
+require_once( get_template_directory() . '/inc/side-bar.php');
+require_once( get_template_directory() . '/inc/taxonomy-meta.php');
+require_once( get_template_directory() . '/inc/widget.php');
 
 require_once( get_template_directory() . '/inc/frontend/accommodation/main.php');
 require_once( get_template_directory() . '/inc/frontend/tour/main.php');
 require_once( get_template_directory() . '/inc/frontend/car/main.php');
 require_once( get_template_directory() . '/inc/frontend/cruise/main.php');
+
 
 
 
@@ -394,11 +398,17 @@ add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 add_action( 'amp_post_template_css', 'levelup_body_font_amp_design_styling' );
 function levelup_body_font_amp_design_styling(){
 	$defaults = levelup_generate_defaults();
+    //print_r($defaults); die;
 	echo 'body {
 		font-family: "'. $defaults['levelup_body_font_family'] .'", sans-serif;
 	
 	}';
 }
+add_action('amp_post_template_head', 'levelup_font_load');
+function levelup_font_load(){
+    echo "<link rel='stylesheet' id='trav_style_font_googleapis-css' href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900' type='text/css' media='all' />";
+}
+
 /*****
 * END Levelup theme AMP
 *****/
