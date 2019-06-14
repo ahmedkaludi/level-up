@@ -29,6 +29,7 @@ require_once(get_template_directory() . '/inc/lib/multiple_sidebars.php');
 require_once( get_template_directory() . '/inc/tour-function-functions.php');
 require_once( get_template_directory() . '/inc/tour-helper-functions.php');
 require_once( get_template_directory() . '/inc/wpml.php');
+require_once get_template_directory() . '/inc/currency.php';
 
 require_once( get_template_directory() . '/inc/frontend/accommodation/main.php');
 require_once( get_template_directory() . '/inc/frontend/tour/main.php');
