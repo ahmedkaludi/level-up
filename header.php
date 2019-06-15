@@ -24,40 +24,90 @@
 	<?php
 	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'level-up' ); ?></a>
+	<h3 class="target"><a class="target-anchor" id="top"></a><amp-position-observer layout="nodisplay"></amp-position-observer></h3>
 	<header id="masthead" class="site-header">
-		<div class="container">
-			<div class="head">
-				<div class="logo">
-	              <a href="<?php echo esc_url( home_url() ); ?>">
-	                <?php 
-	                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-	                if( $custom_logo_id ) {
-	                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-	                }
-	                if ( has_custom_logo() ) {       	
-	                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-	                } else {
-	                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-	                } ?>
-	              </a>
-	            </div><!-- /.logo -->
-                <div class="h-menu">
-                	<a href="#">Mobile</a>
-                </div>
-		    </div><!-- /.head -->
-		</div><!-- /.container -->
-		<div class="desk-menu">
+		<div class="dsk-nav">
 			<div class="container">
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'primary-menu',
-						'menu_class'        => 'd-menu',
-					) );
-				 ?>
+				<div class="head">
+					<div class="logo">
+		              <a href="<?php echo esc_url( home_url() ); ?>">
+		                <?php 
+		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
+
+		                if( $custom_logo_id ) {
+		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+		                }
+		                if ( has_custom_logo() ) {       	
+		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+		                } else {
+		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
+		                } ?>
+		              </a>
+		            </div><!-- /.logo -->
+			    </div><!-- /.head -->
 			</div><!-- /.container -->
-		</div><!-- /.desk-menu -->
+			<div class="desk-menu">
+				<div class="container">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'primary-menu',
+							'menu_class'        => 'd-menu',
+						) );
+					 ?>
+				</div><!-- /.container -->
+			</div><!-- /.desk-menu -->
+		</div>
+		<div class="container">
+			<div class="mbl-menu">
+				<div class="m-logo">
+					<a href="<?php echo esc_url( home_url() ); ?>">
+		                <?php 
+		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
+
+		                if( $custom_logo_id ) {
+		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+		                }
+		                if ( has_custom_logo() ) {       	
+		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+		                } else {
+		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
+		                } ?>
+		            </a>
+				</div>
+				<div class="h-menu">
+	            	<a href="#">Mobile</a>
+	            </div>
+	        </div>
+		</div>
 	</header><!-- #masthead -->
-	
+	<div id="navbar">
+		<div class="container">
+			<div class="ios-menu">
+				<div class="ios-logo">
+					<a href="<?php echo esc_url( home_url() ); ?>">
+		                <?php 
+		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
+
+		                if( $custom_logo_id ) {
+		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+		                }
+		                if ( has_custom_logo() ) {       	
+		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+		                } else {
+		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
+		                } ?>
+		            </a>
+				</div>
+				<div class="ios-nav">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'primary-menu',
+							'menu_class'        => 'd-menu',
+						) );
+					 ?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<?php } ?>
 	<div id="content" class="site-content">

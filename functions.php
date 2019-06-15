@@ -21,6 +21,7 @@ define( 'TRAV_CAR_BOOKINGS_TABLE', $wpdb->prefix . 'trav_car_bookings' );
 define( 'TRAV_CRUISE_SCHEDULES_TABLE', $wpdb->prefix . 'trav_cruise_schedules' );
 define( 'TRAV_CRUISE_BOOKINGS_TABLE', $wpdb->prefix . 'trav_cruise_bookings' );
 define( 'TRAV_CRUISE_VACANCIES_TABLE', $wpdb->prefix . 'trav_cruise_vacancies' );
+define( 'TRAV_TAX_META_DIR_URL', get_template_directory() . '/inc/lib/tax-meta-class/' );
 
 
 require_once( get_template_directory() . '/inc/custom-post-types.php');
@@ -406,8 +407,25 @@ function levelup_body_font_amp_design_styling(){
 }
 add_action('amp_post_template_head', 'levelup_font_load');
 function levelup_font_load(){
-    echo "<link rel='stylesheet' id='trav_style_font_googleapis-css' href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900' type='text/css' media='all' />";
+    echo "<link rel='stylesheet' id='trav_style_font_googleapis-css' href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900'/>";
 }
+
+// Font Awesome Icons
+add_action('amp_post_template_head', 'ampforwp_fontawesome_canonical_link_robert');
+function ampforwp_fontawesome_canonical_link_robert(){ ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <?php 
+}
+
+// Bottom to Top Scroll
+add_action('amp_post_template_head', 'levelup_bottom_to_top_scripts');
+function levelup_bottom_to_top_scripts(){ ?>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <?php 
+}
+
+
+
 
 /*****
 * END Levelup theme AMP
