@@ -61,16 +61,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript">
-//on scroll sticky header 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-184px";
-  }
-}
-</script>
+
 </body>
 </html>

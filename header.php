@@ -26,59 +26,79 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'level-up' ); ?></a>
 	<h3 class="target"><a class="target-anchor" id="top"></a><amp-position-observer layout="nodisplay"></amp-position-observer></h3>
 	<header id="masthead" class="site-header">
-		<div class="dsk-nav">
-			<div class="container">
-				<div class="head">
-					<div class="logo">
-		              <a href="<?php echo esc_url( home_url() ); ?>">
-		                <?php 
-		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-		                if( $custom_logo_id ) {
-		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-		                }
-		                if ( has_custom_logo() ) {       	
-		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-		                } else {
-		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-		                } ?>
-		              </a>
-		            </div><!-- /.logo -->
-			    </div><!-- /.head -->
-			</div><!-- /.container -->
-			<div class="desk-menu">
+		<input type="checkbox" id="offcanvas-menu" class="tg" />
+		<div class="hamb-mnu">
+			<aside class="m-ctr">
+	            <div class="m-scrl">
+	                <div class="menu-heading clearfix">
+	                    <label for="offcanvas-menu" class="c-btn"></label>
+	                </div><!--end menu-heading-->
+	                <nav class="m-menu">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'primary-menu',
+								'menu_class'        => 'mob-menu',
+								'walker' => new Ampforwp_Walker_Nav_Menu()
+							) );
+						 ?>
+					</nav><!--end slide-menu -->
+	            </div><!-- /m-scrl -->
+			</aside>
+			<div class="dsk-nav">
 				<div class="container">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary-menu',
-							'menu_class'        => 'd-menu',
-						) );
-					 ?>
-				</div><!-- /.container -->
-			</div><!-- /.desk-menu -->
-		</div>
-		<div class="container">
-			<div class="mbl-menu">
-				<div class="m-logo">
-					<a href="<?php echo esc_url( home_url() ); ?>">
-		                <?php 
-		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
+					<div class="head">
+						<div class="logo">
+			              <a href="<?php echo esc_url( home_url() ); ?>">
+			                <?php 
+			                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
 
-		                if( $custom_logo_id ) {
-		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-		                }
-		                if ( has_custom_logo() ) {       	
-		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-		                } else {
-		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-		                } ?>
-		            </a>
-				</div>
-				<div class="h-menu">
-	            	<a href="#">Mobile</a>
-	            </div>
-	        </div>
-		</div>
+			                if( $custom_logo_id ) {
+			                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+			                }
+			                if ( has_custom_logo() ) {       	
+			                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+			                } else {
+			                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
+			                } ?>
+			              </a>
+			            </div><!-- /.logo -->
+				    </div><!-- /.head -->
+				</div><!-- /.container -->
+				<div class="desk-menu">
+					<div class="container">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'primary-menu',
+								'menu_class'        => 'd-menu',
+							) );
+						 ?>
+					</div><!-- /.container -->
+				</div><!-- /.desk-menu -->
+			</div>
+			<label for="offcanvas-menu" class="fsc"></label>
+			<div class="container mbl">
+				<div class="mbl-menu">
+					<div class="m-logo">
+						<a href="<?php echo esc_url( home_url() ); ?>">
+			                <?php 
+			                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
+
+			                if( $custom_logo_id ) {
+			                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+			                }
+			                if ( has_custom_logo() ) {       	
+			                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+			                } else {
+			                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
+			                } ?>
+			            </a>
+					</div>
+					<div class="h-nav">
+	                    <label for="offcanvas-menu" class="t-btn"></label>
+	                </div><!--end menu-->
+		        </div>
+			</div>
+		</div><!-- /.hamb-mnu -->
 	</header><!-- #masthead -->
 	<div id="navbar">
 		<div class="container">
