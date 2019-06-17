@@ -71,8 +71,8 @@ if ( have_posts() ) {
 
         <section id="content">
             <div class="container">
-                <div class="row">
-                    <div id="main" class="col-sm-8 col-md-9">
+                <div class="row tour-temp">
+                    <div id="main" class="tout-left accom-left">
                         <div class="tab-container style1" id="hotel-main-content">
                             <ul class="tabs">
 
@@ -103,22 +103,42 @@ if ( have_posts() ) {
                                 <?php if ( ! empty( $gallery_imgs ) && $show_gallery ) { ?>
                                     <div id="photos-tab" class="tab-pane fade">
                                         <div class="photo-gallery flexslider style1" data-animation="slide" data-sync="#photos-tab .image-carousel">
-                                            <ul class="slides">
-                                                <?php foreach ( $gallery_imgs as $gallery_img ) {
-                                                    echo '<li>' . wp_get_attachment_image( $gallery_img, 'full' ) . '</li>';
+                                            <amp-carousel id="carouselWithPreview" width="400" height="300" layout="responsive" type="slides" on="slideChange:carouselWithPreviewSelector.toggle(index=event.index, value=true)">
+                                                <?php foreach ( $gallery_imgs as $gallery_img ) {   
+                                                $image_attributes = wp_get_attachment_image_src( $gallery_img, 'full' );
+                                                    if($image_attributes){
+                                                    $amp_image = '<amp-img width="'.$image_attributes[1].'" height="'.$image_attributes[2].'" layout="responsive" alt="a sample image" src="'.$image_attributes[0].'"  ></amp-img>';
+                                                    echo  $amp_image;
+                                                    }
                                                 } ?>
-                                            </ul>
+                                            </amp-carousel>
                                         </div>
                                         <div class="image-carousel style1" data-animation="slide" data-item-width="70" data-item-margin="10" data-sync="#photos-tab .photo-gallery">
-                                            <ul class="slides">
-                                                <?php foreach ( $gallery_imgs as $gallery_img ) {
-                                                    echo '<li>' . wp_get_attachment_image( $gallery_img, 'widget-thumb' ) . '</li>';
+                                            <amp-selector id="carouselWithPreviewSelector"
+                                                class="carousel-preview"
+                                                on="select:carouselWithPreview.goToSlide(index=event.targetOption)"
+                                                layout="container">
+                                                <?php 
+                                                $i = 0;
+                                                foreach ( $gallery_imgs as $gallery_img ) {
+                                                    $sm_image_attributes = wp_get_attachment_image_src( $gallery_img, 'thumbnail' );
+                                                    if($sm_image_attributes){
+                                                        $thumb_images = '<amp-img option="'.$i.'"
+                                                        '.(($i==0)?'selected': '').'
+                                                        src="'.$sm_image_attributes[0].'"
+                                                        width="70"
+                                                        height="70"
+                                                        alt="a sample image"></amp-img>';
+                                                        echo $thumb_images;
+                                                    }
+                                                    $i++;
                                                 } ?>
-                                            </ul>
+                                             </amp-selector>
                                         </div>
                                     </div>
                                 <?php } ?>
-
+                                    
+                                   
                                 <?php if ( ! empty( $map ) ) { ?>
                                     <?php  if ( $show_map ) { ?>
                                         <div id="map-tab" class="tab-pane fade"></div>
@@ -194,184 +214,24 @@ if ( have_posts() ) {
                         </div>
 
                         <div id="hotel-features" class="tab-container">
-                            <ul class="tabs">
+
+                            <amp-selector class="tabs-with-selector" role="tablist"
+                                on="select:myTabPanels.toggle(index=event.targetOption, value=true)">
                                 <?php $def_tab = ( ! empty(  $acc_meta['trav_accommodation_def_tab'] ) ) ? $acc_meta['trav_accommodation_def_tab'][0] : 'desc';?>
-                                <li<?php echo ( $def_tab == 'desc' ) ? ' class="active"' : '' ?>><a href="#hotel-description" data-toggle="tab"><?php _e( 'Description','trav' ); ?></a></li>
-                                <!-- <li<?php echo ( $def_tab == 'rooms' ) ? ' class="active"' : '' ?>><a href="#hotel-availability" data-toggle="tab"><?php _e( 'Availability','trav' ); ?></a></li> -->
-                                <li<?php echo ( $def_tab == 'amenity' ) ? ' class="active"' : '' ?>><a href="#hotel-amenities" data-toggle="tab"><?php _e( 'Amenities','trav' ); ?></a></li>
-                                <!-- <li><a href="#hotel-reviews" data-toggle="tab"><?php _e( 'Reviews','trav' ); ?></a></li> -->
-                                <?php if ( ! empty( $acc_meta['trav_accommodation_faq'] ) ) : ?>
-                                    <li><a href="#hotel-faqs" data-toggle="tab"><?php _e( 'Rooms And Suites','trav' ); ?></a></li>
-                                <?php endif ?>
-                                <?php if ( ! empty( $things_to_do ) ) : ?>
-                                    <li><a href="#hotel-things-todo" data-toggle="tab"><?php _e( 'Things to Do','trav' ); ?></a></li>
-                                <?php endif; ?>
-                              <!--  <li><a href="#hotel-write-review" data-toggle="tab"><?php _e( 'Write a Review','trav' ); ?></a></li> -->
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade<?php echo ( $def_tab == 'rooms' ) ? ' in active' : '' ?>" id="hotel-availability">
-                                    <form id="check_availability_form" method="post">
-                                        <input type="hidden" name="accommodation_id" value="<?php echo esc_attr( $acc_id ); ?>">
-                                        <input type="hidden" name="action" value="acc_get_available_rooms">
-                                        <?php wp_nonce_field( 'post-' . $acc_id, '_wpnonce', false ); ?>
-                                        <?php if ( isset( $_GET['edit_booking_no'] ) && ! empty( $_GET['edit_booking_no'] ) ) : ?>
-                                            <input type="hidden" name="edit_booking_no" value="<?php echo esc_attr( $_GET['edit_booking_no'] ) ?>">
-                                            <input type="hidden" name="pin_code" value="<?php echo esc_attr( $_GET['pin_code'] ) ?>">
-                                        <?php endif; ?>
-                                        <div class="update-search clearfix">
-                                            <div class="alert alert-error" style="display:none;"><span class="message"><?php _e( 'Please select check in date.','trav' ); ?></span><span class="close"></span></div>
-                                            <div class="col-md-5">
-                                                <h4 class="title"><?php _e( 'When','trav' ); ?></h4>
-                                                <div class="row">
-                                                    <div class="col-xs-6">
-                                                        <label><?php _e( 'CHECK IN','trav' ); ?></label>
-                                                        <div class="datepicker-wrap validation-field from-today">
-                                                            <input name="date_from" type="text" placeholder="<?php echo trav_get_date_format('html'); ?>" class="input-text full-width" value="<?php echo $date_from; ?>" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6">
-                                                        <label><?php _e( 'CHECK OUT','trav' ); ?></label>
-                                                        <div class="datepicker-wrap validation-field from-today">
-                                                            <input name="date_to" type="text" placeholder="<?php echo trav_get_date_format('html'); ?>" class="input-text full-width" value="<?php echo $date_to;?>" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <h4 class="title"><?php _e( 'Who','trav' ); ?></h4>
-                                                <div class="row">
-                                                    <div class="col-xs-4">
-                                                        <label><?php _e( 'ROOMS','trav' ); ?></label>
-                                                        <div class="selector validation-field">
-                                                            <select name="rooms" class="full-width">
-                                                                <?php
-                                                                    for ( $i = 1; $i <= $search_max_rooms; $i++ ) {
-                                                                        $selected = ( $i == $rooms ) ? 'selected' : '';
-                                                                        echo '<option value="' . esc_attr( $i ) . '" ' . $selected . '>' . esc_html( $i ) . '</option>';
-                                                                    }
-                                                                ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <label><?php _e( 'ADULTS','trav' ); ?></label>
-                                                        <div class="selector validation-field">
-                                                            <select name="adults" class="full-width">
-                                                                <?php
-                                                                    for ( $i = 1; $i <= $search_max_adults; $i++ ) {
-                                                                        $selected = ( $i == $adults ) ? 'selected' : '';
-                                                                        echo '<option value="' . esc_attr( $i ) . '" ' . $selected . '>' . esc_html( $i ) . '</option>';
-                                                                    }
-                                                                ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <label><?php _e( 'KIDS','trav' ); ?></label>
-                                                        <div class="selector validation-field">
-                                                            <select name="kids" class="full-width">
-                                                                <?php
-                                                                    for ( $i = 0; $i <= $search_max_kids; $i++ ) {
-                                                                        $selected = ( $i == $kids ) ? 'selected' : '';
-                                                                        echo '<option value="' . esc_attr( $i ) . '" ' . $selected . '>' . esc_html( $i ) . '</option>';
-                                                                    }
-                                                                ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearer"></div>
-                                                    <div class="col-xs-12 age-of-children <?php if ( $kids == 0) echo 'no-display'?>">
-                                                        <h5><?php _e( 'Age of Children','trav' ); ?></h5>
-                                                        <div class="row">
-                                                        <?php
-                                                            $kid_nums = ( $kids > 0 )?$kids:1;
-                                                            for ( $kid_num = 1; $kid_num <= $kid_nums; $kid_num++ ) {
-                                                        ?>
-                                                        
-                                                            <div class="col-xs-4 child-age-field">
-                                                                <label><?php echo esc_html( __( 'Child ', 'trav' ) . $kid_num ) ?></label>
-                                                                <div class="selector validation-field">
-                                                                    <select name="child_ages[]" class="full-width">
-                                                                        <?php
-                                                                            $max_kid_age = 17;
-                                                                            $child_age = ( isset( $_GET['child_ages'][ $kid_num -1 ] ) && is_numeric( (int) $_GET['child_ages'][ $kid_num -1 ] ) )?(int) $_GET['child_ages'][ $kid_num -1 ]:0;
-                                                                            for ( $i = 0; $i <= $max_kid_age; $i++ ) {
-                                                                                $selected = ( $i == $child_age ) ? 'selected' : '';
-                                                                                echo '<option value="' . esc_attr( $i ) . '" ' . $selected . '>' . esc_html( $i ) . '</option>';
-                                                                            }
-                                                                        ?>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        <?php } ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-3">
-                                                <h4 class="visible-md visible-lg">&nbsp;</h4>
-                                                <label class="visible-md visible-lg">&nbsp;</label>
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <button id="check_availability" data-animation-duration="1" data-animation-type="bounce" class="full-width icon-check animated bounce" type="submit"><?php _e( "SEARCH NOW", "trav" ); ?></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                    <h2><?php echo __( 'Available Rooms', 'trav' ) ?></h2>
-                                    <div class="room-list listing-style3 hotel">
-
-                                        <?php 
-                                            //get accommodation rooms
-                                            if ( ! empty( $room_types ) ) {
-                                                if ( ! empty( $date_from ) && ! empty( $date_to ) ) {
-                                                    echo '<input type="hidden" name="pre_searched" value="1">';
-                                                    $return_value = trav_acc_get_available_rooms( $acc_id, $_GET['date_from'], $_GET['date_to'], $rooms, $adults, $kids, $child_ages, $except_booking_no, $pin_code );
-                                                    if ( is_array( $return_value ) ) {
-                                                        $number_of_days = count( $return_value['check_dates'] );
-                                                        $available_room_type_ids = $return_value['bookable_room_type_ids'];
-                                                        if ( ! empty( $available_room_type_ids ) ) {
-                                                            foreach ( $available_room_type_ids as $room_type_id ) {
-                                                                $room_price = 0;
-                                                                foreach ( $return_value['check_dates'] as $check_date ) {
-                                                                    $room_price += (float) $return_value['prices'][ $room_type_id ][ $check_date ]['total'];
-                                                                }
-                                                                trav_acc_get_room_detail_html( $room_type_id, 'available', $room_price, $number_of_days, $rooms );
-                                                            }
-                                                        }
-                                                        $not_available_room_type_ids = array_diff( $return_value['matched_room_type_ids'], $return_value['bookable_room_type_ids'] ) ;
-                                                        if ( ! empty( $not_available_room_type_ids ) ) {
-                                                            foreach ( $not_available_room_type_ids as $room_type_id ) {
-                                                                trav_acc_get_room_detail_html( $room_type_id, 'not_available' );
-                                                            }
-                                                        }
-                                                        $not_match_room_type_ids = array_diff( $return_value['all_room_type_ids'], $return_value['matched_room_type_ids'] ) ;
-                                                        if ( ! empty( $not_match_room_type_ids ) ) {
-                                                            foreach ( $not_match_room_type_ids as $room_type_id ) {
-                                                                trav_acc_get_room_detail_html( $room_type_id, 'not_match' );
-                                                            }
-                                                        }
-                                                    } else {
-                                                        echo wp_kses_post( $return_value );
-                                                    }
-                                                } else {
-                                                    echo '<input type="hidden" name="pre_searched" value="0">';
-                                                    foreach ( $room_types as $room_type ) {
-                                                        trav_acc_get_room_detail_html( $room_type->ID, 'all');
-                                                    }
-                                                }
-                                            } else {
-                                                echo __( 'No Rooms Found', 'trav' );
-                                            }
-                                        ?>
-
-                                    </div>
+                                <div id="sample3-tab1" class="tab-mn" role="tab" aria-controls="sample3-tabpanel1" option="0"selected>
+                                    <?php _e( 'Description','trav' ); ?>
                                 </div>
-                                <div class="tab-pane fade<?php echo ( $def_tab == 'desc' ) ? ' in active' : '' ?>" id="hotel-description">
+                                <div id="sample3-tab2" class="tab-mn" role="tab" aria-controls="sample3-tabpanel2" option="1">
+                                    <?php _e( 'Amenities','trav' ); ?>
+                                </div>
+                                <?php if ( ! empty( $acc_meta['trav_accommodation_faq'] ) ) : ?>
+                                    <div id="sample3-tab3" class="tab-mn" role="tab" aria-controls="sample3-tabpanel3" option="2">
+                                            <?php _e( 'Rooms And Suites','trav' ); ?>
+                                    </div>
+                                <?php endif ?>
+                            </amp-selector>
+                            <amp-selector id="myTabPanels" class="tabpanels">
+                                <div id="sample3-tabpanel1" role="tabpanel" aria-labelledby="sample3-tab1" option selected>
                                     <div class="intro table-wrapper full-width hidden-table-sms">
                                         <div class="col-sm-4 features table-cell">
                                             <table>
@@ -467,7 +327,8 @@ if ( have_posts() ) {
                                         </div> -->
                                     </div>
                                 </div>
-                                <div class="tab-pane fade<?php echo ( $def_tab == 'amenity' ) ? ' in active' : '' ?>" id="hotel-amenities">
+
+                                <div id="sample3-tabpanel2" role="tabpanel" aria-labelledby="sample3-tab2" option>
                                     <h2><?php echo __('Amenities of ', 'trav'); the_title();?></h2>
                                     <p>
                                         <?php
@@ -495,203 +356,15 @@ if ( have_posts() ) {
                                         ?>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="hotel-reviews">
-                                    <div class="intro table-wrapper full-width hidden-table-sms">
-                                        <div class="rating table-cell col-sm-4">
-                                            <?php
-                                                $acc_review = ( ! empty( $acc_meta['review'] ) )?(float) $acc_meta['review']:0;
-                                                $acc_review = round( $acc_review, 1 );
-                                            ?>
-                                            <span class="score"><?php echo esc_html( $acc_review );?>/5.0</span>
-                                            <div class="five-stars-container"><div class="five-stars" style="width: <?php echo esc_attr( $acc_review / 5 * 100 ) ?>%;"></div></div>
-                                            <a href="#" class="goto-writereview-pane button green btn-small full-width"><?php echo esc_html__( 'WRITE A REVIEW', 'trav' ) ?></a>
-                                        </div>
-                                        <div class="table-cell col-sm-8 no-rpadding no-lpadding">
-                                            <div class="detailed-rating validation-field">
-                                                <ul class="clearfix">
-                                                    <?php
-                                                        $review_factors = array(
-                                                                'cln' => __( 'Cleanliness', 'trav' ),
-                                                                'cft' => __( 'Comfort', 'trav' ),
-                                                                'loc' => __( 'Location', 'trav' ),
-                                                                'fac' => __( 'Facilities', 'trav' ),
-                                                                'stf' => __( 'Staff', 'trav' ),
-                                                                'vfm' => __( 'Value for money', 'trav' ),
-                                                            );
-                                                        $i = 0;
-                                                        $review_detail = array( 0, 0, 0, 0, 0, 0 );
-                                                        if ( ! empty( $acc_meta['review_detail'] ) ) $review_detail = is_array( $acc_meta['review_detail'] ) ? $acc_meta['review_detail'] : unserialize( $acc_meta['review_detail'] );
-                                                        foreach ( $review_factors as $factor => $label ) {
-                                                            echo '<li class="col-md-6"><div class="each-rating"><label>' . esc_html( $label ) . '</label><div class="five-stars-container" data-toggle="tooltip" data-placement="bottom" data-original-title="' . esc_attr( $review_detail[$i] ) . ' stars" ><div class="five-stars" style="width: ' . esc_attr( $review_detail[$i] / 5 * 100 ) . '%;"></div></div></div></li>';
-                                                            $i++;
-                                                        }
-                                                    ?>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="guest-reviews">
-                                        <h2><?php echo __('Guest Reviews', 'trav') . ' <small>('; echo esc_html( trav_get_review_count(  trav_acc_org_id( $acc_id ) ) . ' ' .  __('reviews', 'trav') . ')' ); ?></small></h2>
-                                        <?php
-                                            $per_page = 10;
-                                            $review_count = trav_get_review_html( trav_acc_org_id( $acc_id ), 0, $per_page);
-                                        ?>
-                                    </div>
-                                    <?php if ( $review_count >= $per_page ) { ?>
-                                        <a href="#" class="more-review"><button class="silver full-width btn-large"><?php echo __( 'LOAD MORE REVIEWS', 'trav' ) ?></button></a>
-                                    <?php } ?>
-                                </div>
                                 <?php if ( ! empty( $acc_meta['trav_accommodation_faq'] ) ) : ?>
-                                    <div class="tab-pane fade" id="hotel-faqs">
+                                    <div id="sample3-tabpanel3" role="tabpanel" aria-labelledby="sample3-tab3" option>
                                         <?php echo do_shortcode( $acc_meta['trav_accommodation_faq'][0] ); ?>
                                     </div>
                                 <?php endif; ?>
-                                <?php if ( ! empty( $things_to_do ) ) : ?>
-                                    <div class="tab-pane fade" id="hotel-things-todo">
-                                        <h2><?php _e('Things to Do', 'trav');?></h2>
-                                        <p><?php echo esc_html( empty( $acc_meta['trav_accommodation_ttd_detail'] )?'':$acc_meta['trav_accommodation_ttd_detail'][0] ); ?></p>
-                                        <div class="activities image-box style2 innerstyle">
-                                            <?php foreach( $things_to_do as $ttd_id ) { ?>
-                                                <article class="box">
-                                                    <figure>
-                                                        <a title="<?php echo esc_attr( get_the_title( $ttd_id ) ); ?>" href="<?php echo esc_url( get_permalink( $ttd_id ) ); ?>"><?php echo ( get_the_post_thumbnail( $ttd_id, 'list-thumb' ) ); ?></a>
-                                                    </figure>
-                                                    <div class="details">
-                                                        <div class="details-header">
-                                                            <h4 class="box-title"><?php echo esc_html( get_the_title( $ttd_id ) ); ?></h4>
-                                                        </div>
-                                                        <p><?php
-                                                            $ttd_excerpt = get_post_field('post_excerpt', $ttd_id);
-                                                            if ( ! empty( $ttd_excerpt ) ) {
-                                                                echo wp_kses_post( apply_filters( 'the_excerpt', $ttd_excerpt ) );
-                                                            } else {
-                                                                $ttd_content = apply_filters('the_content', get_post_field('post_content', $ttd_id));
-                                                                echo wp_kses_post( wp_trim_words( $ttd_content, 55, '' ) );
-                                                            }
-                                                        ?></p>
-                                                        <a class="button" title="<?php echo __( 'MORE', 'trav' ) ?>" href="<?php echo esc_url( get_permalink( $ttd_id ) ); ?>"><?php echo __( 'MORE', 'trav' ) ?></a>
-                                                    </div>
-                                                </article>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                <?php endif; ?>
-                                <div class="tab-pane fade" id="hotel-write-review">
-                                    <?php
-                                        $booking_data = '';
-                                        $review_data ='';
-                                        $rating_detail = '';
-                                        $averagy_rating = 0;
-                                        global $wpdb;
-                                        if ( is_user_logged_in() ) {
-                                            $booking_data = $wpdb->get_row( sprintf( 'SELECT * FROM ' . TRAV_ACCOMMODATION_BOOKINGS_TABLE . ' WHERE accommodation_id=%d AND user_id=%d AND date_to<%s ORDER BY date_to DESC', trav_acc_org_id( $acc_id ), get_current_user_id(), date("Y-m-d") ), ARRAY_A );
-                                            if ( ! empty( $booking_data ) ) {
-                                                $review_data = $wpdb->get_row( sprintf( 'SELECT * FROM ' . TRAV_REVIEWS_TABLE . ' WHERE booking_no=%d AND pin_code=%d', $booking_data['booking_no'], $booking_data['pin_code'] ), ARRAY_A );
-                                                if ( is_array( $review_data ) && isset( $review_data['review_rating_detail'] ) ) {
-                                                    $rating_detail = unserialize($review_data['review_rating_detail']);
-                                                    $averagy_rating = array_sum($rating_detail)/count($rating_detail);
-                                                }
-                                            }
-                                        }
-                                    ?>
-                                    <div class="alert alert-error" style="display: none;"><span class="message"></span><span class="close"></span></div>
-                                    <div class="main-rating table-wrapper full-width hidden-table-sms intro">
-                                        <article class="image-box box hotel listing-style1 table-cell col-sm-4 photo">
-                                            <figure>
-                                                <?php the_post_thumbnail( 'gallery-thumb' )?>
-                                            </figure>
-                                            <div class="details">
-                                                <h4 class="box-title"><?php the_title(); ?><small><i class="soap-icon-departure"></i> <?php echo esc_html( empty( $city )?'':( $city . ', ' ) ); echo esc_html( empty( $country )?'':( $country ) ); ?></small></h4>
-                                                <div class="feedback">
-                                                    <div title="<?php echo esc_attr( $acc_review . ' ' . __( 'stars', 'trav') );?>" class="five-stars-container" data-toggle="tooltip" data-placement="bottom"><span class="five-stars" style="width: <?php echo esc_html( $acc_review / 5 * 100 );?>%;"></span></div>
-                                                    <span class="review"><?php echo esc_html( trav_get_review_count( $acc_id ) ); echo ' ' . __( 'reviews', 'trav' ) ?></span>
-                                                </div>
-                                            </div>
-                                        </article>
-                                        <div class="table-cell col-sm-8 no-rpadding">
-                                            <div class="overall-rating">
-                                                <h4><?php _e( 'Your overall Rating of this property', 'trav');?></h4>
-                                                <div class="star-rating clearfix">
-                                                    <div class="five-stars-container"><div class="five-stars" style="width: <?php echo esc_attr( $averagy_rating / 5 * 100 ) ?>%;"></div></div>
-                                                    <span class="status"></span>
-                                                </div>
-                                                <div class="detailed-rating validation-field">
-                                                    <ul class="clearfix">
-                                                        <?php
-                                                            $i = 0;
-                                                            foreach ( $review_factors as $factor => $label ) {
-                                                                echo '<li class="col-md-6"><div class="each-rating"><label>' . esc_html( $label ) . '</label><div class="five-stars-container editable-rating" data-original-stars="' . esc_attr( ( is_array($rating_detail) && isset( $rating_detail[ $i ] ) )?$rating_detail[ $i ]:0 ) . '"></div></div></li>';
-                                                                $i++;
-                                                            }
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <form class="review-form" id="review-form" method="post">
-                                        <?php wp_nonce_field( 'post-' . $acc_id, '_wpnonce', false ); ?>
-                                        <input type="hidden" name="review_rating" value="<?php echo esc_attr( $averagy_rating ) ?>">
-                                        <?php
-                                        $i = 0;
-                                        foreach ( $review_factors as $factor => $label ) {
-                                            echo '<input type="hidden" class="rating_detail_hidden" name="review_rating_detail[]" value="' . esc_attr( ( is_array($rating_detail) && isset( $rating_detail[ $i ] ) )?$rating_detail[ $i ]:'' ) . '">';
-                                            $i++;
-                                        } ?>
-                                        <input type="hidden" name="post_id" value="<?php echo esc_attr( $acc_id ); ?>">
-                                        <input type="hidden" name="action" value="acc_submit_review">
-                                        <div class="row clearer">
-                                            <div class="form-group col-md-5 no-padding">
-                                                <h4><?php _e( 'Booking Number', 'trav'); ?></h4>
-                                                <input type="text" name="booking_no" class="input-text full-width validation-field" value="<?php if ( is_array( $booking_data ) && isset( $booking_data['booking_no'] ) ) echo esc_attr( $booking_data['booking_no'] ); ?>" data-error-message="<?php _e( 'Enter your booking number', 'trav' ); ?>" placeholder="<?php _e( 'Enter your booking number', 'trav' ); ?>" />
-                                            </div>
-                                            <div class="form-group col-md-5 col-md-offset-1 no-padding">
-                                                <h4><?php _e( 'Pin Code', 'trav'); ?></h4>
-                                                <input type="text" name="pin_code" class="input-text full-width validation-field" value="<?php if ( is_array( $booking_data ) && isset( $booking_data['pin_code'] ) ) echo esc_attr( $booking_data['pin_code'] ); ?>" data-error-message="<?php _e( 'Enter your pin code', 'trav' ); ?>" placeholder="<?php _e( 'Enter your pin code', 'trav' ); ?>" />
-                                            </div>
-                                        </div>
-
-                                         <div class="form-group col-md-5 no-float no-padding">
-                                            <h4><?php _e( 'Title of your review', 'trav'); ?></h4>
-                                            <input type="text" name="review_title" class="input-text full-width validation-field" value="<?php if ( is_array( $review_data ) && isset( $review_data['review_title'] ) ) echo esc_attr( $review_data['review_title'] ); ?>" data-error-message="<?php _e( 'Enter a review title', 'trav' ); ?>" placeholder="<?php _e( 'Enter a review title', 'trav' ); ?>" />
-                                        </div>
-                                        <div class="form-group">
-                                            <h4><?php _e( 'Your review', 'trav'); ?></h4>
-                                            <textarea name="review_text" class="input-text full-width validation-field" data-error-message="<?php _e( 'Enter your review', 'trav' ); ?>" placeholder="<?php _e( 'Enter your review', 'trav' ); ?>" rows="5"><?php if ( is_array( $review_data ) && isset( $review_data['review_text'] ) ) echo esc_textarea( $review_data['review_text'] ); ?></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <h4><?php _e( 'What sort of Trip was this?', 'trav'); ?></h4>
-                                            <ul class="sort-trip clearfix">
-                                                <?php
-                                                    $trip_types = array(
-                                                            'businessbag' => __( 'Business', 'trav' ),
-                                                            'couples' => __( 'Couples', 'trav' ),
-                                                            'family' => __( 'Family', 'trav' ),
-                                                            'friends' => __( 'Friends', 'trav' ),
-                                                            'user' => __( 'Solo', 'trav' ),
-                                                        );
-                                                    $active_trip_type = 0;
-                                                    $i = 0;
-                                                    if ( is_array( $review_data ) && isset( $review_data['trip_type'] ) ) $active_trip_type = $review_data['trip_type'];
-                                                    foreach ($trip_types as $key => $value) {
-                                                        $active = '';
-                                                        if ( $i == $active_trip_type ) $active = ' class="active"';
-                                                        echo '<li' . $active . '><a href="#"><i class="soap-icon-' . esc_attr( $key ) . ' circle"></i></a><span>' . esc_html( $value ) . '</span></li>';
-                                                        $i++;
-                                                    }
-                                                ?>
-                                            </ul>
-                                            <input type="hidden" name="trip_type" value="<?php echo esc_attr( $active_trip_type ); ?>">
-                                        </div>
-                                        <div class="form-group col-md-5 no-float no-padding no-margin">
-                                            <button type="submit" class="btn-large full-width submit-review"><?php echo __( 'SUBMIT REVIEW', 'trav' ) ?></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            </amp-selector>
                         </div>
                     </div>
-                    <div class="sidebar col-sm-4 col-md-3">
+                    <div class="sidebar tour-right">
                         <article class="detailed-logo">
                             <?php if ( isset( $acc_meta['trav_accommodation_logo'] ) ) { ?>
                                 <figure>

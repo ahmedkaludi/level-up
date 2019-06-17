@@ -33,8 +33,8 @@ if ( have_posts() ) {
 
         <section id="content">
             <div class="container tour-detail-page">
-                <div class="row">
-                    <div id="main" class="col-sm-8 col-md-9">
+                <div class="row tour-temp">
+                    <div id="main" class="tour-left">
                         <div <?php post_class(); ?>>
                             <div class="image-box">
                                 <?php if ( ! empty( $discount ) && ! empty( $discount_rate ) ) : ?>
@@ -68,7 +68,6 @@ if ( have_posts() ) {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="col-md-3">
                                                 <label class="visible-md visible-lg">&nbsp;</label>
                                                 <div class="row">
@@ -100,8 +99,7 @@ if ( have_posts() ) {
                             </div>
                         </div>
                     </div>
-
-                    <div class="sidebar col-sm-4 col-md-3">
+                    <div class="sidebar tour-right">
                         <?php generated_dynamic_sidebar(); ?>
                     </div>
                 </div>

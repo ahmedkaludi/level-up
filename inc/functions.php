@@ -2374,6 +2374,7 @@ if ( ! function_exists('trav_post_gallery') ) {
         global $sld_with_cl_id;
 
         $isv_setting = get_post_meta( $post_id, 'trav_post_media_type', true );
+        
         if ( empty( $isv_setting ) || $isv_setting == 'img' ) {
             if ( '' == get_the_post_thumbnail() ) {
                 $isv_setting = '';
@@ -2412,7 +2413,8 @@ if ( ! function_exists('trav_post_gallery') ) {
                 }
 
                 $gallery_type = get_post_meta( $post_id, 'trav_post_gallery_type', true );
-
+                print_r($gallery_type);
+                die;
                 if ( $gallery_type == 'sld_2' ) { ?>
 
                     <div class="flexslider photo-gallery style4<?php echo esc_attr( $nav_class ) ?>">
@@ -2441,15 +2443,11 @@ if ( ! function_exists('trav_post_gallery') ) {
                     </div>
                 <?php } else { ?>
                     <div class="flexslider photo-gallery style3<?php echo esc_attr( $nav_class ) ?>">
-                        <amp-carousel width="400" height="300" layout="responsive" type="slides">
-                            <?php foreach ( $gallery_imgs as $gallery_img ) {   
-                            $image_attributes = wp_get_attachment_image_src( $gallery_img, 'full' );
-                                if($image_attributes){
-                                $amp_image = '<amp-img width="'.$image_attributes[1].'" height="'.$image_attributes[2].'" layout="responsive" alt="a sample image" src="'.$image_attributes[0].'"  ></amp-img>';
-                                echo  $amp_image;
-                                }
+                        <ul class="slides">
+                            <?php foreach ( $gallery_imgs as $gallery_img ) {
+                                echo '<li>' . wp_get_attachment_image( $gallery_img, 'full' ) . '</li>';
                             } ?>
-                        </amp-carousel>
+                        </ul>
                     </div>
                 <?php }
             }

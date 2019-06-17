@@ -23,7 +23,7 @@ define( 'TRAV_CRUISE_BOOKINGS_TABLE', $wpdb->prefix . 'trav_cruise_bookings' );
 define( 'TRAV_CRUISE_VACANCIES_TABLE', $wpdb->prefix . 'trav_cruise_vacancies' );
 define( 'TRAV_TAX_META_DIR_URL', get_template_directory() . '/inc/lib/tax-meta-class/' );
 
-
+require_once( get_template_directory() . '/inc/functions.php');
 require_once( get_template_directory() . '/inc/custom-post-types.php');
 require_once( get_template_directory() . '/inc/metaboxes.php');
 require_once(get_template_directory() . '/inc/lib/multiple_sidebars.php');
@@ -35,10 +35,12 @@ require_once( get_template_directory() . '/inc/side-bar.php');
 require_once( get_template_directory() . '/inc/taxonomy-meta.php');
 require_once( get_template_directory() . '/inc/widget.php');
 
+
 require_once( get_template_directory() . '/inc/frontend/accommodation/main.php');
 require_once( get_template_directory() . '/inc/frontend/tour/main.php');
 require_once( get_template_directory() . '/inc/frontend/car/main.php');
 require_once( get_template_directory() . '/inc/frontend/cruise/main.php');
+
 
 
 
@@ -417,15 +419,37 @@ function ampforwp_fontawesome_canonical_link_robert(){ ?>
     <?php 
 }
 
-// Bottom to Top Scroll
+// Bottom to Top Scroll scripts
 add_action('amp_post_template_head', 'levelup_bottom_to_top_scripts');
 function levelup_bottom_to_top_scripts(){ ?>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <?php 
 }
 
+// AMP Carousel scripts
+add_action('amp_post_template_head', 'levelup_amp_carousel_scripts');
+function levelup_amp_carousel_scripts(){ ?>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<?php
+}
+
+// AMP Video Scripts
+add_action('amp_post_template_head', 'levelup_amp_video');
+function levelup_amp_video(){ ?>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-video-docking" src="https://cdn.ampproject.org/v0/amp-video-docking-0.1.js"></script>
+
+<?php 
+}
 
 
+
+// AMP Tabs Scripts
+//add_action('amp_post_template_head', 'levelup_amp_tabs');
+function levelup_amp_tabs(){ ?>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<?php }
 
 /*****
 * END Levelup theme AMP

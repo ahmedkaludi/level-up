@@ -1278,7 +1278,6 @@ body a, .rp-list{
 	display: inline-block;
 	width:100%;
 	clear: both;
-    margin: 50px 0 0 0;
 }
 .site-footer .container{
     background: transparent
@@ -1473,11 +1472,6 @@ body a, .rp-list{
     opacity: 0.4;
     font-size: 24px;
     margin-right: 8px;
-}
-.entry-content{
-    display: flex;
-    width: 100%;
-    margin-top:40px;
 }
 .right-part{
     width: 72%;
@@ -2013,7 +2007,6 @@ blockquote p:last-child {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    background: #fff;
 }
 body{
 	font-size:15px;
@@ -2253,6 +2246,280 @@ body{
 }
 
 
+/** Tour CSS **/
+.site-content .entry-content{margin:0;}
+.site-content{
+	width:100%;
+	display:inline-block;
+	background: #f5f5f5;
+	padding: 40px 0px;
+}
+.tour-temp{
+	display: inline-grid;
+	grid-template-columns: 1fr 270px;
+	width:100%;
+	grid-gap: 0px 30px;
+}
+.tour-left{
+	background:#fff;
+}
+.tour-left .travelo-box{
+	padding:20px;
+}
+.ui-tabs{
+	padding:0px 20px 20px 20px;
+	font-size: 13px;
+    line-height: 1.6;
+}
+.ui-tabs-nav {
+	display: inline-flex;
+	flex-wrap: wrap;
+	width:100%;
+}
+.wpb_tab.ui-tabs-panel{
+	padding:20px;
+}
+.ui-tabs-panel h2{
+	font-size: 1.6667em;
+    line-height: 1.25em;
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #2d3e52;
+}
+.ui-tabs-nav li{
+	list-style-type: none;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-right: 5px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.ui-tabs-nav li a{
+	background: #2ec298;
+	color:#fff;
+	padding:13px 20px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.sidebar .travelo-box.widget_text{
+    text-align: center;
+    background:#fff;
+    padding: 20px;
+}
+.sidebar .travelo-box.social_links, .sidebar .travelo-box.widget_media_video{
+	background:#fff;
+    padding: 20px;
+}
+.travelo-box.social_links .social-icons li i {
+    font-size: 12px;
+}
+.widget.travelo-box h4{
+	margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.sidebar .travelo-box.social_links ul li a, .sidebar .travelo-box.social_links ul li{
+	color:#fff;
+}
+.sidebar .travelo-box.widget_text .textwidget {
+	padding: 15px 20px 0px;
+    border: 2px solid #2ec298;
+}
+.sidebar .textwidget, .sidebar .textwidget h5 {
+    font-size: 14px;
+}
+.sidebar .textwidget h5{
+	color:#2ec298;
+}
+.sidebar .textwidget p span{
+	font-size:10px;
+}
+.sidebar .textwidget .btnrq a {
+    background: rgba(237, 169, 0, 1);
+    font-size: 19px;
+    margin: 10px 0px 0px;
+    padding: 5px 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+/** Accommodation CSS **/
+.detailed-logo {
+    display: none;
+}
+.image-carousel amp-selector{
+	padding:20px;
+}
+amp-selector [option][selected] {
+    outline: none;
+}
+.carousel-preview amp-img{
+	opacity: 0.5;
+	cursor: pointer;
+	margin: 0px 10px 10px 0px;
+}
+.carousel-preview amp-img:hover{
+	opacity: 1;
+}
+.carousel-preview amp-img[selected] {
+    opacity: 1;
+}
+#hotel-availability, #hotel-reviews, #hotel-write-review,  .hidden-table-sms{display:none;}
+#hotel-description .intro.table-wrapper {
+    display: none;
+}
+#hotel-main-content ul{
+	display: block;
+    background: #fff;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+#hotel-main-content ul li{
+	list-style-type: none;
+}
+#hotel-main-content ul li a{
+	color: #fff;
+    background: #0ab596;
+    position: relative;
+    padding: 7px 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+#hotel-main-content ul li a:after{
+	content:"";
+	display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 7px 0 7px;
+    border-color: #0ab596 transparent transparent transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -5px;
+}
+.tout-left.accom-left #hotel-main-content{
+	background:#fff;
+	margin-bottom: 30px;
+}
+.tab-mn{
+	color: #fff;
+    background: #2ec298;
+    position: relative;
+    padding: 12px 20px;
+    margin-right:5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+#myTabPanels{
+	background:#fff;
+	font-size: 13px;
+    line-height: 1.7;
+}
+#myTabPanels h2{
+	font-size: 1.6667em;
+    line-height: 1.25em;
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #2d3e52;
+}
+.tabs-with-selector .tab-mn[selected], .tabs-with-selector .tab-mn:hover{
+	background:#fff;
+	color:#2ec298;
+}
+#myTabPanels > div{
+	padding:20px;
+}
+#myTabPanels .long-description{
+    margin-top: 25px;
+    padding: 0 15px;
+}
+#myTabPanels .lista ul {
+    list-style: inside;
+    margin: 10px 0 30px 3px;
+    font-size: 1.0833em;
+}
+amp-selector[role=tablist].tabs-with-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab] {
+    flex-grow: 1;
+    text-align: center;
+}
+amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+    display: none;
+    width: 100%;
+    order: 1; 
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
+    display: block;
+}
+amp-selector[role=tablist].tabs-with-selector {
+    display: inline-flex;
+}
+amp-selector[role=tablist].tabs-with-selector [role=tab] {
+  text-align: center;
+}
+amp-selector.tabpanels [role=tabpanel] {
+  display: none;
+}
+amp-selector.tabpanels [role=tabpanel][selected] {
+  outline: none;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:1170px){
@@ -2408,4 +2675,26 @@ body{
 	.ft-widgets-blk {
     	grid-template-columns: 1fr;
     }
+    /** Tour CSS **/
+    .tour-temp{
+    	grid-template-columns: 1fr;
+    	grid-gap: 30px 0;
+    }
+    .ui-tabs {
+    	padding: 0;
+    }
+    .ui-tabs-nav{
+    	display: inline-block;
+    }
+    .ui-tabs-nav li a{
+    	width:100%;
+    }
+    .wpb_tab.ui-tabs-panel {
+	    padding: 12px;
+	}
+	/** Accom CSS **/
+	amp-selector[role=tablist].tabs-with-selector {
+	    display: inline-block;
+	    width: 100%;
+	}
 }
