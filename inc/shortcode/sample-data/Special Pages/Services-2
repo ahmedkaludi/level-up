@@ -1,0 +1,193 @@
+[container]
+[block type="large"]
+[block1 type="whitebox"]
+<div class="services overflow-hidden">
+[five_column no_margin="true" class="services"]
+[icon_box style="style9" icon="soap-icon-slider"]
+<h5 class="box-title">Powerful Sliders</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-search"]
+<h5 class="box-title">Unique Search Layouts</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-stories"]
+<h5 class="box-title">Tons of Shortcodes</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-flexible"]
+<h5 class="box-title">Flexible Layouts</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-passenger"]
+<h5 class="box-title">Inflight Comfort</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-adventure"]
+<h5 class="box-title">Travel Guide Page</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-check"]
+<h5 class="box-title">Travel Ideas</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-baggage-status"]
+<h5 class="box-title">Complete Package</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-photogallery"]
+<h5 class="box-title">Photo Gallery</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-conference"]
+<h5 class="box-title">Travel Stories</h5>
+<p>Lorem Ipsum is simply dumy typesetting industry.</p>
+[/icon_box]
+[/five_column]
+</div>
+[/block1]
+[/block]
+
+[block type="large"]
+[content_boxes style="style4"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/115.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Get Attractions</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/27.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Travel Hot Deals</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/37.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Travelers Stories</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/block]
+
+[block type="large"]
+[row]
+[one_half]
+[tabs style="style1" title="Why Choose Us?" tab1="Unlimited Layouts" tab2="Design Inovation" tab3="Best Support" tab4="8 sliders"]
+[tab id="tab1"]
+<h4>Check Complete Layouts</h4>
+<p>Proin eget libero vel nunc cursus mollis ac eget sapien. Aenean porttitor euismod leo sed ultrices. Ut porta iaculis lorem ut placerat. Morbi non vulputate turpis. Aenean a tempor nulla. Maecenas nec pharetra felis, eget varius orci. Mauris vehicula, elit nec tincidunt mattis, nisi velit dignissim libero vel commodo eros lectus vel leo. Donec condimentum suscipit laoreet. Proin scelerisque mattis tristique.odio vel aliquam volutpat. in euismod sem lectus. ligula vehicula enenatis semper.</p>
+<a href="#" class="button pull-right">MORE</a>
+[/tab]
+[tab id="tab2"]
+[/tab]
+[tab id="tab3"]
+<h4>Check Complete Layouts</h4>
+<p>Proin eget libero vel nunc cursus mollis ac eget sapien. Aenean porttitor euismod leo sed ultrices. Ut porta iaculis lorem ut placerat. Morbi non vulputate turpis. Aenean a tempor nulla. Maecenas nec pharetra felis, eget varius orci. Mauris vehicula, elit nec tincidunt mattis, nisi velit dignissim libero vel commodo eros lectus vel leo. Donec condimentum suscipit laoreet. Proin scelerisque mattis tristique.odio vel aliquam volutpat. in euismod sem lectus. ligula vehicula enenatis semper.</p>
+<a href="#" class="button pull-right">MORE</a>
+[/tab]
+[tab id="tab4"]
+[/tab]
+[/tabs]
+[/one_half]
+
+[one_half]
+
+[testimonials style="style1" title="What They Say?"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/one_half]
+[/row]
+[/block]
+
+<h2>Our Investors Relations</h2>
+[slider type="carousel1" data_item_margin="30" data_item_width="170" class="investor-list box"]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/125.png" alt="investor-image" width="142" height="65" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/215.png" alt="investor-image" width="150" height="46" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/315.png" alt="investor-image" width="150" height="43" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/47.png" alt="investor-image" width="150" height="54" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/54.png" alt="investor-image" width="150" height="45" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/64.png" alt="investor-image" width="150" height="57" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/125.png" alt="investor-image" width="142" height="65" /]
+[/block]
+[/slide]
+[/slider]
+[/container]
+
+[parallax_block ratio="0.1" class="section"]
+[container]
+[row]
+[one_third]
+[icon_box style="style10" icon="soap-icon-recommend"]
+<small>travel is</small>
+<h4 class="box-title">100% Original Theme</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-insurance"]
+<small>We are providing you</small>
+<h4 class="box-title">Custom Travel Icons Pack</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-anchor"]
+<small>Fully customizeable</small>
+<h4 class="box-title">Dashboard Included</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[/row]
+[/container]
+[/parallax_block]

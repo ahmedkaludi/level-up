@@ -1,0 +1,120 @@
+[container]
+
+
+[row]
+
+[column md="6"]
+[block]
+
+[tabs title="Tabs 01" def_id1="Satisfied customers" def_id2="tours suggestions" def_id3="careers" ]
+
+[tab id="def_id1"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="def_id2"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex[/tab]
+
+[tab id="def_id3"]ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[/tabs]
+
+[/block]
+[/column]
+[column md="6"]
+[block]
+
+[tabs title="Tabs 02" style_id1="Unlimited Layouts" style_id2="Design Inovation" style_id3="Best Support" style_id4="8 sliders" style="style1"]
+
+[tab id="style_id1"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="style_id2"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex[/tab]
+
+[tab id="style_id3"]ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="style_id4"]consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[/tabs]
+[/block]
+[/column]
+
+[/row]
+
+
+
+[row]
+
+[column md="6"]
+[block]
+
+[tabs title="Transparent Tabs with Icons 01" trans_id1='<i class="fa fa-male"></i>Family' trans_id2='<i class="fa fa-heart"></i>Honeymoon' trans_id3='<i class="fa fa-smile-o"></i>Weekends' trans_id4='<i class="fa fa-user"></i>Friends' style="trans-style" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs02.png" img_alt="tab bg image" ]
+
+[tab id="trans_id1"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="trans_id2"] tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="trans_id3"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [/tab]
+
+[tab id="trans_id4"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non ...[/tab]
+
+[/tabs]
+
+[/block]
+[/column]
+[column md="6"]
+[block]
+
+[tabs title="Transparent Simple Tabs 02" trans_simple_id1='Family' trans_simple_id2='Honeymoon' trans_simple_id3='weekends' trans_simple_id4='Friends' style="trans-style"  img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs03.png" img_alt="tab bg image" bg_color="skin-bg "]
+
+[tab id="trans_simple_id1"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="trans_simple_id2"] tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/tab]
+
+[tab id="trans_simple_id3"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [/tab]
+
+[tab id="trans_simple_id4"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non ...[/tab]
+
+[/tabs]
+
+[/block]
+[/column]
+[/row]
+
+[block]
+
+[tabs title="Full Width Tab" fw_tab_id1='<i class="soap-icon-anchor circle"></i>First Tab' fw_tab_id2='<i class="soap-icon-user circle"></i>Second Tab' fw_tab_id3='<i class="soap-icon-suitcase circle"></i>Third Tab' style="full-width-style" ]
+
+[tab id="fw_tab_id1"]
+<h2 class="tab-content-title">Hi First Tab Text</h2>
+Nam volutpat aliquam sem, in tristique felis luctus consectetur. In molestie quis velit eget mattis. Vivamus libero eros, euismod at bibendum vel, aliquet a nunc. Proin viverra eleifend metus, sit amet bibendum orci. sed eget semper odio. mauris fermentum porttitor augue eu vehicula. quisque congue velit turpis, sit amet interdum quam facilisis in. Proin venenatis purus a ipsum porttitor, sed cursus libero bibendum. aenean auctor felis et sagittis egestas. Donec lobortis, est dictum dictum molestie, dolor massa pulvinar quam, vel malesuada nisi magna a nulla.
+
+Sed fringilla volutpat mauris sed dictum etiam a volutpat dui, et dignissim nisi. morbi ipsum risus, adipiscing imperdiet fermentum ac, consequat sed ante. In velit diam commodo tempor molestie et, congue ac augue. nam dignissim neque commodo sem ullamcorper, nec luctus nisi faucibus. Aliquam tincidunt ullamcorper velit vestibulum lacinia. morbi convallis justo sed tincidunt scelerisque. Integer porttitor consectetur ante. Mauris pretium dolor arcu, quis imperdiet felis semper nec unc arcu urna, aliquam nec erat at, facilisis dignissim velit. Phasellus vitae elementum sem, ac mollis magna. Ut pharetra tellus vel mi bibendum vel aliquam nisi scelerisque Pellentesque elementum porttitor dui facilisis luctus.
+
+[/tab]
+[tab id="fw_tab_id2"]
+<h2 class="tab-content-title">Hi Second Tab Text</h2>
+Nam volutpat aliquam sem, in tristique felis luctus consectetur. In molestie quis velit eget mattis. Vivamus libero eros, euismod at bibendum vel, aliquet a nunc. Proin viverra eleifend metus, sit amet bibendum orci. sed eget semper odio. mauris fermentum porttitor augue eu vehicula. quisque congue velit turpis, sit amet interdum quam facilisis in. Proin venenatis purus a ipsum porttitor, sed cursus libero bibendum. aenean auctor felis et sagittis egestas. Donec lobortis, est dictum dictum molestie, dolor massa pulvinar quam, vel malesuada nisi magna a nulla.
+
+Sed fringilla volutpat mauris sed dictum etiam a volutpat dui, et dignissim nisi. morbi ipsum risus, adipiscing imperdiet fermentum ac, consequat sed ante. In velit diam commodo tempor molestie et, congue ac augue. nam dignissim neque commodo sem ullamcorper, nec luctus nisi faucibus. Aliquam tincidunt ullamcorper velit vestibulum lacinia. morbi convallis justo sed tincidunt scelerisque. Integer porttitor consectetur ante. Mauris pretium dolor arcu, quis imperdiet felis semper nec unc arcu urna, aliquam nec erat at, facilisis dignissim velit. Phasellus vitae elementum sem, ac mollis magna. Ut pharetra tellus vel mi bibendum vel aliquam nisi scelerisque Pellentesque elementum porttitor dui facilisis luctus.
+
+[/tab]
+[tab id="fw_tab_id3"]
+<h2 class="tab-content-title">Hi Thrid Tab Text</h2>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+[/tab]
+
+[/tabs]
+
+[/block]
+
+[/container]

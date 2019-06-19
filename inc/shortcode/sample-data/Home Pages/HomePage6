@@ -1,0 +1,117 @@
+[parallax_block]
+[section]
+[container class="description text-center"]
+<h1>How Travelo Works?</h1>
+<br />
+<div class="travelo-process">
+    <img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/travelo_process.png" alt="process-image">
+    <div class="process first icon-box style12">
+        <div class="details animated" data-animation-type="fadeInUp" data-animation-delay="1">
+            <h4>Explore Destinations</h4>
+            <p class="hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="icon-wrapper animated" data-animation-type="slideInLeft" data-animation-delay="0">
+            <i class="soap-icon-beach circle"></i>
+        </div>
+    </div>
+    <div class="process second icon-box style12">
+        <div class="icon-wrapper animated" data-animation-type="slideInRight" data-animation-delay="1.5">
+            <i class="soap-icon-availability circle"></i>
+        </div>
+        <div class="details animated" data-animation-type="fadeInUp" data-animation-delay="2.5">
+            <h4>Check Availability</h4>
+            <p class="hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <div class="process third icon-box style12">
+        <div class="icon-wrapper animated" data-animation-type="slideInRight" data-animation-delay="2">
+            <i class="soap-icon-stories circle"></i>
+        </div>
+        <div class="details animated" data-animation-type="fadeInUp" data-animation-delay="3">
+            <h4>Book Online</h4>
+            <p class="hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <div class="process forth icon-box style12">
+        <div class="details animated" data-animation-type="fadeInUp" data-animation-delay="4.5">
+            <h4>Get Ready to Fly</h4>
+            <p class="hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="icon-wrapper animated" data-animation-type="slideInLeft" data-animation-delay="3.5">
+            <i class="soap-icon-plane-left takeoff-effect1 circle"></i>
+        </div>
+    </div>
+</div>
+[/container]
+[/section]
+[/parallax_block]
+
+[container]
+[section]
+<h2>Featured Destinations</h2>
+[content_boxes style="style11"]
+[slider type="carousel1" class="row-2" data_animation="slide" data_item_width="370" data_item_margin="30"]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/116.png" width="370" height="161"  label="Orlando" label_content="Orlando hotels"]
+[/content_box]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/123.png" width="370" height="161"  label="Boston" label_content="Boston hotels"]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/28.png" width="370" height="161"  label="Bangkok" label_content="Bangkok hotels"]
+[/content_box]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/213.png" width="370" height="161"  label="Los Angeles" label_content="Los Angeles hotels"]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/38.png" width="370" height="161"  label="Miami" label_content="Miami beach hotels"]
+[/content_box]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/313.png" width="370" height="161"  label="Washington" label_content="Washington hotels"]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/116.png" width="370" height="161"  label="Orlando" label_content="Orlando hotels"]
+[/content_box]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/123.png" width="370" height="161"  label="Boston" label_content="Boston hotels"]
+[/content_box]
+[/slide]
+[/slider]
+[/content_boxes]
+
+<h2>Travel Guide and Tips</h2>
+[row]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Plan your Travels</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Check Availability</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Get Insurance</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Secure your Bookings</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[/row]
+[/section]
+[/container]

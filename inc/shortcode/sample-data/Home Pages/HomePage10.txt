@@ -1,0 +1,158 @@
+Please set page template to Page Template With Bgslider and add below contents 1), 2), 3) to correct area
+
+1. Main Content
+
+[section class="destinations"]
+[container]
+[accommodations type="latest" title="Recommended Hotels" count="4" slide="false" style="style2"]
+[/container]
+[/section]
+
+[parallax_block class="mobile-section"]
+[promo_box content_section_width="6" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/travelo_site.png" img_alt="promo box image1" img_width="555" img_height="390" type="type2" animation_type="fadeInUp"]
+<h1>Take Travelo With You Wherever You Go!</h1>
+
+<div class="review clearfix">
+&nbsp;&nbsp;&nbsp;<label>[rating value="5" class="pull-left"]&nbsp;<small class="white-color uppercase">455 user ratings</small></label>
+</div>
+<br>
+<p class="align-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+[button type="extra" color="blue" icon="soap-icon-apple"]Download from<br><em>apple store</em>[/button]
+[button type="extra" color="yellow" icon="soap-icon-googleplay"]Download from<br><em>google play</em>[/button]
+[/promo_box]
+[/parallax_block]
+
+[section]
+[container]
+<h2>Recommended Minute Packages</h2>
+[tours type="latest" count="5" item_width="370" item_margin="30"]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container class="description"]
+<h1 class="text-center box">Why Travelo?</h1>
+[row]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0"]
+[icon_box icon="soap-icon-hotel" style="style8"]
+<h4 class="box-title">135,000+ Hotels</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.3"]
+[icon_box icon="soap-icon-insurance" style="style8"]
+<h4 class="box-title">Low Rates &amp; Top Savings</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.6"]
+[icon_box icon="soap-icon-star-1" style="style8"]
+<h4 class="box-title">Reviewed by Real Travellers</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.9"]
+[icon_box icon="soap-icon-support" style="style8"]
+<h4 class="box-title">We Speak your Language</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[/row]
+[/container]
+[/section]
+[/parallax_block]
+
+[section]
+[container]
+[row class="block"]
+[column md="6" ]
+[tabs style="style1" title="Hot Hotel Details" hot="POPULAR" las_vegas="LAS VEGAS" paris="Paris" san_francisco="SAN FRANSISCO" france="FRANCE"]
+[tab id="hot"]
+[accommodations type="hot" style="style4" count="2"]
+[/tab]
+[tab id="las_vegas"]
+[accommodations type="hot" city="Las Vegas" style="style4" count="2"]
+[/tab]
+[tab id="paris"]
+[accommodations type="hot" city="Paris" style="style4" count="2"]
+[/tab]
+[tab id="san_francisco"]
+[accommodations type="hot" city="San Francisco" style="style4" count="2"]
+[/tab]
+[tab id="france"]
+[accommodations type="hot" country="france" style="style4" count="2"]
+[/tab]
+[/tabs]
+[/column]
+[column md="6"]
+[testimonials title="What Travelers Say?" author_img_size="" class="box"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/column]
+[/row]
+[/container]
+[/section]
+
+[parallax_block ratio="0.1"]
+[promo_box content_section_width="9" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/promo-image1.png" img_alt="promo box image1" img_width="342" img_height="258" animation_type="fadeInUp"]
+[promo_box_left][animation type="fadeInDown" duration="1.5"]<h2 class="m-title">Tell us where you would like to go.<br><em>12,000+ Hotel and Resorts Available!</em></h2>[/animation][/promo_box_left]
+[promo_box_right class="col-md-4 no-float"]
+[search_form post_type="accommodation"]
+[row]
+[column xs="6" md="12"]
+[search_form_textfield /]
+[/column]
+[column xs="6" md="12"]
+[button tag="button" type="large" class="full-width"]search hotels[/button]
+[/column]
+[/row]
+[/search_form]
+[/promo_box_right]
+[/promo_box]
+[/parallax_block]
+
+
+
+
+
+
+
+
+
+
+
+2. Content On Background Slider
+
+<h1 class="page-title">Fly with us in Comfort!</h1>
+<h2 class="page-description col-md-6 no-float no-padding">We're bringing you a modern, comfortable and connected flight experience.</h2>
+<p>[search_group style="style4"]</p>
+
+
+
+
+
+
+
+
+3. Custom CSS
+
+.page-title {font-size: 4.1667em; font-weight: bold; } .page-title, .page-description {color: #fff; } .page-description {font-size: 2.5em; margin-bottom: 50px; }
+section#content { min-height: inherit; padding-top: 0; }
+#main {margin-bottom:0}

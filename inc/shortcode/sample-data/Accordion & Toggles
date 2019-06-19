@@ -1,0 +1,177 @@
+[block]
+
+[row]
+[one_half]
+
+[toggles title="Accordions 01" type="accordion" style="style1" class="box"]
+
+[toggle title="Travel Insurance Single Person"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Luxury Appartment for Family"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Inflight Dinner/ Lunch Deal"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[one_half]
+
+[toggles title="Accordions 02" type="accordion" style="style2"  class="box"  ]
+
+[toggle title="Our Visions and Missions"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Services we provide"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Travelo Corporate Responsibility"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[/row]
+
+[/block]
+
+[block]
+
+[row]
+[one_half]
+
+[toggles title="Toggles 01"  class="box" ]
+
+[toggle title="Travel Insurance Single Person"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Luxury Appartment for Family"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Inflight Dinner/ Lunch Deal"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[one_half]
+
+[toggles title="Toggle 02"  style="style2"   class="box" ]
+
+[toggle title="Our Visions and Missions"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Services we provide"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[toggle title="Travelo Corporate Responsibility"]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[/row]
+
+[/block]
+
+[block]
+
+[row]
+
+[one_half]
+
+[toggles title="Toggle Container Title" type="accordion" style="style1" with_image="true" image_animation_type="fadeIn" image_animation_duration="3"   class="box" ]
+
+[toggle title="Book your Bags in Advance" collapsed="false" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tab01.jpg" img_alt="img1" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[toggle title="Cabin Baggage Allowance" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs02.png" img_alt="img2" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[toggle title="Checked Baggage Allowance"  img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs03.png" img_alt="img3" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[one_half]
+
+[toggles title="Toggle Container Title" type="accordion" with_image="true" image_animation_type="fadeIn" image_animation_duration="3"   class="box" style="style2" ]
+
+[toggle title="Book your Bags in Advance" collapsed="false" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tab01.jpg" img_alt="img1" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[toggle title="Cabin Baggage Allowance" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs02.png" img_alt="img2" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[toggle title="Checked Baggage Allowance"  img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs03.png" img_alt="img3" img_width="" img_height=""]
+
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden por nequetiam elerisque mi id habitant morbi tristique senectus passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+
+[/toggle]
+
+[/toggles]
+
+[/one_half]
+
+[/row]
+
+[/block]

@@ -1,0 +1,91 @@
+Please set page template to Page Template With Bgslider and add below contents 1), 2), 3) to correct area
+
+1. Main Content
+
+[section]
+[container]
+[accommodations type="featured" style="style2" title="Recommended Hotels"]
+[row class="block"]
+[column md="6" ]
+[tabs style="style1" title="Hot Hotel Details" hot="POPULAR" las_vegas="LAS VEGAS" paris="Paris" san_francisco="SAN FRANSISCO" france="FRANCE"]
+[tab id="hot"]
+[accommodations type="hot" style="style4" count="2"]
+[/tab]
+[tab id="las_vegas"]
+[accommodations type="hot" city="Las Vegas" style="style4" count="2"]
+[/tab]
+[tab id="paris"]
+[accommodations type="hot" city="Paris" style="style4" count="2"]
+[/tab]
+[tab id="san_francisco"]
+[accommodations type="hot" city="San Francisco" style="style4" count="2"]
+[/tab]
+[tab id="france"]
+[accommodations type="hot" country="france" style="style4" count="2"]
+[/tab]
+[/tabs]
+[/column]
+[column md="6"]
+[testimonials title="What Travelers Say?" author_img_size="" class="box"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/column]
+[/row]
+[accommodations type="popular" style="style1" title="Travelers Choice of Hotels" count="5"]
+[/container]
+[/section]
+[parallax_block ratio="0.1"]
+[promo_box content_section_width="9" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/promo-image3.png" img_alt="promo box image3" img_width="342" img_height="258" animation_type="fadeInUp" animation-duration="2"]
+[promo_box_left]
+[animation type="fadeInDown"]
+<h2 class="m-title">Tell us where you would like to go.
+<em>12,000+ Hotel and Resorts Available!</em></h2>
+[/animation]
+[/promo_box_left]
+[promo_box_right class="col-md-4 no-float"]
+[search_form post_type="accommodation"]
+[row]
+[column xs="6" md="12"]
+[search_form_textfield /]
+[/column]
+[column xs="6" md="12"]
+[animation type="fadeInUp" delay="1"]
+[button tag="button" type="large" class="full-width"]search hotels[/button]
+[/animation]
+[/column]
+[/row]
+[/search_form]
+[/promo_box_right]
+[/promo_box]
+[/parallax_block]
+
+
+2. Content On Background Slider
+
+<p>[container]</p>
+<div class="center-block-wrapper full-width">
+<div class="center-block align-center">[box]<img src="http://soaptheme.net/html/travelo/images/tour/home/logo.png" alt="" />[/box] [box class="bg-title-section"]</p>
+<h1>PLAN YOUR PERFECT ADVENTURE</h1>
+<h3>GET 20% DISCOUNT ON SINGLE HOTEL</h3>
+<p>[/box] [search_form post_type="accommodation" style="style3"]</p>
+<div class="text-center"> <a href="http://themeforest.net/item/travelo-responsive-wordpress-booking-theme/9806696?ref=SoapTheme" class="button btn-medium sky-blue1 uppercase">Purchase Now</a> &nbsp;&nbsp; <a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s&view=list" class="button btn-medium red uppercase">Latest Hotels</a> </div>
+</p>
+</div>
+</div>
+<p> [/container]</p>
+
+
+3. Custom CSS
+
+section#content { padding-top: 0; min-height: inherit;} #main{margin-bottom:0}
+.bg-title-section h1{ font-size: 4.1667em; color: #fff; letter-spacing: 0; text-shadow: 0 0 8px rgba(0,0,0,0.25); margin-bottom: 0; font-weight: 900; }
+.center-block div.text-center a{  padding: 0 20px; }
+.bg-title-section h3{ font-size: 2em; color: #000; letter-spacing: 0.1em; text-shadow: 0 0 6px rgba(255,233,169,0.25); font-weight: 900; }

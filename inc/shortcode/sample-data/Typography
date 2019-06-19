@@ -1,0 +1,285 @@
+[block]
+<h1 class="s-title">Normal Heading Styles</h1>
+[row class="add-clearfix"]
+[one_half class="box"]<h1>H1 Heading</h1><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h2>H2 Heading</h2><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h3>H3 Heading</h3><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h4>H4 Heading</h4><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h5>H5 Heading</h5><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h6>H6 Heading</h6><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[/row]
+[/block]
+
+[block]
+<h1 class="s-title">Heading Styles with 40 Space</h1>
+[row class="add-clearfix"]
+[one_half class="box"]<h1 class="fourty-space">H1 Heading</h1><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h2 class="fourty-space">H2 Heading</h2><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h3 class="fourty-space">H3 Heading</h3><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h4 class="fourty-space">H4 Heading</h4><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h5 class="fourty-space">H5 Heading</h5><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h6 class="fourty-space">H6 Heading</h6><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[/row]
+[/block]
+
+[block]
+<h1 class="s-title">Heading Styles in Caps with 40 Space</h1>
+[row class="add-clearfix"]
+[one_half class="box"]<h1 class="fourty-space uppercase">H1 Heading</h1><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h2 class="fourty-space uppercase">H2 Heading</h2><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h3 class="fourty-space uppercase">H3 Heading</h3><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h4 class="fourty-space uppercase">H4 Heading</h4><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h5 class="fourty-space uppercase">H5 Heading</h5><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[one_half class="box"]<h6 class="fourty-space uppercase">H6 Heading</h6><p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. ipsum is free text not hasellus eget sem id justo consequat egestas quis facilisis metus.</p>[/one_half]
+[/row]
+[/block]
+
+[block]
+<h1>Dropcaps</h1>
+[row]
+[one_half]
+<p>
+[dropcap]
+Djusto eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id sto consequat egestas quis facilisis metus.
+Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifen tempor intmagna scelerisque urna placerat vel.
+[/dropcap]
+</p>
+[/one_half]
+[one_half]
+<p>
+[dropcap style="style2"]
+Djusto eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id sto consequat egestas quis facilisis metus.
+Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifen tempor intmagna scelerisque urna placerat vel.
+[/dropcap]
+</p>
+[/one_half]
+[/row]
+[/block]
+
+[block]
+<h1>Blockquote</h1>
+[row]
+[one_half]
+[blockquote style="style1"]
+Vivamus sit amet lectus venenatis est rhoncus interdum a vitae velit Massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet egeat. sce vitae dui sit amet lacus rutrum convallis.[/blockquote]
+[/one_half]
+[one_half]
+[blockquote style="style2"]
+Vivamus sit amet lectus venenatis est rhoncus interdum a vitae velit Massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet egeat. sce vitae dui sit amet lacus rutrum convallis.[/blockquote]
+[/one_half]
+[/row]
+[/block]
+
+[block]
+<h1>HTML Styles</h1>
+<p>
+This is a Text Link justo eget <u class="active">diam posuere sollicitudin</u> eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifen <span class="info-success">tempor inted magna in scelerisqu</span> urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula <u>justo eget diam posuere</u> sollicitudin eu tincidunt nulla Curabitur eleifend tempor magna scelerisque urna placerat vel. Ph <span class="info-primary">sellus eget sem id justo consequ</span> egestas quis facilisis metus.
+</p>
+[/block]
+
+[block]
+<h1>Bullets, Lists & Check Lists</h1>
+[row class="add-clearfix"]
+[column xs="6" sm="4" md="2"]
+[checklist icon="arrow" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="triangle" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="circle" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="check" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="chevron" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="arrow-square" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="decimal" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="upper-roman" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="lower-latin" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="upper-latin" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="check-square" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[column xs="6" sm="4" md="2"]
+[checklist icon="check-circle" class="box"]
+<ul>
+<li>Item #1</li>
+<li>Item #2</li>
+<li>Item #3</li>
+<li>Item #4</li>
+</ul>
+[/checklist]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Columns</h1>
+[row]
+[one_half]
+<h5>1/2 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_half]
+[one_half]
+<h5>1/2 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_half]
+[/row]
+
+[row]
+[one_third]
+<h5>1/3 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_third]
+[one_third]
+<h5>1/3 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_third]
+[one_third]
+<h5>1/3 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_third]
+[/row]
+
+[row]
+[one_third]
+<h5>1/3 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/one_third]
+[two_third]
+<h5>2/3 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna, in scelerisque urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.</p>
+[/two_third]
+[/row]
+
+[row]
+[one_fourth]
+<h5>1/4 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin eu tincidunt nulla. Curabitu eleifeempor magna in scelerisque.</p>
+[/one_fourth]
+[one_fourth]
+<h5>1/4 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin eu tincidunt nulla. Curabitu eleifeempor magna in scelerisque.</p>
+[/one_fourth]
+[one_fourth]
+<h5>1/4 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin eu tincidunt nulla. Curabitu eleifeempor magna in scelerisque.</p>
+[/one_fourth]
+[one_fourth]
+<h5>1/4 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin eu tincidunt nulla. Curabitu eleifeempor magna in scelerisque.</p>
+[/one_fourth]
+[/row]
+
+[row]
+[three_fourth]
+<h5>9 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.Phasellus vehica justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.</p>
+[/three_fourth]
+[one_fourth]
+<h5>3 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin eu tincidunt nulla. Curabitu eleifeempor magna in scelerisque.</p>
+[/one_fourth]
+[/row]
+
+[row]
+[column xs="10"]
+<h5>10 Columns</h5>
+<p>Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.Phasellus vehica justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla. Curabitur eleifend tempor magna in scelerisque.</p>
+[/column]
+[column xs="2"]
+<h5>2 Columns</h5>
+<p>Phasellus vehicula justo eget diam e sollicitudin tincidunt nulla.</p>
+[/column]
+[/row]
+[/block]

@@ -1,0 +1,104 @@
+[folded_corner_block]
+[images]
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/1.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/2.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/3.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/4.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/5.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/6.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/7.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/8.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/9.png" link="#" width="124" height="80" position="middle"]</li>
+[/images]
+<h1 class="title">We’re truely dedicated to make your travel experience as much simple and fun as possible!</h1>
+<p>Bringing you a modern, comfortable, and connected travel experience is one of our highest priorities and that’s
+why we continuously try to improve your experience when you book anything with us.
+<br /><br />
+We really appreciate and welcome any of suggstions you might have for us, so feel free drop us line anytime.</p>
+[/folded_corner_block]
+
+<h2>Travelo Dedicated Team</h2>
+[row]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Jessica Brown<small>Chief Executive</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/david.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Jackson<small>Director - Hotels</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/kyle.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Kyle Martin<small>Chief Operating Officer</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/robets.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Robets<small>Founder &amp; Director</small></a></h4>
+[/person]
+[/column]
+[/row]
+
+[block type="large"]
+[row]
+[one_half]
+<h2>Our Core Values</h2>
+[tabs tab1="Satisfied customers" tab2="tours suggestions" tab3="Careers"]
+[tab id="tab1"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs01.png" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[tab id="tab2"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/places02.jpg" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[tab id="tab3"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs01.png" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[/tabs]
+[/one_half]
+[one_half]
+<h2>Know More About Us</h2>
+[toggles type="accordion"]
+[toggle title="Travel Insurance Single Person" collapsed="false"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[toggle title="Inflight Dinner/ Lunch Deal"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+[/toggle]
+[toggle title="Luxury Appartment for Family"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa iden porta nequetiam elerisque mi id habitant morbi tristique senectus.
+[/toggle]
+[/toggles]
+[/one_half]
+[/row]
+[/block]
+
+[block type="large"]
+[row]
+[column sm="6" md="3"]
+[icon_box style="style3" icon="soap-icon-places yellow-color" number="3200"]Amazing Places To Visit[/icon_box]
+[/column]
+[column sm="6" md="3"]
+[icon_box style="style3" icon="soap-icon-hotel blue-color" number="5738"]5 Star Hotels To Stay[/icon_box]
+[/column]
+[column sm="6" md="3"]
+[icon_box style="style3" icon="soap-icon-plane green-color" number="4509"]Airlines To Travel the World[/icon_box]
+[/column]
+[column sm="6" md="3"]
+[icon_box style="style3" icon="soap-icon-car red-color" number="3200"]VIP Transport Options[/icon_box]
+[/column]
+[/row]
+[/block]

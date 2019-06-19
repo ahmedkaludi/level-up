@@ -1,0 +1,50 @@
+[block]
+<h2>Listing With Slide</h2>
+[accommodations type="selected" post_ids="45,188,189,193,209"]
+<h2>Listing Without Slide</h2>
+[accommodations type="selected" post_ids="45,188,189,193" slide="false"]
+<h2>Latest Accommodations</h2>
+[accommodations type="latest"]
+<h2>Featured Accommodations</h2>
+[accommodations type="featured"]
+<h2>Popular Accommodations</h2>
+[accommodations type="popular"]
+<h2>Hot Accommodations</h2>
+[accommodations type="hot"]
+[/block]
+
+[block]
+<h2>Listing With Slide</h2>
+[accommodations style="style2" type="selected" post_ids="45,188,189,193,209"]
+<h2>Listing Without Slide</h2>
+[accommodations style="style2" type="selected" post_ids="45,188,189,193" slide="false"]
+<h2>Latest Accommodations</h2>
+[accommodations style="style2" type="latest"]
+<h2>Featured Accommodations</h2>
+[accommodations style="style2" type="featured"]
+<h2>Popular Accommodations</h2>
+[accommodations style="style2" type="popular"]
+<h2>Hot Accommodations</h2>
+[accommodations style="style2" type="hot"]
+[/block]
+
+[block]
+[row]
+[three_fourth]
+<h2>Selected Accommodations</h2>
+[accommodations style="style3" type="selected" post_ids="45,188,189"]
+<h2>Latest Accommodations</h2>
+[accommodations style="style3" type="latest" count="3"]
+<h2>Featured Accommodations</h2>
+[accommodations style="style3" type="featured" count="3"]
+<h2>Popular Accommodations</h2>
+[accommodations style="style3" type="popular" count="3"]
+<h2>Hot Accommodations</h2>
+[accommodations style="style3" type="hot" count="3"]
+[/three_fourth]
+[one_fourth]
+<h1>Hotel Listings</h1>
+<p>Nam volutpat aliquam sem, in tristique felis luctus consectetur. In molestie quis velit eget mattis. Vivamus libero eros, euismod at bibendum vel, aliquet a nunc. Proin viverra eleifend metus, sit amet bibendum orci. Sed eget semper odio. Mauris fermentum porttitor augue eu vehicula. Quisque congue velit turpis, sit amet interdum quam facilisis in. Proin venenatis purus a ipsum porttitor, sed cursus libero bibendum. Aenean auctor felis et sagittis egestasonec lobortis.</p>
+[/one_fourth]
+[/row]
+[/block]

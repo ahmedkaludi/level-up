@@ -1,0 +1,96 @@
+[section]
+[container]
+[accommodations count="4" slide="no" type="latest" style="style1" title="Latest Hotels" animation_type="fadeInDown"]
+[/container]
+[/section]
+
+[parallax_block class="mobile-section"]
+[promo_box content_section_width="6" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/travelo_site.png" img_alt="promo box image1" img_width="555" img_height="390" type="type2" animation_type="fadeInUp"]
+<h1>Take Travelo With You Wherever You Go!</h1>
+
+<div class="review clearfix">
+&nbsp;&nbsp;&nbsp;<label>[rating value="5" class="pull-left"]&nbsp;<small class="white-color uppercase">455 user ratings</small></label>
+</div>
+<br />
+<p class="align-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+[button type="extra" color="blue" icon="soap-icon-apple"]Download from<br /><em>apple store</em>[/button]
+[button type="extra" color="yellow" icon="soap-icon-googleplay"]Download from<br /><em>google play</em>[/button]
+[/promo_box]
+[/parallax_block]
+[section]
+[container]
+<h2>Travelo Photo Gallery</h2>
+[slider type="carousel1" data_animation="slide" data_item_width="170" data_item_margin="30" class="row-2"]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/110.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/7.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/24.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/8.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/34.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/9.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/4.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/10.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/5.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/111.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/6.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/121.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/110.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/7.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[/slider]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container class="description"]
+<h1 class="text-center box">Why Travelo?</h1>
+[row]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0"]
+[icon_box icon="soap-icon-hotel" style="style8"]
+<h4 class="box-title">135,000+ Hotels</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.3"]
+[icon_box icon="soap-icon-insurance" style="style8"]
+<h4 class="box-title">Low Rates &amp; Top Savings</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.6"]
+[icon_box icon="soap-icon-star-1" style="style8"]
+<h4 class="box-title">Reviewed by Real Travellers</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="3"]
+[animation type="slideInUp" delay="0.9"]
+[icon_box icon="soap-icon-support" style="style8"]
+<h4 class="box-title">We Speak your Language</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[/row]
+[/container]
+[/section]
+[/parallax_block]

@@ -1,0 +1,144 @@
+[section class="destinations"]
+[container]
+[accommodations type="porpular" title="Popular Hotels" count="4" slide="false" style="style2"]
+[/container]
+[/section]
+[parallax_block]
+[promo_box content_section_width="6" class="honeymoon" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/couple.png" img_alt="couple" img_width="524" img_height="541" animation_type="fadeInUp" animation_duration="2"]
+<h1 class="title">Popular Destinations for Honeymoon</h1>
+<p>Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque purusac Etiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[content_boxes style="style9"]
+[row class="places"]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places01.jpg" alt="paris" position="middle" width="306" height="170" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Paris<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1" delay="0.4"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=greece" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places02.jpg" alt="greece" position="middle" width="175" height="175" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Greece<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=greece" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1" delay="0.8"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=australia" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places03.jpg" alt="australia" position="middle" width="340" height="226" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Australia<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=australia" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/promo_box]
+[/parallax_block]
+[section class="offer"]
+[container]
+<h1 class="text-center">Did you know?</h1>
+<p class="col-xs-9 center-block no-float text-center" style="margin-bottom:50px;">Mauris ullamcorper nibh quis leo ultrices in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique.
+Nullam placerat lacinia dolor quis pretium. Phasellus vitae lacinia quam, at pellentesque lorem. Sed euismod turpis quis mattis fringilla.</p>
+[content_boxes style="style2"]
+[row]
+[column md="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers01.jpg" link="#" width="270" height="192" title="" animation_type="fadeInLeft" animation_duration="1"]
+[content_box_detail]
+<h4>Hire Cars</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+<a href="#" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers02.jpg" link="#" width="270" height="192" title="" animation_type="fadeInLeft" animation_duration="1" animation_delay="0.4"]
+[content_box_detail]
+<h4>Cruise Deals</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+<a href="#" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers03.jpg" link="#" width="270" height="192" title="" animation_type="fadeInLeft" animation_duration="1"]
+[content_box_detail]
+<h4>Things To Do</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+<a href="#" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers04.jpg" link="#" width="270" height="192" title="" animation_type="fadeInLeft" animation_duration="1" animation_delay="0.4"]
+[content_box_detail]
+<h4>Fly in Comfort</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+<a href="#" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/container]
+[/section]
+
+[parallax_block class="section"]
+[container]
+[content_boxes style="style7"]
+[row]
+[column sm="6" md="3" sms="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/14.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Best Price Guarantee</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3" sms="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/21.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Travel Insurance</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3" sms="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/31.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Why Choose Us</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3" sms="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/41.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Need Help?</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/container]
+[/parallax_block]

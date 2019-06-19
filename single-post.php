@@ -9,7 +9,7 @@ if ( have_posts() ) {
 
 		// add to user recent activity
 		trav_update_user_recent_activity( $post_id ); ?>
-
+		any thing......
 		<section id="content">
 			<div class="container">
 				<div class="row">

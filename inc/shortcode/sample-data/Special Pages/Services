@@ -1,0 +1,154 @@
+[section]
+[row]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-hotel"]Complete Hotel Design[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-plane-right takeoff-effect"]Responsive Flight Pages[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-car"]Rental Car Pages[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-cruise"]Full Cruise Layout[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-slider"]8 Custom Sliders[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-search"]7 Unique Search Styles[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-insurance"]Travelo Icons Pack[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[column sm="6" md="3" class="box"]
+[icon_box style="style11" class="box" icon="soap-icon-stories"]Tons of Shortcodes[/icon_box]
+<p>Lorem Ipsum is simply dummy freee text of the printing and typesetting industry.</p>
+[/column]
+[/row]
+[/section]
+
+[block type="large"]
+[content_boxes style="style2"]
+[row]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers01.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Hire Cars</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers02.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Cruise Deals</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers03.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Things To Do</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers04.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Fly in Comfort</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[/row]
+[/content_boxes]
+[/block]
+
+<h2>Our Investors Relations</h2>
+[slider type="carousel1" data_item_margin="30" data_item_width="170" class="investor-list box"]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/125.png" alt="investor-image" width="142" height="65" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/215.png" alt="investor-image" width="150" height="46" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/315.png" alt="investor-image" width="150" height="43" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/47.png" alt="investor-image" width="150" height="54" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/54.png" alt="investor-image" width="150" height="45" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/64.png" alt="investor-image" width="150" height="57" /]
+[/block]
+[/slide]
+[slide]
+[block type="whitebox"]
+[imageframe link="#" title="" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/125.png" alt="investor-image" width="142" height="65" /]
+[/block]
+[/slide]
+[/slider]
+
+[row]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title">Fully Responsive Theme</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title">Header &amp; Footer Styles</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title">Custom Icon Pack</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title">We Create Ideas</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[/row]

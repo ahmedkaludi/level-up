@@ -2425,19 +2425,37 @@ if ( ! function_exists('trav_post_gallery') ) {
 
                 <?php } elseif ( $gallery_type == 'sld_with_cl' ) { ?>
                     <?php if ( empty( $sld_with_cl_id ) ) { $sld_with_cl_id = 0; } $sld_with_cl_id++; ?>
-                    <div class="flexslider photo-gallery style1<?php echo esc_attr( $nav_class ) ?>" id="post-slideshow<?php echo esc_attr( $sld_with_cl_id ) ?>" data-sync="#post-carousel<?php echo esc_attr( $sld_with_cl_id ) ?>">
-                        <ul class="slides">
-                            <?php foreach ( $gallery_imgs as $gallery_img ) {
-                                echo '<li>' . wp_get_attachment_image( $gallery_img, 'full' ) . '</li>';
+                    <div class="flexslider photo-gallery style1 0000<?php echo esc_attr( $nav_class ) ?>" id="post-slideshow<?php echo esc_attr( $sld_with_cl_id ) ?>" data-sync="#post-carousel<?php echo esc_attr( $sld_with_cl_id ) ?>">
+                        <amp-carousel id="carouselWithPreview" width="400" height="300" layout="responsive" type="slides" on="slideChange:carouselWithPreviewSelector.toggle(index=event.index, value=true)">
+                            <?php foreach ( $gallery_imgs as $gallery_img ) {   
+                            $image_attributes = wp_get_attachment_image_src( $gallery_img, 'full' );
+                                if($image_attributes){
+                                $amp_image = '<amp-img width="'.$image_attributes[1].'" height="'.$image_attributes[2].'" layout="responsive" alt="a sample image" src="'.$image_attributes[0].'"  ></amp-img>';
+                                echo  $amp_image;
+                                }
                             } ?>
-                        </ul>
+                        </amp-carousel>
                     </div>
                     <div class="flexslider image-carousel style1" id="post-carousel<?php echo esc_attr( $sld_with_cl_id ) ?>"  data-animation="slide" data-item-width="70" data-item-margin="10" data-sync="#post-slideshow<?php echo esc_attr( $sld_with_cl_id ) ?>">
-                        <ul class="slides">
-                            <?php foreach ( $gallery_imgs as $gallery_img ) {
-                                echo '<li>' . wp_get_attachment_image( $gallery_img, 'widget-thumb' ) . '</li>';
+                        <amp-selector id="carouselWithPreviewSelector" class="carousel-preview"
+                            on="select:carouselWithPreview.goToSlide(index=event.targetOption)"
+                            layout="container">
+                            <?php 
+                            $i = 0;
+                            foreach ( $gallery_imgs as $gallery_img ) {
+                                $sm_image_attributes = wp_get_attachment_image_src( $gallery_img, 'thumbnail' );
+                                if($sm_image_attributes){
+                                    $thumb_images = '<amp-img option="'.$i.'"
+                                    '.(($i==0)?'selected': '').'
+                                    src="'.$sm_image_attributes[0].'"
+                                    width="70"
+                                    height="70"
+                                    alt="a sample image"></amp-img>';
+                                    echo $thumb_images;
+                                }
+                                $i++;
                             } ?>
-                        </ul>
+                        </amp-selector>
                     </div>
                 <?php } else { ?>
                     <div class="flexslider photo-gallery style3<?php echo esc_attr( $nav_class ) ?>">

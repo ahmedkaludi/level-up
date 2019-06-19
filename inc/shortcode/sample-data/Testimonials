@@ -1,0 +1,55 @@
+[block type="large"]
+[container]
+[row]
+[one_half]
+[testimonials style="style1" title="Style1"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/one_half]
+
+[one_half]
+[testimonials style="style2" title="Style2"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/one_half]
+[/row]
+[/container]
+[/block]
+
+[parallax_block]
+[section]
+[container]
+[testimonials style="style3" title="Testimonial Style 03"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings.
+[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+[/testimonial]
+
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+[/testimonial]
+[/testimonials]
+[/container]
+[/section]
+[/parallax_block]

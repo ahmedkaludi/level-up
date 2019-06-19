@@ -1,0 +1,247 @@
+<h1>4 Column White Tables</h1>
+[block]
+[row]
+[column sm="6" md="3"]
+[pricing_table]
+[pricing_table_head title="Individual<small>for individuals</small>" icon="soap-icon-user" icon_class="circle green-color" price="<small>monthly</small>$30" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table]
+[pricing_table_head title="Group<small>for groups</small>" icon="soap-icon-friends" icon_class="circle yellow-color" price="<small>monthly</small>$60" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="yellow" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table]
+[pricing_table_head title="Corporate<small>for SME’s</small>" icon="soap-icon-suitcase" icon_class="circle blue-color" price="<small>monthly</small>$120" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="sky-blue1" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table]
+[pricing_table_head title="Ultimate<small>for big companies</small>" icon="soap-icon-hotel-1" icon_class="circle red-color" price="<small>monthly</small>$240" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="red" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+[/row]
+[/block]
+
+<h1>4 Column Colored Tables</h1>
+[block]
+[row]
+[column sm="6" md="3"]
+[pricing_table color="green"]
+[pricing_table_head title="Individual<small>for individuals</small>" icon="soap-icon-user" icon_class="circle white-color" price="<small>monthly</small>$30" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width green-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table color="yellow"]
+[pricing_table_head title="Group<small>for groups</small>" icon="soap-icon-friends" icon_class="circle white-color" price="<small>monthly</small>$60" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width yellow-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table color="blue"]
+[pricing_table_head title="Corporate<small>for SME’s</small>" icon="soap-icon-suitcase" icon_class="circle white-color" price="<small>monthly</small>$120" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width blue-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+
+[column sm="6" md="3"]
+[pricing_table color="red"]
+[pricing_table_head title="Ultimate<small>for big companies</small>" icon="soap-icon-hotel-1" icon_class="circle white-color" price="<small>monthly</small>$240" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width red-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/column]
+[/row]
+[/block]
+
+
+
+<h1>3 Column White Tables</h1>
+[block]
+[row]
+[one_third]
+[pricing_table]
+[pricing_table_head title="Individual<small>for individuals</small>" icon="soap-icon-user" icon_class="circle green-color" price="<small>monthly</small>$30" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[one_third]
+[pricing_table]
+[pricing_table_head title="Group<small>for groups</small>" icon="soap-icon-friends" icon_class="circle yellow-color" price="<small>monthly</small>$60" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="yellow" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[one_third]
+[pricing_table]
+[pricing_table_head title="Corporate<small>for SME’s</small>" icon="soap-icon-suitcase" icon_class="circle blue-color" price="<small>monthly</small>$120" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="sky-blue1" class="full-width" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[/row]
+[/block]
+
+<h1>3 Column Colored Tables</h1>
+[block]
+[row]
+[one_third]
+[pricing_table color="green"]
+[pricing_table_head title="Individual<small>for individuals</small>" icon="soap-icon-user" icon_class="circle white-color" price="<small>monthly</small>$30" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width green-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[one_third]
+[pricing_table color="yellow"]
+[pricing_table_head title="Group<small>for groups</small>" icon="soap-icon-friends" icon_class="circle white-color" price="<small>monthly</small>$60" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width yellow-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[one_third]
+[pricing_table color="blue"]
+[pricing_table_head title="Corporate<small>for SME’s</small>" icon="soap-icon-suitcase" icon_class="circle white-color" price="<small>monthly</small>$120" /]
+[pricing_table_content]Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.[/pricing_table_content]
+[pricing_table_features]
+<li>ONLINE BOOKING</li>
+<li>ADVANCED OPTIONS</li>
+<li>CREATE PROFILE</li>
+<li>MANAGE BOOKINGS</li>
+<li>MAP SEARCH</li>
+<li>GROUP BOOKINGS</li>
+[/pricing_table_features]
+[button type="small" color="white" class="full-width blue-color" link="#"]SELECT THIS PLAN[/button]
+[/pricing_table]
+[/one_third]
+
+[/row]
+[/block]

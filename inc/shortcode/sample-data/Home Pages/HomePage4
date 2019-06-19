@@ -1,0 +1,188 @@
+[section]
+[container]
+[content_boxes style="style10"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/120.png" width="370" height="132" hover="hover-effect" animation_type="fadeInLeft"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Driven to save?<br /><small>Save up to 35%</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/212.png" width="370" height="132" hover="hover-effect" animation_type="fadeInLeft" animation_delay="0.6"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Room to relax<br /><small>Earn 250 miles</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/312.png" width="370" height="132" hover="hover-effect" animation_type="fadeInLeft" animation_delay="1.2"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Last Minute Car Deals<br /><small>Get best car rental deals</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container]
+[testimonials style="style3" title="Testimonial Style 03"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]We'd like to thank Travelo for making our honeymoon such a memorable experience as we were able to do everything on a single website.[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/testimonial]
+[/testimonials]
+[/container]
+[/section]
+[/parallax_block]
+
+[section]
+[container]
+[accommodations type="porpular" title="Popular Hotels" count="5" slide="true" style="style2"]
+
+<h2>Featured Holiday Activities</h2>
+[content_boxes style="style5"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/116.png" link="#" width="370" height="161" label="Singapore" label_content="3 activities" animation_type="fadeInDown" animation_delay="0"]
+[content_box_detail]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$30</span>
+    <h4 class="box-title"><a href="#">Jurong Bird Park Admission</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$120</span>
+    <h4 class="box-title"><a href="#">Night Safari Adventure</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$360</span>
+    <h4 class="box-title"><a href="#">Jungle Breakfast with Wildlife</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/28.png" link="#" width="370" height="161" label="Bangkok" label_content="3 activities" animation_type="fadeInDown" animation_delay="0.3"]
+[content_box_detail]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$122</span>
+<h4 class="box-title"><a href="#">Day Trip to Safari World</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$46</span>
+<h4 class="box-title"><a href="#">Bangkok Cabaret Show by Night</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$259</span>
+<h4 class="box-title"><a href="#">Day Trip to Safari World</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/38.png" link="#" width="370" height="161" label="HongKong" label_content="3 activities" animation_type="fadeInDown" animation_delay="0.6"]
+[content_box_detail]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$376</span>
+<h4 class="box-title"><a href="#">Half-Day Island Tour</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$288</span>
+<h4 class="box-title"><a href="#">Ocean Park Tour</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$59</span>
+<h4 class="box-title"><a href="#">Lantau Island Sightseeing Tour</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container class="description"]
+<div class="text-center">
+<h2>Amazing Destination Ideas for <em>you!</em></h2>
+</div>
+<br />
+[row]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0"]
+[icon_box icon="soap-icon-adventure" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Adventure</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.3"]
+[icon_box icon="soap-icon-beach" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Beach</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.6"]
+[icon_box icon="soap-icon-party" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Party</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.9"]
+[icon_box icon="soap-icon-playplace" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Golf</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="1.2"]
+[icon_box icon="soap-icon-couples" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Romance</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="1.5"]
+[icon_box icon="soap-icon-ski" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Ski</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[/row]
+[/container]
+[/section]
+[/parallax_block]

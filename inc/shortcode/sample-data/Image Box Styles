@@ -1,0 +1,555 @@
+[block]
+<h1>Style 01</h1>
+
+[content_boxes style="style1"]
+[row]
+
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations01.jpg" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail]
+<span class="price"><small>FROM</small>$490</span>
+<h4 class="box-title">Atlantis - The Palm<small>Paris</small></h4>
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations02.jpg" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail]
+<span class="price"><small>FROM</small>$170</span>
+<h4 class="box-title">Hilton Hotel<small>LONDON</small></h4>
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations03.jpg" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail]
+<span class="price"><small>FROM</small>$130</span>
+<h4 class="box-title">MGM Grand<small>LAS VEGAS</small></h4>
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations04.jpg" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail]
+<span class="price"><small>FROM</small>$290</span>
+<h4 class="box-title">Crown Casino<small>ASUTRALIA</small></h4>
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[/row]
+[/content_boxes]
+
+[/block]
+
+
+[block]
+<h1>Style 02</h1>
+
+[content_boxes style="style2"]
+[row]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers01.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Hire Cars</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers02.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Cruise Deals</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers03.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Things To Do</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[one_half]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/offers04.jpg" link="#" width="272" height="192" /]
+[content_box_detail]
+<h4>Fly in Comfort</h4>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/one_half]
+
+[/row]
+[/content_boxes]
+
+[/block]
+
+[block]
+[content_boxes style="style3"]
+<h1>Style 03</h1>
+[row]
+
+[column sm="6" md="3"]
+[content_box"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/114.png" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail class="text-center"]
+<h4 class="box-title">Greece</h4>
+<p class="offers-content">(15 deal offers)</p>
+[rating value="4" /]
+<p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[column sm="6" md="3"]
+[content_box"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/26.png" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail class="text-center"]
+<h4 class="box-title">Singapore</h4>
+<p class="offers-content">(15 deal offers)</p>
+[rating value="4" /]
+<p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+
+[column sm="6" md="3"]
+[content_box"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/36.png" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail class="text-center"]
+<h4 class="box-title">Malaysia</h4>
+<p class="offers-content">(15 deal offers)</p>
+[rating value="4" /]
+<p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3"]
+[content_box"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/42.png" link="#" hover="hover-effect" width="270" height="160" /]
+[content_box_detail class="text-center"]
+<h4 class="box-title">Europe</h4>
+<p class="offers-content">(15 deal offers)</p>
+[rating value="4" /]
+<p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar.</p>
+[button link="#"]SEE ALL[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 04</h1>
+[content_boxes style="style4"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/115.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Get Attractions</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/27.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Travel Hot Deals</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/37.png" link="#" hover="hover-effect" width="370" height="161" /]
+[content_box_detail]
+<h4 class="box-title">Travelers Stories</h4>
+<a href="#" class="goto-detail"><span class="glyphicon glyphicon-arrow-right"></span></a>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+
+[/block]
+
+[block]
+<h1>Style 05</h1>
+[content_boxes style="style5"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/116.png" link="#" width="370" height="161" label="Singapore" label_content="3 activities"]
+[content_box_detail]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$30</span>
+    <h4 class="box-title"><a href="#">Jurong Bird Park Admission</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$120</span>
+    <h4 class="box-title"><a href="#">Night Safari Adventure</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+    <span class="price"><small>FROM</small>$360</span>
+    <h4 class="box-title"><a href="#">Jungle Breakfast with Wildlife</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/28.png" link="#" width="370" height="161" label="Bangkok" label_content="3 activities"]
+[content_box_detail]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$122</span>
+<h4 class="box-title"><a href="#">Day Trip to Safari World</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$46</span>
+<h4 class="box-title"><a href="#">Bangkok Cabaret Show by Night</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$259</span>
+<h4 class="box-title"><a href="#">Day Trip to Safari World</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/38.png" link="#" width="370" height="161" label="HongKong" label_content="3 activities"]
+[content_box_detail]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$376</span>
+<h4 class="box-title"><a href="#">Half-Day Island Tour</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$288</span>
+<h4 class="box-title"><a href="#">Ocean Park Tour</a></h4>
+[/content_box_detail_row]
+[content_box_detail_row]
+<span class="price"><small>FROM</small>$59</span>
+<h4 class="box-title"><a href="#">Lantau Island Sightseeing Tour</a></h4>
+[/content_box_detail_row]
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 06</h1>
+[content_boxes style="style6"]
+[content_box]
+[row]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/117.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">Who We Are?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[/row]
+[/content_box]
+[content_box]
+[row]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">What We Do?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/29.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[/row]
+[/content_box]
+[content_box]
+[row]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/39.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">How Travelo Work?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[/row]
+[/content_box]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 07</h1>
+[content_boxes style="style7"]
+[row]
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/14.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Best Price Guarantee</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/21.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Best Price Guarantee</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/31.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Best Price Guarantee</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sm="6" md="3"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/41.jpg" width="283" height="200" position="middle" hover="opacity"]
+[content_box_detail]
+<h4><a href="#">Best Price Guarantee</a></h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 08</h1>
+[content_boxes style="style8"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/118.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Travel</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/210.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Discover</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/310.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Enjoy</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 09</h1>
+[content_boxes style="style9"]
+[row]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/119.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Majorca<small>(54 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/211.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Tenerife<small>(524 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/311.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Costa Blanca<small>(24 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/44.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Dalaman<small>(12 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/52.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Dalaman<small>(12 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/62.png" width="170" height="161" hover="hover-effect yellow"]
+[content_box_detail]
+<h4 class="box-title">Algarve<small>(34 reviews)</small></h4>
+[button link="#"]MORE[/button]
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 10</h1>
+[content_boxes style="style10"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/120.png" width="370" height="132" hover="hover-effect"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Driven to save?<br /><small>Save up to 35%</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/212.png" width="370" height="132" hover="hover-effect"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Room to relax<br /><small>Earn 250 miles</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/312.png" width="370" height="132" hover="hover-effect"]
+[content_box_detail]
+<a class="button" href="">MORE</a><h4 class="box-title">Last Minute Car Deals<br /><small>Get best car rental deals</small></h4>
+[/content_box_detail]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 11</h1>
+[content_boxes style="style11"]
+[row]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/123.png" width="370" height="161"  label="Boston" label_content="Boston hotels"]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/213.png" width="370" height="161"  label="Los Angeles" label_content="Los Angeles hotels"]
+[/content_box]
+[/one_third]
+[one_third]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/313.png" width="370" height="161"  label="Washington" label_content="Washington hotels"]
+[/content_box]
+[/one_third]
+[/row]
+[/content_boxes]
+[/block]
+
+[block]
+<h1>Style 12</h1>
+[content_boxes style="style12"]
+[row]
+[one_half]
+[content_box]
+[imageframe link="#" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/124.png" width="121" height="101" hover="opacity"]
+[content_box_detail]
+<h4 class="box-title">Seat Selection</h4>
+<p>Whether you would like leg room, a seat with a view or to sit with your family.</p>
+[/content_box_detail]
+[content_box_action]<span class="price"><small>per seat</small>$30</span><a class="button btn-small">BOOK NOW</a>[/content_box_action]
+[/content_box]
+[/one_half]
+[one_half]
+[content_box]
+[imageframe link="#" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/214.png" width="121" height="101" hover="opacity"]
+[content_box_detail]
+<h4 class="box-title">Get Insurance</h4>
+<p>Get covered before you travel!  Whether you are flying around the world.</p>
+[/content_box_detail]
+[content_box_action]<span class="price"><small>per person</small>$16</span><a class="button btn-small">BOOK NOW</a>[/content_box_action]
+[/content_box]
+[/one_half]
+[one_half]
+[content_box]
+[imageframe link="#" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/314.png" width="121" height="101" hover="opacity"]
+[content_box_detail]
+<h4 class="box-title">Car Hire</h4>
+<p>Discounted Car hire rates. Hit the road and explore on your trip with great rates.</p>
+[/content_box_detail]
+[content_box_action]<span class="price"><small>from</small>$11</span><a class="button btn-small">BOOK NOW</a>[/content_box_action]
+[/content_box]
+[/one_half]
+[one_half]
+[content_box]
+[imageframe link="#" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/46.png" width="121" height="101" hover="opacity"]
+[content_box_detail]
+<h4 class="box-title">Sky Shopping</h4>
+<p>Have a sneak preview at our fabulous range of sky shopping products.</p>
+[/content_box_detail]
+[content_box_action]<span class="price"><small>from</small>$9</span><a class="button btn-small">BOOK NOW</a>[/content_box_action]
+[/content_box]
+[/one_half]
+[/row]
+[/content_boxes]
+[/block]

@@ -1,0 +1,46 @@
+[block class="full-box"]
+[map center="48.85661, 2.35222" markers="48.85661, 2.35222" height="400px" /]
+[/block]
+[section class="white-bg"]
+[container]
+[column md="9" class="no-float no-padding center-block"]
+[block class="text-center"]
+<h2>Send us a Message</h2>
+<p>Etiam gravida ac mi ut posuere. Nunc laoreet nulla a porttitor volutpat. Praesent in rutrum justo, in fermentum nulla. Ut vel nulla tincidunt, lobortis tortor eu, venenatis ligula. Vivamus laoreet leo nulla, nec venenatis erat laoreet et. Integer tincidunt nulla at leo dignissim, ut iaculis libero mattis.</p>
+[/block]
+[contact-form-7 id="692" title="Contact form 4"]
+[/column]
+[/container]
+
+[parallax_block ratio="0.1" class="section"]
+[container]
+[row]
+[one_third]
+[icon_box style="style10" icon="soap-icon-recommend"]
+<small>We are on 24/7</small>
+<h4 class="box-title">1-800-123-HELLO</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-insurance"]
+<small>Send us email on</small>
+<h4 class="box-title">Help@Travelo.com</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-anchor"]
+<small>Meet us now</small>
+<h4 class="box-title">USA, P.O Box, 353 Three Avenue</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[/row]
+[/container]
+[/parallax_block]
+
+[/section]

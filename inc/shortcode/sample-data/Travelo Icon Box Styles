@@ -1,0 +1,286 @@
+[container]
+[block]
+<h1>Style1</h1>
+[row]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-wifi"]WI_FI[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-swimming"]swimming pool[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-television"]television[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-coffee"]coffee[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-aircon"]air conditioning[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-fitnessfacility"]fitness facility[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-fridge"]fridge[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style1" icon="soap-icon-winebar"]wine bar[/icon_box]
+[/column]
+[/row]
+<h1>Style2</h1>
+[row]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-wifi"]WI_FI[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-swimming"]swimming pool[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-television"]television[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-coffee"]coffee[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-aircon"]air conditioning[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-fitnessfacility"]fitness facility[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-fridge"]fridge[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style2" icon="soap-icon-winebar"]wine bar[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style3</h1>
+[row]
+[column md="3" sm="6"]
+[icon_box style="style3" number="3200" icon="soap-icon-places select-color"]Amazing Places To Visit[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style3" number="5728" icon="soap-icon-hotel hotel-color"]5 Star Hotels To Stay[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style3" number="4509" icon="soap-icon-plane green-color"]Airlines To Travel the World[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style3" number="3250" icon="soap-icon-car red-color"]VIP Transport Options[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style4</h1>
+[row]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-adventure"]
+<h4 class="box-title">Adventure</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-beach"]
+<h4 class="box-title">Beach</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-party"]
+<h4 class="box-title">Party</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-playplace"]
+<h4 class="box-title">Golf</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-couples"]
+<h4 class="box-title">Romance</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[column md="2" sm="4" xs="6"]
+[icon_box style="style4" icon="soap-icon-ski"]
+<h4 class="box-title">Ski</h4>
+<p class="description">Lorem Ipsum simply dummy text industry.</p>
+[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style5</h1>
+[row]
+[column md="4"]
+[icon_box style="style5" icon="soap-icon-phone"]<small>We are on 24/7</small> <h5>Local: 1-800-123-HELLO</h5>[/icon_box]
+[/column]
+[column md="4"]
+[icon_box style="style5" icon="soap-icon-message"]<small>Send us email on</small> <h5>help@travelo.com</h5>[/icon_box]
+[/column]
+[column md="4"]
+[icon_box style="style5" icon="soap-icon-address"]<small>meet us at</small> <h5>USA, P.O Box, 353 Three Avenue</h5>[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style6</h1>
+[row]
+[column md="3" sm="6"]
+[icon_box style="style6" icon="soap-icon-friends"]<h4 class="box-title">Group Booking</h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style6" icon="soap-icon-pickanddrop"]<h4 class="box-title">Car Hiring</h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style6" icon="soap-icon-insurance"]<h4 class="box-title">Travel Insurance</h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style6" icon="soap-icon-guideline"]<h4 class="box-title">Travel Guidelines</h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style7</h1>
+[row]
+[column md="4"]
+[icon_box style="style7" icon="soap-icon-user"]<h4 class="box-title"><a href="#">Single Trip Plans – coverage for a single trip</a></h4>
+[checklist icon="circle"]
+<ul><li>Trip Protector</li><li>Rental Car Damage Protector</li></ul>
+[/checklist]
+<a href="#" class="view">View Single Trip Plan Options »</a>[/icon_box]
+[/column]
+[column md="4"]
+[icon_box style="style7" icon="soap-icon-friends"]<h4 class="box-title"><a href="#">Long Trip Travel Plans – Multi-Trip Plans</a></h4>
+[checklist icon="circle"]
+<ul><li>Best value for frequent travelers</li><li>Coverage for non-award</li></ul>
+[/checklist]
+<a href="#" class="view">View Annual Trip Plan Options »</a>[/icon_box]
+[/column]
+[column md="4"]
+[icon_box style="style7" icon="soap-icon-plans"]<h4 class="box-title"><a href="#">Long Trip Travel Plans – Multi-Trip Plans</a></h4>
+[checklist icon="circle"]
+<ul><li>Best value for frequent travelers</li><li>Coverage for non-award</li></ul>
+[/checklist]
+<a href="#" class="view">View Annual Trip Plan Options »</a>[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style8</h1>
+[row]
+[column md="3" sm="6"]
+[icon_box style="style8" icon="soap-icon-hotel"]
+<h4 class="box-title">135,000+ Hotels</h4> <p class="description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style8" icon="soap-icon-insurance"]
+<h4 class="box-title">Low Rates &amp; Top Savings</h4> <p class="description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style8" icon="soap-icon-star-1"]
+<h4 class="box-title">Reviewed by Real Travellers</h4> <p class="description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+[/icon_box]
+[/column]
+[column md="3" sm="6"]
+[icon_box style="style8" icon="soap-icon-support"]
+<h4 class="box-title">We Speak your Language</h4> <p class="description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+[/icon_box]
+[/column]
+[/row]
+[/block]
+
+[block]
+<h1>Style9</h1>
+<div class="clearfix column-5">
+[icon_box style="style9" icon="soap-icon-slider"]
+<h5 class="box-title">Powerful Sliders</h5> <p class="description"> Lorem Ipsum is simply dumy typesetting industry. </p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-search"]
+<h5 class="box-title">Unique Search Layouts</h5> <p class="description"> Lorem Ipsum is simply dumy typesetting industry. </p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-stories"]
+<h5 class="box-title">Tons of Shortcodes</h5> <p class="description"> Lorem Ipsum is simply dumy typesetting industry. </p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-flexible"]
+<h5 class="box-title">Flexible Layouts</h5> <p class="description"> Lorem Ipsum is simply dumy typesetting industry. </p>
+[/icon_box]
+[icon_box style="style9" icon="soap-icon-passenger"]
+<h5 class="box-title">Inflight Comfort</h5> <p class="description"> Lorem Ipsum is simply dumy typesetting industry. </p>
+[/icon_box]
+</div>
+[/block]
+<h1>Style10</h1>
+[row class="icon-box-style10"]
+[one_third]
+[icon_box style="style10" icon="soap-icon-recommend"]
+<small>travel is</small>
+<h4 class="box-title">100% Original Theme</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-insurance"]
+<small>We are providing you</small>
+<h4 class="box-title">Custom Travel Icons Pack</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-anchor"]
+<small>Fully customizeable</small>
+<h4 class="box-title">Dashboard Included</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[/row]
+[/container]
+
+[block]
+
+[parallax_block ratio="0.1" class="section"]
+[container]
+[row]
+[one_third]
+[icon_box style="style10" icon="soap-icon-recommend"]
+<small>travel is</small>
+<h4 class="box-title">100% Original Theme</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-insurance"]
+<small>We are providing you</small>
+<h4 class="box-title">Custom Travel Icons Pack</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[one_third]
+[icon_box style="style10" icon="soap-icon-anchor"]
+<small>Fully customizeable</small>
+<h4 class="box-title">Dashboard Included</h4>
+<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/one_third]
+
+[/row]
+[/container]
+[/parallax_block]
+[/block]

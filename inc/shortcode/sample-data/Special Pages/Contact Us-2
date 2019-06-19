@@ -1,0 +1,29 @@
+[block]
+[map center="48.85661, 2.35222" markers="48.85661, 2.35222" height="255px" /]
+[/block]
+[block]
+[row]
+[one_third]
+[icon_box style="style5" icon="soap-icon-phone"]
+<small>We are on 24/7</small>
+<h5>Local: 1-800-123-HELLO</h5>
+[/icon_box]
+[/one_third]
+[one_third]
+[icon_box style="style5" icon="soap-icon-message"]
+<small>Send us email on</small>
+<h5>help@travelo.com</h5>
+[/icon_box]
+[/one_third]
+[one_third]
+[icon_box style="style5" icon="soap-icon-address"]
+<small>meet us at</small>
+<h5>USA, P.O Box, 353 Three Avenue</h5>
+[/icon_box]
+[/one_third]
+[/row]
+[/block]
+[block type="whitebox" class="box-full"]
+<h2>Send us a Message</h2>
+[contact-form-7 id="681" title="Contact form 3"]
+[/block]

@@ -1,0 +1,77 @@
+[section]
+[container]
+[accommodations type="porpular" title="Popular Hotels" count="4" slide="false" style="style1" animation_type="fadeInDown" animation_delay="0.4"]
+[/container]
+[/section]
+
+[parallax_block class="section"]
+[container]
+<div class="text-center description">
+<h1>We Provide You An Ultimate Travel Experience</h1>
+<p>Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque.</p>
+<p>Etiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+</div>
+<br />
+[content_boxes style="style8"]
+[row]
+[one_third]
+[animation type="fadeInUp"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/118.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Travel</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/animation]
+[/one_third]
+[one_third]
+[animation type="fadeInUp"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/210.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Discover</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/animation]
+[/one_third]
+[one_third]
+[animation type="fadeInUp"]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/310.png" width="100" height="172" position="middle" hover="opacity"]
+[content_box_detail]
+<h2 class="box-title">Enjoy</h2>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/content_box_detail]
+[/content_box]
+[/animation]
+[/one_third]
+[/row]
+[/content_boxes]
+[/container]
+[/parallax_block]
+
+[section]
+[container]
+[accommodations type="featured" title="Featured Hotels" count="4" slide="false" style="style1" animation_type="fadeInDown" animation_delay="0.6"]
+[/container]
+[/section]
+
+[parallax_block ratio="0.1"]
+[promo_box content_section_width="9" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/promo-image1.png" img_alt="promo box image1" img_width="342" img_height="258" animation_type="fadeInUp"]
+[promo_box_left][animation type="fadeInDown" duration="1.5"]<h2 class="m-title">Tell us where you would like to go.<br /><em>12,000+ Hotel and Resorts Available!</em></h2>[/animation][/promo_box_left]
+[promo_box_right class="col-md-4 no-float"]
+[search_form post_type="accommodation"]
+[row]
+[column xs="6" md="12"]
+[search_form_textfield /]
+[/column]
+[column xs="6" md="12"]
+[button tag="button" type="large" class="full-width"]search hotels[/button]
+[/column]
+[/row]
+[/search_form]
+[/promo_box_right]
+[/promo_box]
+[/parallax_block]

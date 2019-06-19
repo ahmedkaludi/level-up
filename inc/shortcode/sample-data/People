@@ -1,0 +1,71 @@
+<h2>People Style 01</h2>
+[row]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Jessica Brown<small>Chief Executive</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/david.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Jackson<small>Director - Hotels</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/kyle.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Kyle Martin<small>Chief Operating Officer</small></a></h4>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/robets.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Robets<small>Founder &amp; Director</small></a></h4>
+[/person]
+[/column]
+[/row]
+
+<h2>People Style 02</h2>
+[row]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Jessica Brown<small>Chief Executive</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/david.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Jackson<small>Director - Hotels</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/kyle.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Kyle Martin<small>Chief Operating Officer</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/robets.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Robets<small>Founder &amp; Director</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[/row]
+
+[block]
+[row]
+[one_half]
+[toggles title="We Are Hiring" type="accordion"]
+[toggle title="Travelo company looking for Travel Guide" collapsed="false"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[toggle title="We are looking for Travel Agents"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[toggle title="Travelo Corporate Responsibility"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[/toggles]
+[/one_half]
+[one_half]
+<h2>Send Us Your Details</h2>
+[block1 type="whitebox"]
+[contact-form-7 id="543" title="Contact form 1"]
+[/block1]
+[/one_half]
+[/row]
+[/block]

@@ -2413,8 +2413,7 @@ if ( ! function_exists('trav_post_gallery') ) {
                 }
 
                 $gallery_type = get_post_meta( $post_id, 'trav_post_gallery_type', true );
-                print_r($gallery_type);
-                die;
+                
                 if ( $gallery_type == 'sld_2' ) { ?>
 
                     <div class="flexslider photo-gallery style4<?php echo esc_attr( $nav_class ) ?>">

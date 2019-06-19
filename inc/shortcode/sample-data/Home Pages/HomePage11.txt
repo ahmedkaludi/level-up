@@ -1,0 +1,135 @@
+Please set page template to Page Template With Bgslider and add below contents 1), 2), 3) to correct area
+
+1. Main Content
+
+[section]
+[container]
+[tours title="Featured Tour Packages" type="popular" style="style2" slide="false"]
+[/container]
+[/section]
+
+[parallax_block bg_image="http://soaptheme.net/wordpress/travelo/wp-content/uploads/bgimages/parallax-bg1.jpg" ratio="0.75"]
+[promo_box content_section_width="6" class="honeymoon" type="type2"]
+<h1 class="title">Popular Destinations for Honeymoon</h1>
+<p>Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque purusac Etiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[content_boxes style="style9"]
+[row class="places"]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places01.jpg" alt="paris" position="middle" width="306" height="170" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Paris<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1" delay="0.4"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=greece" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places02.jpg" alt="greece" position="middle" width="175" height="175" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Greece<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=greece" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="4" sm="4"]
+[content_box]
+[animation type="fadeInUp" duration="1" delay="0.8"]
+[imageframe link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=australia" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/places03.jpg" alt="australia" position="middle" width="340" height="226" hover="hover-effect yellow"]
+[/animation]
+[content_box_detail]
+<h4 class="box-title">Australia<small>(990+ PLACES)</small></h4>
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=australia" title="" class="button">SEE ALL</a>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/promo_box]
+[/parallax_block]
+
+[section]
+[container]
+[posts type="lates" style="style2" slider="true" count="4" title="Recent Travelo News"]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container]
+[testimonials style="style3" title="Testimonial Style 03"]
+[testimonial author_name="Jessica Brown" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" ]We'd like to thank Travelo for making our honeymoon such a memorable experience as we were able to do everything on a single website.[/testimonial]
+
+[testimonial author_name="Lisa Kimberly" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author2.png" ]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+
+[testimonial author_name="Simon" author_link="/" author_img_url="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author3.jpg" ]Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/testimonial]
+[/testimonials]
+[/container]
+[/section]
+[/parallax_block]
+
+[container]
+[section]
+<h2>Travel Guide and Tips</h2>
+[row]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Plan your Travels</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Check Availability</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Get Insurance</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[column sms="6" sm="6" md="3"]
+[block type="whitebox"]
+<h4 class="s-title animated" data-animation-type="fadeInLeft" data-animation-delay="1">Secure your Bookings</h4>
+<p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+[/block]
+[/column]
+[/row]
+[/section]
+[/container]
+
+
+
+
+
+
+
+
+
+
+
+
+2. Content On Background Slider
+
+<h1 class="page-title">Fly with us in Comfort!</h1>
+<h2 class="page-description col-md-6 no-float no-padding">We're bringing you a modern, comfortable and connected flight experience.</h2>
+<p>[search_group style="style2"]</p>
+
+
+
+
+
+
+
+
+3. Custom CSS
+
+.page-title {font-size: 4.1667em; font-weight: bold; } .page-title, .page-description {color: #fff; } .page-description {font-size: 2.5em; margin-bottom: 50px; }
+section#content { min-height: inherit; padding-top: 0; }
+.promo-box .content-section.description h1.title, .promo-box .content-section.description p { color: #fff; }

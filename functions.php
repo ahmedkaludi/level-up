@@ -23,7 +23,7 @@ define( 'TRAV_CRUISE_BOOKINGS_TABLE', $wpdb->prefix . 'trav_cruise_bookings' );
 define( 'TRAV_CRUISE_VACANCIES_TABLE', $wpdb->prefix . 'trav_cruise_vacancies' );
 define( 'TRAV_TAX_META_DIR_URL', get_template_directory() . '/inc/lib/tax-meta-class/' );
 
-require_once( get_template_directory() . '/inc/functions.php');
+
 require_once( get_template_directory() . '/inc/custom-post-types.php');
 require_once( get_template_directory() . '/inc/metaboxes.php');
 require_once(get_template_directory() . '/inc/lib/multiple_sidebars.php');
@@ -35,11 +35,36 @@ require_once( get_template_directory() . '/inc/side-bar.php');
 require_once( get_template_directory() . '/inc/taxonomy-meta.php');
 require_once( get_template_directory() . '/inc/widget.php');
 
-
 require_once( get_template_directory() . '/inc/frontend/accommodation/main.php');
 require_once( get_template_directory() . '/inc/frontend/tour/main.php');
 require_once( get_template_directory() . '/inc/frontend/car/main.php');
 require_once( get_template_directory() . '/inc/frontend/cruise/main.php');
+
+//sHORTCODES
+require_once( get_template_directory() . '/inc/shortcode/init.php');
+require_once( get_template_directory() . '/inc/functions/js_composer/init.php' );
+
+
+//theme supports
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'woocommerce' );
+add_image_size( 'list-thumb', 230, 160, true );
+add_image_size( 'gallery-thumb', 270, 160, true );
+add_image_size( 'biggallery-thumb', 500, 300, true );
+add_image_size( 'widget-thumb', 64, 64, true );
+//add_image_size( 'map-thumb', 280, 140, true );
+//add_filter('deprecated_constructor_trigger_error', '__return_false');
+if( ! function_exists( "get_term_by_location" ) ){
+    function get_term_by_location($value){
+        if(empty( $value ))
+            return '';
+        if ( is_numeric( $value ) )
+            return $value;
+        $term = get_term_by( 'name', $value, 'location' );
+        return $term->term_id;
+    }
+}
 
 
 
@@ -401,7 +426,6 @@ add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 add_action( 'amp_post_template_css', 'levelup_body_font_amp_design_styling' );
 function levelup_body_font_amp_design_styling(){
 	$defaults = levelup_generate_defaults();
-    //print_r($defaults); die;
 	echo 'body {
 		font-family: "'. $defaults['levelup_body_font_family'] .'", sans-serif;
 	

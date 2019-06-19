@@ -1,0 +1,30 @@
+Please set page template to Page Template With Bgslider and add below contents 1), 2), 3) to correct area
+
+1. Main Content
+
+[vc_row is_container="yes"][vc_column][cruises type="popular" count="4" slide="no" title="Last Minute Cruise Deals"][/vc_column][/vc_row][vc_row is_container="yes"][vc_column width="1/2"][vc_column_text]<h2>Top Cruise Destinations</h2>[/vc_column_text][content_box class="top-cruise-destinations image-box box"][imageframe animation_type="fadeInDown" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2018/04/1-300x167.jpg"][/imageframe][content_box_detail]<div class="row"><div class="col-xs-4"><h5 class="box-title">Top Destinations</h5><ul class="triangle hover"><li>Alaska</li><li>Bermuda</li><li>Caribbean</li><li>Mexico</li></ul></div><div class="col-xs-4"><h5 class="box-title">Top Interests</h5><ul class="triangle hover"><li>Last Minute Cruises</li><li>Sail from Nearby Ports</li><li>Holiday Cruises</li><li>Weekend Cruises</li></ul></div><div class="col-xs-4"><h5 class="box-title">Top Luxury</h5><ul class="triangle hover"><li>Azamara Cruises</li><li>Crystal Cruises</li><li>Oceania Cruises</li><li>Regent Cruises</li></ul></div></div>[/content_box_detail][/content_box][/vc_column][vc_column width="1/2"][vc_column_text]<h2>Top Cruise Line Deals</h2>[/vc_column_text][content_boxes style="style1" class="travelo-box cruise-line-deals "][vc_row_inner][vc_column_inner width="1/2"][content_box][imageframe animation_type="fadeIn" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2018/04/6.png" class="image-wrapper"][/imageframe][content_box_detail] <span class="price"><small>3 nights</small>$169</span><h5 class="box-title"><a href="#">Norwegian Cruise Line</a><small>Up to $400 OFF!</small></h5>[/content_box_detail][/content_box][/vc_column_inner][vc_column_inner width="1/2"][content_box][imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2018/04/6.png" class="image-wrapper"][/imageframe][content_box_detail] <span class="price"><small>3 nights</small>$169</span><h5 class="box-title"><a href="#">Norwegian Cruise Line</a><small>Up to $400 OFF!</small></h5>[/content_box_detail][/content_box][/vc_column_inner][/vc_row_inner][vc_row_inner][vc_column_inner width="1/2" el_class="no-border"][content_box][imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2018/04/6.png" class="image-wrapper"][/imageframe][content_box_detail] <span class="price"><small>3 nights</small>$169</span><h5 class="box-title"><a href="#">Norwegian Cruise Line</a><small>Up to $400 OFF!</small></h5>[/content_box_detail][/content_box][/vc_column_inner][vc_column_inner width="1/2" el_class="no-border"][content_box][imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2018/04/6.png" class="image-wrapper"][/imageframe][content_box_detail] <span class="price"><small>3 nights</small>$169</span><h5 class="box-title"><a href="#">Norwegian Cruise Line</a><small>Up to $400 OFF!</small></h5>[/content_box_detail][/content_box][/vc_column_inner][/vc_row_inner][/content_boxes][/vc_column][/vc_row][vc_row is_container="yes"][vc_column][cruises style="style2" slide="yes" title="Hot Cruises Deals"][/vc_column][/vc_row][vc_row][vc_column][parallax_block ratio="0.1"][promo_box content_section_width="9" animation_type="fadeInUp" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/promo-image1.png" img_alt="promo box image1" img_width="342" img_height="258"][promo_box_left][animation type="fadeInDown" duration="1.5"][vc_column_text]<h2 class="m-title">Tell us where you would like to go.<em>12,000+ Hotel and Resorts Available!</em></h2>[/vc_column_text][/animation][/promo_box_left][promo_box_right class="col-md-4 no-float"][search_form post_type="accommodation"][vc_row_inner][vc_column_inner offset="vc_col-md-12 vc_col-xs-6"][vc_column_text][search_form_textfield /][/vc_column_text][/vc_column_inner][vc_column_inner offset="vc_col-md-12 vc_col-xs-6"][button tag="button" type="large" class="full-width"]search hotels[/button][/vc_column_inner][/vc_row_inner][/search_form][/promo_box_right][/promo_box][/parallax_block][/vc_column][/vc_row]
+
+2. Content On Background Slider
+
+<p>[container]</p>
+<div class="center-block-wrapper full-width">
+<div class="center-block align-center">[box]<img src="http://soaptheme.net/html/travelo/images/tour/home/logo.png" alt="" />[/box] [box class="bg-title-section"]</p>
+<h1>PLAN YOUR PERFECT ADVENTURE</h1>
+<h3>GET 20% DISCOUNT ON CRUISE</h3>
+<p>[/box] [search_form post_type="cruise" style="style2"]</p>
+<div class="text-center"> <a href="http://themeforest.net/item/travelo-responsive-wordpress-booking-theme/9806696?ref=SoapTheme" class="button btn-medium sky-blue1 uppercase">Purchase Now</a> &nbsp;&nbsp; <a href="http://www.soaptheme.net/wordpress/travelo/?post_type=cruise&s&view=list" class="button btn-medium red uppercase">Latest Cruises</a> </div>
+</p>
+</div>
+</div>
+<p> [/container]</p>
+
+
+
+3. Custom CSS
+
+#main{margin-bottom:0}
+.bg-title-section h1{ font-size: 4.1667em; color: #fff; letter-spacing: 0; text-shadow: 0 0 8px rgba(0,0,0,0.25); margin-bottom: 0; font-weight: 900; }
+.center-block div.text-center a{  padding: 0 20px; }
+.bg-title-section h3{ font-size: 2em; color: #000; letter-spacing: 0.1em; text-shadow: 0 0 6px rgba(255,233,169,0.25); font-weight: 900; }
+.cruise-line-deals .box .details p{ margin: 0; padding: 0; }
+.image-box.cruise-line-deals .box>.details:after, .image-box.box>.details:after{ display: inline; }

@@ -1,0 +1,148 @@
+[block]
+[content_boxes style="style6"]
+[content_box]
+[row]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/117.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">Who We Are?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[/row]
+[/content_box]
+[content_box]
+[row]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">Who We Are?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/29.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[/row]
+[/content_box]
+[content_box]
+[row]
+[column md="5"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/39.png" link="#" width="476" height="318" position="middle"]
+[/column]
+[column md="7"]
+[content_box_detail]
+<h4 class="box-title">How Travelo Work?</h4>
+<div>Vivamus a mauris vel nunc tristique volutpat. Aenean eu faucibus enim. Aenean blandit arcu lectus, in cursus elit porttitor non. Curabitur risus eros, mattis vitae nisl consequat, tincidunt commodo purus. Maecenas eu risus ac risus tempus iaculis. Duis cursus lectus sed dui imperdiet, id pharetra nunc ullamcorper. Donec luctus blandit metus, sed ultrices ipsum facilisis sit amet. Morbi congue ligula sit amet urna tincidunt.</div>
+[/content_box_detail]
+[/column]
+[/row]
+[/content_box]
+[/content_boxes]
+[/block]
+
+[block type="large"]
+[row]
+[one_half]
+[toggles title="Know More About Us" type="accordion"]
+[toggle title="Travel Insurance Single Person" collapsed="false"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[toggle title="Inflight Dinner/ Lunch Deal"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[toggle title="Luxury Appartment for Family"]
+Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam elerisque mi id habitant morbi isnot possible nowadays tristique senectus et netus et malesuada fames.
+[/toggle]
+[/toggles]
+[/one_half]
+[one_half]
+[tabs title="Our Core Values" tab1="Satisfied customers" tab2="tours suggestions" tab3="Careers"]
+[tab id="tab1"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs01.png" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[tab id="tab2"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/places02.jpg" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[tab id="tab3"]
+<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/tabs01.png" alt="tab-image" class="pull-left" />
+<h4>Ocean Park Tour</h4>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Vivamus elementum, ligula vehicula enenatis semper, magna lorem aliquet lacus, in euismod sem lectus. ligula vehicula enenatis semper, magna lorem aliquet lacus euismod sem velit ve.
+<br /><br />
+Ligula vehicula enenatis semper, magna lorem aliquet lacusin ante dapibus dictum. fugats vitaes nemo minima rerums unsers sadips amets.</p>
+[/tab]
+[/tabs]
+[/one_half]
+[/row]
+[/block]
+
+[block type="large"]
+[row]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/author1.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Jessica Brown<small>Chief Executive</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/david.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Jackson<small>Director - Hotels</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/kyle.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">Kyle Martin<small>Chief Operating Officer</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[column sm="6" md="3"]
+[person style="style2" img_src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/robets.png" img_width="270" img_height="263" link="#" twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" flickr="#"]
+<h4 class="box-title"><a href="#">David Robets<small>Founder &amp; Director</small></a></h4><p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+[/person]
+[/column]
+[/row]
+[/block]
+
+[block type="large" class="text-center"]
+<h2>Check our Investors Relations</h2>
+<p>Nunc cursus libero purus ac congue ar lorem cursus ut sed pulvinar massa idend porta nequetiam</p>
+<div class="investor-list row">
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/125.png" alt="investor-image"></a>
+[/block1]
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/215.png" alt="investor-image"></a>
+[/block1]
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/315.png" alt="investor-image"></a>
+[/block1]
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/47.png" alt="investor-image"></a>
+[/block1]
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/54.png" alt="investor-image"></a>
+[/block1]
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+[block1 type="whitebox"]
+<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/64.png" alt="investor-image"></a>
+[/block1]
+</div>
+</div>
+[/block]

@@ -38,6 +38,7 @@ if ( have_posts() ) {
         $city = trav_acc_get_city( $acc_id );
         $country = trav_acc_get_country( $acc_id );
         $facilities = wp_get_post_terms( $acc_id, 'amenity' );
+
         $things_to_do = empty( $acc_meta['trav_accommodation_ttd'] ) ? '' : $acc_meta['trav_accommodation_ttd'];
 
         // init map & gallery & calendar variables
@@ -339,12 +340,13 @@ if ( have_posts() ) {
                                         <?php
                                             $amenity_icons = get_option( "amenity_icon" );
                                             $amenity_html = '';
+
                                             foreach ( $facilities as $facility ) {
                                                 if ( is_array( $amenity_icons ) && isset( $amenity_icons[ $facility->term_id ] ) ) {
                                                     $amenity_html .= '<li class="col-md-4 col-sm-6">';
-                                                    if ( isset( $amenity_icons[ $facility->term_id ]['uci'] ) ) {
-                                                        $amenity_html .= '<div class="icon-box style1"><div class="custom_amenity"><img title="' . esc_attr( $facility->name ) . '" src="' . esc_url( $amenity_icons[ $facility->term_id ]['url'] ) . '" height="42" alt="amenity-image"></div>' . esc_html( $facility->name ) . '</div>';
-                                                    } else if ( isset( $amenity_icons[ $facility->term_id ]['icon'] ) ) {
+                                                     if ( isset( $amenity_icons[ $facility->term_id ]['uci'] ) ) {
+                                                         $amenity_html .= '<div class="icon-box style1"><div class="custom_amenity"><img title="' . esc_attr( $facility->name ) . '" src="' . esc_url( $amenity_icons[ $facility->term_id ]['url'] ) . '" height="42" alt="amenity-image"></div>' . esc_html( $facility->name ) . '</div>';
+                                                     } else if ( isset( $amenity_icons[ $facility->term_id ]['icon'] ) ) {
                                                         $_class = $amenity_icons[ $facility->term_id ]['icon'];
                                                         $amenity_html .= '<div class="icon-box style1"><i class="' . esc_attr( $_class ) . '" title="' . esc_attr( $facility->name ) . '"></i>' . esc_html( $facility->name ) . '</div>';
                                                     }

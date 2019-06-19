@@ -1,0 +1,271 @@
+Please set page template to Page Template With Bgslider and add below contents 1), 2), 3) to correct area
+
+1. Main Content
+
+[section]
+[container]
+[tours title="Book Your Next Tour" type="latest" style="style1" count_per_row="4"]
+[/container]
+[/section]
+[parallax_block bg_image="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/bgimages/bg12.jpg" ratio="1"]
+<div class="text-wrapper">
+<h2>Book Your Next Perfect <br/> Tour With US</h2>
+<div>Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque.<br/>
+Etiam elerisque mi id faucibus iaculis vitae pulvinar.</div>
+<div class="text-center"><a href="http://themeforest.net/item/travelo-responsive-wordpress-booking-theme/9806696?ref=SoapTheme" class="button btn-medium uppercase">Buy Now</a>&nbsp;&nbsp;<a href="#" class="button btn-medium uppercase">More Info</a></div>
+</div>
+[/parallax_block]
+
+[section]
+[container]
+<h2>Explore Our Best Destinations</h2>
+[content_boxes style="style10"]
+[row]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations01.jpg" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=paris" class="button btn-mini">SEE ALL</a><div class="box-title">Paris<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations02.jpg" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=london" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=london" class="button btn-mini">SEE ALL</a><div class="box-title">London<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations03.jpg" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=newyork" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=newyork" class="button btn-mini">SEE ALL</a><div class="box-title">New York<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/destinations04.jpg" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=sydney" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=sydney" class="button btn-mini">SEE ALL</a><div class="box-title">Sydney<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/destinations05.png" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=spain" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=spain" class="button btn-mini">SEE ALL</a><div class="box-title">Spain<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/destinations06.png" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=england" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=england" class="button btn-mini">SEE ALL</a><div class="box-title">England<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/destinations07.png" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=rome" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=rome" class="button btn-mini">SEE ALL</a><div class="box-title">Rome<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[column sms="6" sm="6" md="3"]
+[content_box]
+[animation type="fadeInDown" duration="2"]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/12/destinations08.png" link="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=austalia" img_width="270" img_height="160" hover="hover-effect"]
+[/animation]
+[content_box_detail]
+<a href="http://www.soaptheme.net/wordpress/travelo/?post_type=accommodation&s=austalia" class="button btn-mini">SEE ALL</a><div class="box-title">Austalia<small>(990 places)</small></div>
+[/content_box_detail]
+[/content_box]
+[/column]
+[/row]
+[/content_boxes]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container class="description"]
+[column sm="6" md="3"]
+[animation type="slideInLeft"]
+[icon_box style="style6" icon="soap-icon-friends" delay="0.3"]
+<h4 class="box-title">Group Booking</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column sm="6" md="3"]
+[animation type="slideInDown" delay="0.6"]
+[icon_box style="style6" icon="soap-icon-pickanddrop"]
+<h4 class="box-title">Car Hiring</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column sm="6" md="3"]
+[animation type="slideInDown" delay="0.9"]
+[icon_box style="style6" icon="soap-icon-insurance"]
+<h4 class="box-title">Travel Insurance</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[column sm="6" md="3"]
+[animation type="slideInRight" delay="1.2"]
+[icon_box style="style6" icon="soap-icon-guideline"]
+<h4 class="box-title">Travel Guidelines</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+[/icon_box]
+[/animation]
+[/column]
+[/container]
+[/section]
+[/parallax_block]
+
+[section class="destinations"]
+[container]
+[accommodations type="porpular" title="Popular Hotels" count="4" slide="false" style="style1"]
+[/container]
+[/section]
+
+[parallax_block]
+[section]
+[container class="description"]
+<div class="text-center">
+<h2>Amazing Destination Ideas for <em>you!</em></h2>
+</div>
+<br />
+[row]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0"]
+[icon_box icon="soap-icon-adventure" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Adventure</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.3"]
+[icon_box icon="soap-icon-beach" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Beach</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.6"]
+[icon_box icon="soap-icon-party" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Party</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="0.9"]
+[icon_box icon="soap-icon-playplace" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Golf</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="1.2"]
+[icon_box icon="soap-icon-couples" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Romance</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[column xs="6" sm="4" md="2"]
+[animation type="slideInRight" delay="1.5"]
+[icon_box icon="soap-icon-ski" icon_class="yellow-color" style="style4"]
+<h4 class="box-title">Ski</h4>
+<p class="description">
+Lorem Ipsum simply dummy text industry.
+</p>
+[/icon_box]
+[/animation]
+[/column]
+[/row]
+[/container]
+[/section]
+[/parallax_block]
+
+
+
+
+
+
+
+
+
+
+
+
+2. Content On Background Slider
+
+<h1 class="page-title">Fly with us in Comfort!</h1>
+<h2 class="page-description col-md-6 no-float no-padding">We're bringing you a modern, comfortable and connected flight experience.</h2>
+<p>[search_group style="style4"]</p>
+
+
+
+
+
+
+
+
+3. Custom CSS
+
+.page-title {font-size: 4.1667em; font-weight: bold; } .page-title, .page-description {color: #fff; } .page-description {font-size: 2.5em; margin-bottom: 50px; }
+section#content { min-height: inherit; padding-top: 0; }
+#main {margin-bottom:0}
+.search-box-wrapper.style4 .search-box {background:none;}
+.search-box-wrapper.style4 .search-box > ul.search-tabs li.active > a { border: 2px solid #01b7f2; border-bottom: none;}
+.search-box-wrapper.style4 .search-tab-content { border: 2px solid #01b7f2; margin-top: -2px;}
+.parallax .text-wrapper {width: 560px; color: #fff; text-align: center; padding: 200px 0; margin-left: 22%; }
+@media (max-width: 992px) {
+.parallax .text-wrapper {
+width: 100%;
+margin: 0 auto !important;
+}
+}
+.parallax .text-wrapper h2{font-size: 40px;color: #fff;font-weight: 900;}
+.parallax .text-wrapper > div {line-height: 1em; font-size: 13px;}
+.parallax .text-wrapper .text-center{margin-top: 40px;}
+.parallax .text-wrapper .text-center a{background: none;border: 1px solid #fff;}
+.parallax .text-wrapper .text-center a:hover{background: #fff;color:#01b7f2}
+.box-title{font-size: 1.3333em;}

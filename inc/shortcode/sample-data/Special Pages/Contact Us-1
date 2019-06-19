@@ -1,0 +1,36 @@
+[block]
+[map center="48.85661, 2.35222" markers="48.85661, 2.35222" height="255px" /]
+[/block]
+[row]
+[column sm="4" md="3"]
+[block type="whitebox" class="contact-us-box"]
+<h4>Contact us</h4>
+<ul class="contact-address">
+    <li>
+        <i class="soap-icon-address circle"></i>
+        <h5 class="title">Address</h5>
+        <p>United States of America.</p>
+        <p>P.O Box,  353 Three Avenue.</p>
+    </li>
+    <li>
+        <i class="soap-icon-phone circle"></i>
+        <h5 class="title">Phone</h5>
+        <p>Local: 1-800-123-hello</p>
+        <p>Mobile: 1-800-123-hello</p>
+    </li>
+    <li>
+        <i class="soap-icon-message circle"></i>
+        <h5 class="title">Email</h5>
+        <p>info@Travelo.com</p>
+        <p>www.Travelo.com</p>
+    </li>
+</ul>
+[social_links twitter="#" googleplus="#" facebook="#" linkedin="#" vimeo="#" class="full-width"]
+[/block]
+[/column]
+[column sm="8" md="9"]
+[block type="whitebox"]
+[contact-form-7 id="676" title="Contact form 2"]
+[/block]
+[/column]
+[/row]

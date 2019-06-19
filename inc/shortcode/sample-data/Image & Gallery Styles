@@ -1,0 +1,221 @@
+[block]
+<h1>Gallery Style 01</h1>
+[slider id="gallery1" type="gallery1" data_animation="slide" data_sync="#carousel1"]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/19.png" alt="slide-image" />[/slide]
+[/slider]
+[slider id="carousel1" type="carousel" data_animation="slide" data_item_width="70" data_item_margin="10" data_sync="#gallery1"]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/112.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/25.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/35.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/41.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/51.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/61.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/71.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/81.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/91.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/101.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/113.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/122.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/131.png" alt="slide-image" />[/slide]
+[slide]<img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/141.png" alt="slide-image" />[/slide]
+[/slider]
+[/block]
+
+[block]
+<h1>Gallery Style 02</h1>
+[slider type="gallery2"]
+[slide]
+
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/18.png" alt="slide-image"]
+[content_box_detail]
+<h2 class="box-title"><span class="no-letter-spacing">Beauty of Venice</span><small class="skin-color">island, Beach</small></h2>
+<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+[/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/18.png" alt="slide-image"]
+[content_box_detail]
+<h2 class="box-title"><span class="no-letter-spacing">Beauty of Venice</span><small class="skin-color">island, Beach</small></h2>
+<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+[/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/18.png" alt="slide-image"]
+[content_box_detail]
+<h2 class="box-title"><span class="no-letter-spacing">Beauty of Venice</span><small class="skin-color">island, Beach</small></h2>
+<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+[/content_box_detail]
+[/content_box]
+[/slide]
+[/slider]
+[/block]
+
+[block]
+<h1>Gallery Style 03</h1>
+[slider type="gallery3"]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/3.png" alt="slide-image"></a>[/slide]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/2.png" alt="slide-image"></a>[/slide]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/11.png" alt="slide-image"></a>[/slide]
+[/slider]
+[/block]
+
+[block]
+<h1>Gallery Style 04</h1>
+[slider type="gallery4"]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/11.png" alt="slide-image"></a>[/slide]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/3.png" alt="slide-image"></a>[/slide]
+[slide]<a href="#"><img src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/2.png" alt="slide-image"></a>[/slide]
+[/slider]
+[/block]
+
+[block]
+<h1>Carousel Style 01</h1>
+[slider type="carousel1" data_item_margin="30" data_item_width="170" data_animation="slide"]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/24.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/34.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/4.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/5.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/6.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/7.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[slide]
+[imageframe src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/24.png" hover="hover-effect"]<p class="caption">La Degue Island</p>[/imageframe]
+[/slide]
+[/slider]
+[/block]
+
+[block]
+<h1>Carousel Style 02</h1>
+[slider type="carousel2" data_item_margin="30" data_item_width="170"]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/8.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Majorca<small>(54 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/9.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Tenerife<small>(524 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/10.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Costa Blanca<small>(24 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/111.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Dalaman<small>(12 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/121.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Algarve<small>(34 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/110.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Ibiza<small>(64 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[slide]
+[content_box]
+[imageframe link="#" title="" class="yellow" hover="hover-effect" src="http://www.soaptheme.net/wordpress/travelo/wp-content/uploads/2014/11/24.png" alt="slide-image" width="170" height="161" /]
+[content_box_detail]<h4 class="box-title">Majorca<small>(54 reviews)</small></h4>[button link="#"]MORE[/button][/content_box_detail]
+[/content_box]
+[/slide]
+[/slider]
+[/block]
+
+<h1>Image Style 01</h1>
+[folded_corner_block]
+[images]
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/1.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/2.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/3.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/4.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/5.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/6.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/7.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/8.png" link="#" width="124" height="80" position="middle"]</li>
+<li>[imageframe src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style01/9.png" link="#" width="124" height="80" position="middle"]</li>
+[/images]
+<h1 class="title">We’re truely dedicated to make your travel experience as much simple and fun as possible!</h1>
+<p>Bringing you a modern, comfortable, and connected travel experience is one of our highest priorities and that’s
+why we continuously try to improve your experience when you book anything with us.
+<br /><br />
+We really appreciate and welcome any of suggstions you might have for us, so feel free drop us line anytime.</p>
+[/folded_corner_block]
+
+<h1>Image Style 02</h1>
+[block type="whitebox"]
+[row]
+[column md="6" lg="7"]
+<h2 class="title">Honeymoon Suggestions</h2>
+<p>Duis condimentum ante hendrerit, sagittis sapien vitae, elementum libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec massa urna, interdum sed nunc eu, pretium fermentum velit. Donec sodales.</p>
+[/column]
+[column md="6" lg="5"]
+[images style="style2"]
+<li style="z-index: 5; left: 50px; top; 10px;">
+<a href="#" class="middle-block" style="width: 80px; height: 80px;">
+<img class="middle-item" src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style02/1.png" alt="slide-image" width="133" height="88" />
+</a>
+</li>
+<li style="z-index: 4; left: 180px; top: 100px;">
+<a href="#" class="middle-block" style="width: 100px; height: 100px;">
+<img class="middle-item" src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style02/2.png" alt="slide-image" width="150" height="100" />
+</a>
+</li>
+<li style="z-index: 3; left: 250px; top: 20px;">
+<a href="#" class="middle-block" style="width: 150px; height: 150px;">
+<img class="middle-item" src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style02/3.png" alt="slide-image" width="220" height="196" />
+</a>
+</li>
+<li style="z-index: 2; left: 100px; top: 0;">
+<a href="#" class="middle-block" style="width: 160px; height: 160px;">
+<img class="middle-item" src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style02/4.png" alt="slide-image" width="312" height="208" />
+</a>
+</li>
+<li style="z-index: 1; left: 0; top: 30px;">
+<a href="#" class="middle-block" style="width: 156px; height: 156px;">
+<img class="middle-item" src="http://www.soaptheme.net/html/travelo/images/shortcodes/image/style02/5.png" alt="slide-image" width="235" height="156" />
+</a>
+</li>
+[/images]
+[/column]
+[/row]
+[/block]
