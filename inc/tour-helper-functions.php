@@ -580,7 +580,6 @@ if ( ! function_exists( 'trav_tour_get_special_tours' ) ) {
                 WHERE term.object_id = post.ID
                 ORDER BY ".$args['orderby']." ".$args['order'].
                 " LIMIT ".$args['posts_per_page'];
-                //echo $sql;die;
             $latest_tours = $wpdb->get_results( $sql );
             $result = array();
             if ( ! empty( $latest_tours ) ) {

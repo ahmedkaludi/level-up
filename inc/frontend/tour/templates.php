@@ -240,8 +240,9 @@ if ( ! function_exists( 'trav_tour_get_tour_list_sigle' ) ) {
 							<i class="soap-icon-clock yellow-color"></i>
 							<span><?php echo esc_html( $duration ) ?></span>
 						</div>
-					<div class="action">
-						<a title="<?php _e( 'View Detail', 'trav' ); ?>" class="button btn-small full-width" href="<?php echo esc_url( $url ); ?>"><?php _e( 'SELECT', 'trav' ); ?></a>
+						<div class="action">
+							<a title="<?php _e( 'View Detail', 'trav' ); ?>" class="button btn-small full-width" href="<?php echo esc_url( $url ); ?>"><?php _e( 'SELECT', 'trav' ); ?></a>
+						</div>
 					</div>
 				</div>
 			</article>
