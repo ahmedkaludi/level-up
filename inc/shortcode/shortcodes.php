@@ -1104,8 +1104,10 @@ class TravShortcodes {
 			}
 			$def_after_item = '</div>';
 		} else {
-			$def_before_list = '<div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '"><ul class="slides tour-packages image-box listing-' . esc_attr( $style ) . '">';
-			$def_after_list = '</ul></div>';
+			$def_before_list = '<div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '">
+			<amp-carousel height="358" layout="fixed-height" type="carousel" class="carousel1 tour-packages image-box listing-' . esc_attr( $style ) . '">';
+				$def_after_list = '</amp-carousel>
+			</div>';
 			$def_before_item = '<li>';
 			$def_after_item = '</li>';
 		}

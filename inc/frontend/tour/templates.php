@@ -219,22 +219,19 @@ if ( ! function_exists( 'trav_tour_get_tour_list_sigle' ) ) {
 		$duration = trav_tour_get_tour_duration( $tour_id );
 
 		if ( $list_style == "style1" ) { ?>
-			<article class="box" onclick="window.location.href='<?php echo esc_url( $url ); ?>'">
-				<?php echo get_the_post_thumbnail( $tour_id, 'biggallery-thumb' ); ?>
-				<?php /*<figure <?php echo wp_kses_post( $animation ) ?>>
-					<a title="<?php _e( 'View Photo Gallery', 'trav' ); ?>" class="hover-effect popup-gallery" data-post_id="<?php echo esc_attr( $tour_id );?>" href="#"><?php echo get_the_post_thumbnail( $tour_id, 'biggallery-thumb' ); ?></a>
-					<?php if ( ! empty( $discount_rate ) ) { ?>
-						<span class="discount"><span class="discount-text"><?php echo esc_html( $discount_rate . '%' . ' ' . __( 'Discount', 'trav' ) ); ?></span></span>
-					<?php } ?>
-				</figure>*/?>
-				<div class="details">
+			<div class="tour-slider-part">
+				<div class="tur-img">
+					<?php echo get_the_post_thumbnail( $tour_id, 'biggallery-thumb' ); ?>
+					<h4 class="box-title"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( get_the_title( $tour_id ) );?></a></h4>
+				</div>
+				<div class="slide-cntn">
 					<?php if ( ! empty( $min_price ) && is_numeric( $min_price ) ) { ?>
 						<span class="price"><?php echo esc_html( trav_get_price_field( $min_price ) ); ?></span>
 					<?php } ?>
-					<h4 class="box-title"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( get_the_title( $tour_id ) );?></a></h4>
-					<hr>
+					
+					
 					<div class="description"><?php echo wp_kses_post( $brief ); ?></div>
-					<hr>
+					
 					<div class="text-center">
 						<div class="time">
 							<i class="soap-icon-clock yellow-color"></i>
@@ -245,7 +242,7 @@ if ( ! function_exists( 'trav_tour_get_tour_list_sigle' ) ) {
 						</div>
 					</div>
 				</div>
-			</article>
+			</div>
 		<?php } elseif ( $list_style == "style2" ) { ?>
 			<article class="box">
 				<?php if ( ! empty( $discount_rate ) ) { ?>

@@ -491,3 +491,11 @@ add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
 function codeless_remove_type_attr($tag, $handle) {
     return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
 }
+
+
+add_filter("ampforwp_template_mode_the_content", "levelup_add_layoutreponsive_content");
+
+function levelup_add_layoutreponsive_content($new_content){
+    $new_content = str_replace("<amp-img", "<amp-img layout='responsive'", $new_content);
+    return $new_content;
+}
