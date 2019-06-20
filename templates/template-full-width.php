@@ -14,7 +14,7 @@ if ( have_posts() ) :
 		} ?>
 
 		<section id="content">
-			<div id="main" class="entry-content">
+			<div id="main" class="entry-content full-width-temp">
 				<?php if ( has_post_thumbnail() ) { ?>
 					<?php if(!is_front_page()){?>
 						<figure class="image-container block">

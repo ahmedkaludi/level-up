@@ -945,11 +945,12 @@ class TravShortcodes {
 					$def_after_item = "</div>";
 				}
 			} else {
-				$def_before_list = '<div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '"><ul class="slides hotel image-box listing-' . esc_attr( $style ) . '">';
-				$def_after_list = '</ul></div>';
+				$def_before_list = '<div class="block image-carousel style2 flexslider custom-slider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '"><amp-carousel height="340" layout="fixed-height" type="carousel" class="carousel1 tour-packages slides hotel image-box listing-' . esc_attr( $style ) . '">';
+				$def_after_list = '</amp-carousel></div>';
 				$def_before_item = '<li>';
 				$def_after_item = '</li>';
-			}
+			} 
+			
 		}
 		if ( empty( $before_list ) ) $before_list = $def_before_list;
 		if ( empty( $after_list ) ) $after_list = $def_after_list;
@@ -1104,7 +1105,7 @@ class TravShortcodes {
 			}
 			$def_after_item = '</div>';
 		} else {
-			$def_before_list = '<div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '">
+			$def_before_list = '<div class="block image-carousel style2 flexslider custom-slider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '">
 			<amp-carousel height="340" layout="fixed-height" type="carousel" class="carousel1 tour-packages image-box listing-' . esc_attr( $style ) . '">';
 				$def_after_list = '</amp-carousel>
 			</div>';
@@ -1452,7 +1453,7 @@ class TravShortcodes {
 		$result .= do_shortcode( $content );
 		if ( $hover == 'opacity' ) $result .= '<span class="opacity-wrapper"></span>';
 		if ( $link != "no" ) $result .= '</a>';
-		//if ( ! empty( $label_content ) ) $result .= '<figcaption>' . $label_content . '</figcaption>';
+		if ( ! empty( $label_content ) ) $result .= '<figcaption>' . $label_content . '</figcaption>';
 		$result .= '</figure>';
 		return $result;
 	}

@@ -164,22 +164,24 @@ if ( ! function_exists( 'trav_acc_get_acc_list_sigle' ) ) {
 		$discount_rate = get_post_meta( $acc_id, 'trav_accommodation_discount_rate', true );
 
 		if ( $list_style == "style1" || $list_style == "style2" ) { ?>
-			<article class="box">
-				<figure <?php echo wp_kses_post( $animation ) ?>>
-					<a href="#" data-post_id="<?php echo esc_attr( $acc_id ) ?>" class="hover-effect popup-gallery"><?php echo get_the_post_thumbnail( $acc_id, 'biggallery-thumb' );  ?></a>
-					<?php if ( $show_badge && ! empty( $discount_rate ) ) { ?>
-						<span class="discount"><span class="discount-text"><?php echo esc_html( $discount_rate . '%' . ' ' . __( 'Discount', 'trav' ) ); ?></span></span>
-					<?php } ?>
-				</figure>
-				<div class="details">
+			<div class="tour-slider-part">
+				<div class="tur-img">
+					<figure <?php echo wp_kses_post( $animation ) ?>>
+						<a href="#" data-post_id="<?php echo esc_attr( $acc_id ) ?>" class="hover-effect popup-gallery"><?php echo get_the_post_thumbnail( $acc_id, 'biggallery-thumb' );  ?></a>
+						<?php if ( $show_badge && ! empty( $discount_rate ) ) { ?>
+							<span class="discount"><span class="discount-text"><?php echo esc_html( $discount_rate . '%' . ' ' . __( 'Discount', 'trav' ) ); ?></span></span>
+						<?php } ?>
+					</figure>
+					<h4 class="box-title">
+						<a href="<?php echo esc_url( get_permalink( $acc_id ) ); ?>"><?php echo esc_html( get_the_title( $acc_id ) ); ?></a>
+						<small><?php echo esc_html( trav_acc_get_city( $acc_id ) . ' ' . trav_acc_get_country( $acc_id ) ); ?></small>
+					</h4>
+				</div>
+				<div class="slide-cntn">
 					<?php if ( $list_style == "style1" ) {
 						if ( ! empty( $avg_price ) && is_numeric( $avg_price ) ) { ?>
 							<span class="price"><small><?php _e( 'avg/night', 'trav' ) ?></small><?php echo esc_html( trav_get_price_field( $avg_price ) ); ?></span>
 						<?php } ?>
-						<h4 class="box-title">
-							<a href="<?php echo esc_url( get_permalink( $acc_id ) ); ?>"><?php echo esc_html( get_the_title( $acc_id ) ); ?></a>
-							<small><?php echo esc_html( trav_acc_get_city( $acc_id ) . ' ' . trav_acc_get_country( $acc_id ) ); ?></small>
-						</h4>
 						<div class="feedback">
 							<div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="<?php echo esc_attr( $review . ' ' . __( 'stars', 'trav' ) ) ?>"><span style="width: <?php echo esc_attr( $review / 5 * 100 ) ?>%;" class="five-stars"></span></div>
 							<span class="review"><?php echo esc_html( trav_get_review_count( $acc_id ) . ' ' .  __('reviews', 'trav') ); ?></span>
@@ -204,7 +206,7 @@ if ( ! function_exists( 'trav_acc_get_acc_list_sigle' ) ) {
 						<?php }
 					} ?>
 				</div>
-			</article>
+			</div>
 
 		<?php } elseif ( $list_style == "style3" ) { ?>
 			<article class="box">

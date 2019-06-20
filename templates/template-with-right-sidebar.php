@@ -15,7 +15,7 @@ if ( have_posts() ) :
 
 		<section id="content">
 			<div class="container">
-				<div class="row">
+				<div class="row tour-temp templ-wrap">
 					<div id="main" class="col-sm-8 col-md-9 entry-content">
 						<?php if ( has_post_thumbnail() ) { ?>
 							<figure class="image-container block">
@@ -25,7 +25,7 @@ if ( have_posts() ) :
 						<?php the_content(); ?>
 						<?php wp_link_pages('before=<div class="page-links">&after=</div>'); ?>
 					</div>
-					<div class="sidebar col-sm-4 col-md-3">
+					<div class="sidebar tour-right">
 						<?php generated_dynamic_sidebar(); ?>
 					</div>
 				</div>

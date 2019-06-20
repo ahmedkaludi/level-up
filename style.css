@@ -167,13 +167,32 @@ dfn {
 	font-style: italic;
 }
 
-h1 { font-size: 2.8125em; }
+/*h1 { font-size: 2.8125em; }
 h2 { font-size: 2.25em; }
-h3 { font-size: 1.6875em; }
+h3 { font-size: 1.6875em; }*/
 h4 { font-size: 1.125em; }
 h5 { font-size: 0.88889em; }
 h6 { font-size: 0.71111em; }
 
+
+h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+}
+h2 {
+    font-size: 1.6667em;
+    line-height: 1.25em;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.2222em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #2d3e52;
+}
 mark {
 	background: #ff0;
 	color: #000;
@@ -473,15 +492,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #005be2;
+	color: #2d3e52;
 }
 
 a:visited {
-	color: #005be2;
+	color: #0ab596;
 }
 
 a:hover, a:focus, a:active {
-	color: #005be2;
+	color: #0ab596;
 }
 
 a:focus {
@@ -700,11 +719,6 @@ a:hover, a:active {
 .sticky {
 	display: block;
 }
-
-.hentry {
-	margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
 	display: none;
 }
@@ -861,7 +875,7 @@ object {
     margin: 0 auto;
 }
 body{
-	font-size:15px;
+	font-size:14px;
 	line-height:1.4;
 	color: #838383;
 }
@@ -1079,18 +1093,28 @@ body{
 
 
 /** Tour CSS **/
-.site-content .entry-content{margin:0;}
+
+.site-content .entry-content{
+	margin:0;
+	}
+.site-content .full-width-temp{
+	margin:0;
+	padding: 40px 0px;
+}
 .site-content{
 	width:100%;
 	display:inline-block;
 	background: #f5f5f5;
-	padding: 40px 0px;
+}
+.tour-detail-page, .cstm-pgs{
+	padding:40px 0px;
 }
 .tour-temp{
 	display: inline-grid;
 	grid-template-columns: 1fr 270px;
 	width:100%;
 	grid-gap: 0px 30px;
+	padding:40px 0px;
 }
 .tour-left{
 	background:#fff;
@@ -1103,10 +1127,13 @@ body{
 	font-size: 13px;
     line-height: 1.6;
 }
-.ui-tabs-nav {
+.ui-tabs-nav, .tab-container .tabs {
 	display: inline-flex;
 	flex-wrap: wrap;
 	width:100%;
+}
+.tab-container .tabs{
+	margin-bottom: 20px;
 }
 .wpb_tab.ui-tabs-panel{
 	padding:20px;
@@ -1118,7 +1145,7 @@ body{
     font-weight: 400;
     color: #2d3e52;
 }
-.ui-tabs-nav li{
+.ui-tabs-nav li, .tab-container .tabs li{
 	list-style-type: none;
     font-size: 12px;
     line-height: 1.2;
@@ -1126,7 +1153,7 @@ body{
     font-weight: 600;
     letter-spacing: 0.4px;
 }
-.ui-tabs-nav li a{
+.ui-tabs-nav li a, .tab-container .tabs li a{
 	background: #2ec298;
 	color:#fff;
 	padding:13px 20px;
@@ -1440,10 +1467,12 @@ amp-selector.tabpanels [role=tabpanel][selected] {
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom:25px;
+    text-align: center;
 }
 .action a:hover{
 	background:#98ce44;
 }
+.feedback{display: none;}
 .image-box .row{
     display: inline-grid;
     flex-wrap: wrap;
@@ -1516,9 +1545,20 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 .vc_custom_1548339130214{
 	background:#fff;
 }
-
-
-
+/** Inner page CSS **/
+.entry-header{
+	background: #2d3e52;
+	padding:15px 0px;
+}
+.entry-header h1.entry-title{
+	font-size: 20px;
+	line-height: 1.4;
+	color:#fff;
+	margin:0;
+}
+.cstm-pgs .custom-slider{
+	margin-bottom: 8%;
+}	
 
 
 
