@@ -696,14 +696,14 @@ class TravShortcodes {
 		if ( $style != "style3" ) {
 			if ( ! empty( $title ) ) { $result .= '<h2>' . esc_html( $title ) . '</h2>'; }
 			$result .= '<div class="testimonial ' . esc_attr( $style . $class ) . '">';
-			$result .= '<ul class="slides ">';
+			$result .= '<ul class="slides">';
 			$result .= do_shortcode( $content );
 			$result .= '</ul></div>';
 		} else {
 			//$result .= '<div class="global-map-area section" style="margin-top: 100px;"><div class="container">';
 			$result .= empty($title)?'':"<h1 class='text-center white-color'>" . esc_html( $title ) . "</h1>";
 			$result .= '<div class="testimonial ' . esc_attr( $style . $class ) . '">';
-			$result .= '<ul class="slides ">';
+			$result .= '<ul class="slides">';
 			$result .= do_shortcode( $content );
 			$result .= '</ul></div>';
 			//$result .= '</div></div>';
@@ -1105,7 +1105,7 @@ class TravShortcodes {
 			$def_after_item = '</div>';
 		} else {
 			$def_before_list = '<div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="' . esc_attr( $item_width ) . '" data-item-margin="' . esc_attr( $item_margin ) . '">
-			<amp-carousel height="358" layout="fixed-height" type="carousel" class="carousel1 tour-packages image-box listing-' . esc_attr( $style ) . '">';
+			<amp-carousel height="340" layout="fixed-height" type="carousel" class="carousel1 tour-packages image-box listing-' . esc_attr( $style ) . '">';
 				$def_after_list = '</amp-carousel>
 			</div>';
 			$def_before_item = '<li>';
@@ -1367,9 +1367,9 @@ class TravShortcodes {
 		}
 
 		$result .= '<div' . $id . ' class="' . esc_attr( $class ) . '"' . $slider_atts . '>';
-		$result .= '<ul class="' . esc_attr( $ul_class ) . '">';
+		$result .= '<amp-carousel  layout="fixed-height" height="180" class="logo-slides ' . esc_attr( $ul_class ) . '">';
 		$result .= do_shortcode( $content );
-		$result .= '</ul>';
+		$result .= '</amp-carousel>';
 		$result .= '</div>';
 
 		return $result;
@@ -1383,9 +1383,9 @@ class TravShortcodes {
 		extract( shortcode_atts( $variables, $atts ) );
 		$class = empty( $class )?'':( ' class="' . esc_attr( $class ) . '"' );
 		$result = '';
-		$result .= '<li' . $class . '>';
+		//$result .= '<li' . $class . '>';
 		$result .= do_shortcode( $content );
-		$result .= '</li>';
+		//$result .= '</li>';
 		return $result;
 	}
 
@@ -1452,7 +1452,7 @@ class TravShortcodes {
 		$result .= do_shortcode( $content );
 		if ( $hover == 'opacity' ) $result .= '<span class="opacity-wrapper"></span>';
 		if ( $link != "no" ) $result .= '</a>';
-		if ( ! empty( $label_content ) ) $result .= '<figcaption>' . $label_content . '</figcaption>';
+		//if ( ! empty( $label_content ) ) $result .= '<figcaption>' . $label_content . '</figcaption>';
 		$result .= '</figure>';
 		return $result;
 	}

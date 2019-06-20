@@ -497,5 +497,7 @@ add_filter("ampforwp_template_mode_the_content", "levelup_add_layoutreponsive_co
 
 function levelup_add_layoutreponsive_content($new_content){
     $new_content = str_replace("<amp-img", "<amp-img layout='responsive'", $new_content);
+    //$new_content = preg_replace('/sizes="(.*?)"/', "", $new_content);
+    $new_content = preg_replace('/sizes="\(min-width: 1000px\) 1000px, 100vw"/', "", $new_content);
     return $new_content;
 }

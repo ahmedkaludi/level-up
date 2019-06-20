@@ -1360,19 +1360,25 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 .text-center {
     text-align: center;
 }
-.vc_single_image-wrapper amp-img.vc_single_image-img{
-	width:100%;
-	max-width: 100%;
+.vc_box_border_grey, .vc_figure{	max-width: 100%;
+
+	width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.vc_single_image-wrapper amp-img{
+	width:100vw;
+	max-width: 100vw;
 	margin-bottom:30px;
 }
-.entry-content div h2{
+.vc_custom_1541787367096 .col-sm-12 div h2{
 	font-size: 20px;
     line-height: 1.5;
     font-weight: 500;
     color: #333;
     margin-bottom: 10px;
 }
-.entry-content div h3{
+.vc_custom_1541787367096 .col-sm-12 div h3{
 	font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
@@ -1380,7 +1386,7 @@ amp-selector.tabpanels [role=tabpanel][selected] {
     margin-bottom: 50px;
 }
 .vc_custom_1541787380291 {
-    padding-top: 50px;
+    padding: 50px 0px 8% 0px;
     background-color: #e2e2e2;
 }
 .vc_custom_1541787380291 h1{
@@ -1396,15 +1402,17 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 340px;
+    background: #fff;
 }
-.amp-carousel-slide {
+.tour-packages .amp-carousel-slide {
     width: 270px;
     margin-right:20px;
 }
 .slide-cntn{
 	white-space: initial;
 	background:#fff;
-	padding:15px;
+	padding:15px 18px;
 }
 .tour-slider-part .box-title{
 	white-space: initial;
@@ -1414,14 +1422,100 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 .tour-slider-part .description {
     display: none;
 }
-
-
-
-
-
-
-
-
+.box-title a{
+	color:#2d3e52;
+	font-size: 16px;
+    font-weight: 500;
+}
+.box-title a:hover{
+	color:#0ab596;
+}
+.action a{
+	display: inline-block;
+    background: #ccc;
+    padding: 5px 0px;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom:25px;
+}
+.action a:hover{
+	background:#98ce44;
+}
+.image-box .row{
+    display: inline-grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px 30px;
+    width: 100%;
+}
+.section .image-box{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.image-box .box .middle-block{
+	position: relative;
+	height:72px;
+	overflow: hidden;
+}
+.image-box .box .middle-block .opacity-wrapper{
+	display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fdb714;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
+.image-box .box .middle-block:hover .opacity-wrapper{
+	opacity: 0;
+}
+.image-box .box .middle-block:hover amp-img{
+     transform: scale(1.07,1.07);
+}
+.image-box .box .middle-block amp-img{
+	position: absolute;
+    top: 50%;
+    margin-top: -95.5px;
+    left: 50%;
+    margin-left: -135px;
+    transition: transform .35s;
+}
+.image-box .box .details{
+	font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+}
+.image-box .box .details h3{
+	font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+.logo-slides .amp-carousel-slide {
+    height:auto;
+    margin-right:20px;
+}
+.logo-slides .amp-carousel-slide amp-img{
+	max-width:100%;
+	height:auto;
+	min-height: auto;
+}
+.logo-slides{
+    padding: 60px 0px;
+}
+.logo-slides .amp-carousel-slide figure, .logo-slides .amp-carousel-slide figure a{
+	width:100%;
+	height:auto;
+	display: inline-block;
+}
+.vc_custom_1548339130214{
+	background:#fff;
+}
 
 
 
