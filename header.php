@@ -48,19 +48,12 @@
 				<div class="container">
 					<div class="head">
 						<div class="logo">
-			              <a href="<?php echo esc_url( home_url() ); ?>">
-			                <?php 
-			                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-			                if( $custom_logo_id ) {
-			                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-			                }
-			                if ( has_custom_logo() ) {       	
-			                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-			                } else {
-			                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-			                } ?>
-			              </a>
+			              <?php 
+			               	if ( has_custom_logo() ) {       	
+			                     echo get_custom_logo();
+			                 } else {
+			                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+			                 } ?>
 			            </div><!-- /.logo -->
 				    </div><!-- /.head -->
 				</div><!-- /.container -->
@@ -79,19 +72,12 @@
 			<div class="container mbl">
 				<div class="mbl-menu">
 					<div class="m-logo">
-						<a href="<?php echo esc_url( home_url() ); ?>">
-			                <?php 
-			                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-			                if( $custom_logo_id ) {
-			                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-			                }
-			                if ( has_custom_logo() ) {       	
-			                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-			                } else {
-			                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-			                } ?>
-			            </a>
+						<?php 
+		               	if ( has_custom_logo() ) {       	
+		                     echo get_custom_logo();
+		                 } else {
+		                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+		                } ?>
 					</div>
 					<div class="h-nav">
 	                    <label for="offcanvas-menu" class="t-btn"></label>
@@ -104,19 +90,12 @@
 		<div class="container">
 			<div class="ios-menu">
 				<div class="ios-logo">
-					<a href="<?php echo esc_url( home_url() ); ?>">
-		                <?php 
-		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-		                if( $custom_logo_id ) {
-		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-		                }
-		                if ( has_custom_logo() ) {       	
-		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-		                } else {
-		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-		                } ?>
-		            </a>
+					<?php 
+	               	if ( has_custom_logo() ) {       	
+	                     echo get_custom_logo();
+	                 } else {
+	                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+	                 } ?>
 				</div>
 				<div class="ios-nav">
 					<?php

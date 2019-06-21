@@ -32,7 +32,7 @@ if ( have_posts() ) {
         trav_update_user_recent_activity( $tour_id ); ?>
 
         <section id="content">
-            <div class="container tour-detail-page">
+            <div class="container">
                 <div class="row tour-temp">
                     <div id="main" class="tour-left">
                         <div <?php post_class(); ?>>

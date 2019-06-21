@@ -36,19 +36,12 @@
 		<div class="container">
 			<div class="footer-2">
 				<div class="f-logo">
-					<a href="<?php echo esc_url( home_url() ); ?>">
-		                <?php 
-		                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-		                if( $custom_logo_id ) {
-		                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-		                }
-		                if ( has_custom_logo() ) {       	
-		                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-		                } else {
-		                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-		                } ?>
-	              	</a>
+	                <?php 
+	               	if ( has_custom_logo() ) {       	
+	                     echo get_custom_logo();
+	                 } else {
+	                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+	                 } ?>
 				</div>
 				<div class="cpr">
 					<span>© "ITS Viagens e Turismo Ltda. - Copyright © 1998-Present - All Rights Reserved." Custom Brazil Travel Packages, Tours & Vacations</span>
