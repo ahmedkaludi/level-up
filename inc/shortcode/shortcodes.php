@@ -1095,12 +1095,12 @@ class TravShortcodes {
 				$def_before_item = "<div class='col-sm-6'>";
 				$def_after_item = "</div>";
 			} elseif ( 3 == $count_per_row ) {
-				$def_before_list = '<div class="tour-packages row add-clearfix image-box listing-' . esc_attr( $style ) . '">';
+				$def_before_list = '<div class="tour-packages tour-pcgs-blocks row add-clearfix image-box listing-' . esc_attr( $style ) . '">';
 				$def_before_item = '<div class="col-sm-6 col-md-4">';
 				$def_after_item = "</div>";
 			} else {
 				$def_before_list = '<div class="tour-packages row add-clearfix image-box listing-' . esc_attr( $style ) . '">';
-				$def_before_item = "<div class='col-sm-6 col-sms-6 col-md-3'>";
+				$def_before_item = "<div class='tour-pcgs-blocks'>";
 				$def_after_item = "</div>";
 			}
 			$def_after_item = '</div>';

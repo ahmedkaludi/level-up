@@ -898,7 +898,7 @@ body{
 	list-style-type: none;
 	position: relative;
 }
-.d-menu > li a{
+.d-menu li a{
 	padding:20px 10px;
 	display: inline-block;
 	color:#838383;
@@ -1546,11 +1546,11 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 	background:#fff;
 }
 /** Inner page CSS **/
-.entry-header{
+.page-title-container{
 	background: #2d3e52;
 	padding:15px 0px;
 }
-.entry-header h1.entry-title{
+.page-title-container h2.entry-title{
 	font-size: 20px;
 	line-height: 1.4;
 	color:#fff;
@@ -1559,13 +1559,60 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 .cstm-pgs .custom-slider{
 	margin-bottom: 8%;
 }	
-
-
-
-
-
-
-
+.tour-pcgs-blocks{ 
+	display:inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 30px;
+	width:100%;
+}
+.tour-packages.listing-style1 .tur-img amp-img{
+	max-width: 270px;
+}
+.tlt-brd{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.breadcrumbs li{
+	list-style-type: none;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.breadcrumbs li:after{
+	content:"/";
+	display: inline-block;
+	color:#5a7ca3;
+	padding:0px 5px;
+}
+.breadcrumbs li.active:after{
+	display: none;
+}
+.breadcrumbs li a{
+	color:#fff;
+}
+.breadcrumbs li.active{
+	color:#fdb714;
+}
+.templ-wrap{
+	width: 100%;
+    display: inline-flex;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+}
+.templ-wrap .temp-sdbr{
+	width: 70%;
+    margin-right: 30px;
+    flex: 1 0 70%;
+}
+.templ-wrap .tour-right{
+	width:270px;
+}
 
 
 
@@ -1735,6 +1782,14 @@ amp-selector.tabpanels [role=tabpanel][selected] {
     .amenities {
     	grid-template-columns: 1fr 1fr;
     }
+	.templ-wrap .temp-sdbr{
+		width: 100%;
+	    margin-right: 0px;
+	    flex: 1 0 100%;
+	}
+	.templ-wrap .tour-right{
+		width:100%;
+	}
 
 }
 

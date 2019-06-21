@@ -15,8 +15,8 @@ if ( have_posts() ) :
 
 		<section id="content">
 			<div class="container">
-				<div class="row tour-temp templ-wrap">
-					<div id="main" class="col-sm-8 col-md-9 entry-content">
+				<div class="row templ-wrap">
+					<div id="main" class="col-sm-8 col-md-9 entry-content temp-sdbr">
 						<?php if ( has_post_thumbnail() ) { ?>
 							<figure class="image-container block">
 								<?php the_post_thumbnail(); ?>

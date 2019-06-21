@@ -221,7 +221,7 @@ if ( ! function_exists( 'trav_tour_get_tour_list_sigle' ) ) {
 		if ( $list_style == "style1" ) { ?>
 			<div class="tour-slider-part">
 				<div class="tur-img">
-					<?php echo get_the_post_thumbnail( $tour_id, 'biggallery-thumb' ); ?>
+					<?php $images = get_the_post_thumbnail( $tour_id, 'biggallery-thumb' ); ?>
 					<h4 class="box-title"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( get_the_title( $tour_id ) );?></a></h4>
 				</div>
 				<div class="slide-cntn">

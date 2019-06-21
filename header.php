@@ -109,4 +109,21 @@
 		</div>
 	</div>
 	<?php } ?>
+	<?php 
+$inner_disable = '';
+
+if ( is_page() ) {
+    $page_object = get_queried_object();
+    $post_id     = get_queried_object_id();
+    $inner_disable = get_post_meta( $post_id, 'trav_page_inner', true );
+}
+if ( is_home() || is_front_page() || is_page_template('templates/template-home.php') ) {
+    //
+} else {
+    if ( is_page() && $inner_disable == 'disable' ) {
+        //
+    } else {
+        trav_get_template( 'inner-1.php', '/templates/inners' );
+    }
+} ?>
 	<div id="content" class="site-content">
