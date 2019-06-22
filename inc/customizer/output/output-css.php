@@ -19,28 +19,6 @@ function levelup_customizer_style() {
 	$header_text_color = get_header_textcolor();
 	
 	?>
-	<style type="text/css">
-	<?php
-	?>
-	.levelup-primary-menu .customize-partial-edit-shortcut button {
-		margin-left: 50px;
-	}
-	.site-title a,
-	.site-description {
-		color: #<?php echo ! empty( $header_text_color ) ? esc_attr( $header_text_color ) : ''; ?>;
-	}
-
-	body, button, input, select, optgroup, textarea {
-		color: <?php echo $defaults['body_font_color']; ?>;
-	}
-
-	body {
-		font-family: "<?php echo $defaults['levelup_body_font_family']; ?>", sans-serif;
-		font-size: <?php echo $defaults['body_font_size']; ?>px;
-	}
-
-
-	</style>
 	<?php
 }
 endif;

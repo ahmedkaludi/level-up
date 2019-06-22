@@ -16,63 +16,66 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+	<?php wp_head(); 
+	ampforwp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<?php do_action( 'levelup_head');
-
+	<?php
 	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'level-up' ); ?></a>
-
 	<header id="masthead" class="site-header">
-		<div class="container">
-			<div class="head">
-				<div class="hamburger-menu drawer drawer--left">
-	                <button type="button" class="drawer-toggle drawer-hamburger">
-	                  <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'level-up' ); ?></span>
-	                  <span class="drawer-hamburger-icon"></span>
-	                </button>
-	                <nav class="drawer-nav" role="navigation">
-	                  <div class="drawer-menu">
-	                    <?php
-	                    if ( has_nav_menu( 'header-menu' ) ) {
-	                      wp_nav_menu(array(
-	                    	'theme_location' => 'header-menu',
-							'menu_class'        => 'header-menu',
-	                    ));
-	                    } ?>
-	                  </div>
-	                  <span class="icon-close drawer-toggle"></span>
-	                </nav>
-                </div><!-- /.mobile-menu -->
-				<div class="logo">
-	              <a href="<?php echo esc_url( home_url() ); ?>">
-	                <?php 
-	                $custom_logo_id = esc_attr( get_theme_mod( 'custom_logo' ) );
-
-	                if( $custom_logo_id ) {
-	                	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-	                }
-	                if ( has_custom_logo() ) {       	
-	                    echo '<img src="'. esc_url( $logo[0] ) .'">';
-	                } else {
-	                    echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span>';
-	                } ?>
-	              </a>
-	            </div><!-- /.logo -->
-                <div class="h-srch h-ic">
-                    <a class="lb icon-search2" href="#search"></a>
-                    <div class="lb-btn"> 
-                        <div class="lb-t" id="search">
-                            <?php get_search_form(); ?>
-                        </div> 
-                    </div>
-                </div><!-- /.search -->
-		    </div><!-- /.head -->
-		</div><!-- /.container -->
+		<input type="checkbox" id="offcanvas-menu" class="tg" />
+		<div class="hamb-mnu">
+			<aside class="m-ctr">
+	            <div class="m-scrl">
+	                <div class="menu-heading clearfix">
+	                    <label for="offcanvas-menu" class="c-btn"></label>
+	                </div><!--end menu-heading-->
+	                <nav class="m-menu">
+	                	<?php
+		                    if ( has_nav_menu( 'header-menu' ) ) {
+		                      wp_nav_menu(array(
+		                    	'theme_location' => 'header-menu',
+								'menu_class'        => 'mob-menu',
+								'walker' => new Ampforwp_Walker_Nav_Menu()
+		                    ));
+		                    } ?>
+						<?php
+							// wp_nav_menu( array(
+							// 	'theme_location' => 'primary-menu',
+							// 	'menu_class'        => 'mob-menu',
+							// 	'walker' => new Ampforwp_Walker_Nav_Menu()
+							// ) );
+						?>
+					</nav><!--end slide-menu -->
+	            </div><!-- /m-scrl -->
+			</aside>
+			<label for="offcanvas-menu" class="fsc"></label>
+			<div class="container">
+				<div class="head">
+					<div class="h-nav">
+	                    <label for="offcanvas-menu" class="t-btn"></label>
+	                </div><!--end menu-->
+					<div class="logo">
+		              <?php 
+		               	if ( has_custom_logo() ) {       	
+		                     echo get_custom_logo();
+		                 } else {
+		                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+		                 } ?>
+		            </div><!-- /.logo -->
+	                <div class="h-srch h-ic">
+	                    <a class="lb icon-search2" href="#search"></a>
+	                    <div class="lb-btn"> 
+	                        <div class="lb-t" id="search">
+	                            <?php get_search_form(); ?>
+	                        </div> 
+	                    </div>
+	                </div><!-- /.search -->
+			    </div><!-- /.head -->
+			</div><!-- /.container -->
+		</div>
 	</header><!-- #masthead -->
 	<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
 	<div class="p-m-fl">

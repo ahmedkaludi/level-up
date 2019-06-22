@@ -1,4 +1,5 @@
 <?php
+add_theme_support( "amp-template-mode" );
 /**
  * levelup functions and definitions
  *
@@ -236,13 +237,16 @@ function levelup_core_plugin_notice(){
 	if(!current_user_can('install_plugins')){
 		return false;
 	}
-    $plugin_base_name = 'levelup/levelup.php';
-    $plugin_slug      = 'levelup';
-    $plugin_filename  = 'levelup.php';
-    $plugin_title     = __('Levelup', 'level-up');
-
+    $plugin_base_name = 'accelerated-mobile-pages/accelerated-moblie-pages.php';
+    $plugin_slug      = 'accelerated-mobile-pages';
+    $plugin_filename  = 'accelerated-moblie-pages.php';
+    $plugin_title     = __('Accelerated Mobile Pages', 'level-up');
+    $classArray = array( 'button', 'button-primary' );
+    if(!file_exists( WP_PLUGIN_DIR."/".$plugin_base_name )){
+        $classArray[] = 'level-up-recommended-plugin';
+    }
     $links_attrs = array(
-        'class'                 => array( 'button', 'button-primary','level-up-recommended-plugin' ),
+        'class'                 => $classArray,
         'data-plugin-slug'      => $plugin_slug,
 
         'data-activating-label' => __('Activating ..', 'level-up'),
@@ -252,7 +256,7 @@ function levelup_core_plugin_notice(){
         'data-install-url'      => levelup_get_plugin_install_link( $plugin_slug ),
         'data-install-label'    => sprintf( __('Install %s', 'level-up' ), $plugin_title ),
 
-        'data-redirect-url'     => self_admin_url( 'admin.php?page=levelup' )
+        'data-redirect-url'     => self_admin_url( 'admin.php?page=amp_options' )
     );
 
     $installed_plugins  = get_plugins();
@@ -274,7 +278,7 @@ function levelup_core_plugin_notice(){
     if($show){
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
-        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'LevelUP' ); ?></h3>
+        <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'Level UP' ); ?></h3>
         <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
         <p class="submit">
             <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
@@ -363,3 +367,13 @@ function levelup_body_font_amp_design_styling(){
 /*****
 * END Levelup theme AMP
 *****/
+
+
+/* Disable WordPress Admin Bar for all users but admins. */
+show_admin_bar(false);
+add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+
+function codeless_remove_type_attr($tag, $handle) {
+    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+}
