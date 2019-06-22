@@ -1309,6 +1309,10 @@ body a, .rp-list{
     line-height: 23px;
     color: #333;
 }
+.logo amp-img{
+	width:190px;
+	margin: 0 auto;
+}
 .logo span{
     font-size: 12px;
 }
