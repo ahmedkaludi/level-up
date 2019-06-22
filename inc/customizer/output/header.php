@@ -43,6 +43,4 @@ function levelup_customize_partial_blogname() {
 function levelup_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
-
-
 ?>

@@ -1,5 +1,4 @@
 <?php
-add_theme_support( "amp-template-mode" );
 /**
  * levelup functions and definitions
  *
@@ -17,7 +16,13 @@ if ( ! function_exists( 'levelup_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function levelup_setup() {
-		/*
+        /*
+		 * Enable AMP Theme Support
+		 */
+        
+        add_theme_support( 'amp-template-mode' );
+
+        /*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on levelup, use a find and replace
@@ -95,7 +100,7 @@ add_action( 'after_setup_theme', 'levelup_setup' );
  * @global int $content_width
  */
 function levelup_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'levelup_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'levelup_content_width', 960 );
 }
 add_action( 'after_setup_theme', 'levelup_content_width', 0 );
 
@@ -123,17 +128,6 @@ add_action( 'widgets_init', 'levelup_widgets_init' );
  */
 function levelup_scripts() {
 	wp_enqueue_style( 'levelup-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'levelup-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-     
-    wp_enqueue_script( 'levelup-drawer-min', get_template_directory_uri() . '/js/drawer.min.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'levelup-iscroll', get_template_directory_uri() . '/js/iscroll.js', array( 'jquery' ), '', false );
-    wp_enqueue_script( 'levelup-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', false );
-	wp_enqueue_script( 'levelup-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'levelup_scripts' );
 
@@ -187,7 +181,7 @@ function levelup_custom_wp_admin_style() {
 add_action( 'admin_enqueue_scripts', 'levelup_custom_wp_admin_style' );
 
 /*****
-* Levelup theme upload
+* Levelup required plugin
 * Start
 *****/
 function levelup_make_html_attributes( $attrs = array() ){
@@ -279,7 +273,7 @@ function levelup_core_plugin_notice(){
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
         <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'Level UP' ); ?></h3>
-        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
+        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
         <p class="submit">
             <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
             <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
@@ -348,26 +342,8 @@ function levelup_core_plugin_notice(){
 }
 add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 /*****
-* END Levelup theme upload
+* END Levelup required plugin
 *****/
-
-
-/*****
-* Start Levelup theme AMP
-*****/
-
-add_action( 'amp_post_template_css', 'levelup_body_font_amp_design_styling' );
-function levelup_body_font_amp_design_styling(){
-	$defaults = levelup_generate_defaults();
-	echo 'body {
-		font-family: "'. $defaults['levelup_body_font_family'] .'", sans-serif;
-	
-	}';
-}
-/*****
-* END Levelup theme AMP
-*****/
-
 
 /* Disable WordPress Admin Bar for all users but admins. */
 show_admin_bar(false);
