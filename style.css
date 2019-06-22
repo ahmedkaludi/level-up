@@ -1702,7 +1702,8 @@ body a, .rp-list{
 .post-img amp-img{
 	width:100%;
 	height: auto;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .post-img .featured_caption {
     width: 1100px;
@@ -1725,9 +1726,10 @@ body a, .rp-list{
     margin-right: 8px;
 }
 .entry-content{
-    display: flex;
     width: 100%;
-    margin-top:40px;
+}
+.single-post .entry-content{
+    display: flex;
 }
 .right-part{
     width: 72%;
@@ -2135,7 +2137,6 @@ blockquote p:last-child {
 	/** Single page **/
 	.entry-content {
  	   display: inline-block;
- 	   margin-top: 20px;
 	}
 	.right-part {
 	    width: 100%;
