@@ -978,13 +978,27 @@ object {
 }
 /** Hamberger Menu CSS **/
 .tg, .fsc{display: none;}
+.fsc{
+		width: 100%;
+		position: absolute;
+		cursor: pointer;
+		top:0;
+		left:0;
+		z-index:9;
+	}
+	.tg:checked + .hamb-mnu > .fsc{
+		display: block;
+		background: rgba(0,0,0,.9);
+		height:100%;
+		transition: all 0.5s ease-in-out 0s;
+	}
 .tg:checked + .hamb-mnu > .m-ctr {
 	margin-left: 0;	
 }
 .tg:checked + .hamb-mnu > .m-ctr .c-btn {
-	position: absolute;
-	right: 0px;
-	top:0px;
+	position: fixed;
+	right: 5px;
+	top:5px;
 }
 .m-ctr{
 	margin-left: -100%;
@@ -1010,7 +1024,7 @@ object {
 	padding: 20px 15px;
 }
 .m-ctr{
-	width:100%;
+	width:90%;
 	height: 100%;
 	position: absolute;
 	z-index:99;
