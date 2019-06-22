@@ -927,7 +927,7 @@ object {
   content: "\e908";
 }
 .icon-search2:before {
-  content: "\e8b6";
+  content: "\e901";
 }
 .icon-whatsapp:before {
   content: "\e909";
@@ -1005,14 +1005,14 @@ object {
 }
 .t-btn, .c-btn{cursor: pointer;}
 .t-btn:after{
-	content: "\e5d2";
+	content: "\e900";
 	font-family: 'icomoon';
 	font-size:26px;
 	display:inline-block;
 	color: #333;
 }
 .c-btn:after{
-	content: "\e5cd";
+	content: "\e907";
 	font-family: 'icomoon';
 	font-size:18px;
 	color: #fff;
@@ -1294,6 +1294,7 @@ body a, .rp-list{
     margin: 15px 15px 25px 15px;
     flex-basis: calc(33.33% - 32px);
 }
+.fsp-img a, .fsp-img amp-img{max-width:330px}
 .fsp-cnt{
     margin-top:10px;
 }
@@ -1992,6 +1993,10 @@ blockquote p:last-child {
 	    width: 54%;
 	    float: left;
 	}
+    .fsp-img a, .fsp-img amp-img{
+        max-width: 100%;
+        margin: 0
+    }
 	/** Single page **/
 	.entry-content {
  	   display: inline-block;
@@ -2027,6 +2032,9 @@ blockquote p:last-child {
     }
 }
 @media (max-width: 480px){
+    .fsp-img a, .fsp-img amp-img{ 
+        width: 100%;padding: 0;margin: 0 auto
+    }
 	.home .site-main .container{padding:0;}
 	.fsp {
 	    border: none;

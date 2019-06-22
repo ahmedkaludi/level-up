@@ -369,23 +369,11 @@ function levelup_body_font_amp_design_styling(){
 *****/
 
 
-
-
-
 /* Disable WordPress Admin Bar for all users but admins. */
-  show_admin_bar(false);
+show_admin_bar(false);
 add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
 add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
 
 function codeless_remove_type_attr($tag, $handle) {
     return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
-}
-
-/*added image responsive on all pages*/
-add_filter("ampforwp_the_content_last_filter", "levelup_add_layoutreponsive_content");
-function levelup_add_layoutreponsive_content($new_content){
-    $new_content = str_replace("<amp-img", "<amp-img layout='responsive'", $new_content);
-    $new_content = preg_replace('/sizes="(.*?)"/', "", $new_content);
-    return $new_content;
-
 }
