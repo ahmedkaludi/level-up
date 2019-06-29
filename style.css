@@ -1060,16 +1060,15 @@ object {
 	.m-menu .toggle {float :right;}
 	.m-menu input{display:none}
 	.m-menu .mob-menu [id^=drop]:checked + label + ul{ display: block;}
-	.m-menu .mob-menu [id^=drop]:checked + .toggle:after{transform:rotate(360deg);}
+	.m-menu .mob-menu [id^=drop]:checked + .toggle:after{transform:rotate(90deg);}
 	.amp-menu li.menu-item-has-children ul {display: none;margin: 0;}
 .m-menu .mob-menu .toggle:after {
-    content: "\e313";
+    content: "\e905";
 	font-family: 'icomoon';
     font-size:20px;
     display: inline-block;
     top: 1px;
     padding: 5px;
-    transform: rotate(270deg);
     border-radius: 35px;
     color:#fff;
 }
