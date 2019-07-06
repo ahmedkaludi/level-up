@@ -1,15 +1,15 @@
-=== levelup ===
+=== Level UP ===
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
-Tested up to: 4.9.7
-Stable tag: 1.2
+Tested up to: 5.2.2
+Stable tag: 1.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-levelup WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+LevelUP is an AMP WordPress theme that is minimal and fast with best Performance & high Pagespeed score with active development.
 
 == Installation ==
 
@@ -27,8 +27,8 @@ The AMP compatibility will be added with you install the AMP for WP plugin.
 
 == Copyright ==
 
-levelup WordPress Theme, Copyright 2018 xtheme.net
-levelup is distributed under the terms of the GNU GPL.
+Levelup WordPress Theme, Copyright 2019
+Levelup is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -54,37 +54,47 @@ icomoon Icon Font, Copyright Keyamoon
 License: GPL / CC BY 4.0
 Source: https://github.com/Keyamoon/IcoMoon-Free/
 
+Icons Complied with Iconmoon are Font Awesome Font Awesome Free is free, open source, and GPL friendly. You can use it for
+commercial projects, open source projects, or really almost whatever you want.
+Full Font Awesome Free license: https://fontawesome.com/license/free.
+
+Font Awesome Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
+packaged as SVG and JS file types.
+
+Font Awesome Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL)
+In the Font Awesome Free download, the SIL OLF license applies to all icons
+packaged as web and desktop font files.
+
 TGM Plugin Activation, Copyright LukyVj
 License: GPL-2.0 or later
 Source: https://github.com/TGMPA/TGM-Plugin-Activation
-
-drawer.js & drawer.min.js, Copyright blivesta <design@blivesta.com> (http://blivesta.com/)
-License: MIT
-Source: http://git.blivesta.com/drawer
-
-skip-link-focus-fix.js, Copyright _s (Automattic)
-License: MIT
-Source: https://git.io/vWdr2
-
-iScroll, Copyright Matteo Spinelli  
-License: MIT
-Source: https://github.com/cubiq/iscroll
 
 Font Poppins, Copyright Indian Type Foundry
 License: SIL Open Font License, Version 1.1
 Source: http://scripts.sil.org/OFL_web
 
-Image used in screenshot.png, by Sarah Götze
-License: CC0 license (https://unsplash.com/license)
-Source: https://unsplash.com/photos/ODua_Pc7VQY
-
+Image used in screenshot:
+https://pixabay.com/en/girl-smartphone-iphone-1192032/
+https://pixabay.com/en/office-notes-notepad-entrepreneur-620817/
+https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
-= 1.2 - July 18 2018 =
-* License updated
 
-= 1.1 - July 18 2018 =
-* Few Bug Fixes
+= 1.3 - Feb 12 2019 =
+* AMP Support improved
 
-= 1.0 - May 18 2018 =
+= 1.2.1 - Feb 12 2019 =
+* Theme Home URL updated
+
+= 1.2 - Feb 12 2019 =
+* LevelUP Plugin Compatibility added
+* Elementor Compatibility added
+* AMP Compatibility added
+
+= 1.1 - Sep 10 2018 =
+* TGMPA automatic is set to false
+* Icomoon source icon fonts are added
+
+= 1.0 - Sep 10 2018 =
 * Initial release
