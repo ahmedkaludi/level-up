@@ -29,7 +29,10 @@ if ( ! function_exists( 'levelup_setup' ) ) :
 		 * to change 'level-up' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'level-up', get_template_directory() . '/languages' );
-
+        
+        // Enable AMP Support
+        add_theme_support( "amp-template-mode" );
+        
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -345,11 +348,18 @@ add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 * END Levelup required plugin
 *****/
 
-/* Disable WordPress Admin Bar for all users but admins. */
-show_admin_bar(false);
-add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
-add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+/*****
+* Start Levelup theme AMP
+*****/
 
-function codeless_remove_type_attr($tag, $handle) {
-    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+add_action( 'amp_post_template_css', 'levelup_body_font_amp_design_styling' );
+function levelup_body_font_amp_design_styling(){
+	$defaults = levelup_generate_defaults();
+	echo 'body {
+		font-family: "'. $defaults['levelup_body_font_family'] .'", sans-serif;
+	
+	}';
 }
+/*****
+* END Levelup theme AMP
+*****/

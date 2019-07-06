@@ -2,14 +2,14 @@
 Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
-Tested up to: 5.2
+Tested up to: 5.2.2
 Stable tag: 1.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 == Description ==
 
-LevelUP WordPress theme is a minimal and fast theme that makes your AMP and Non-AMP version look same.
+LevelUP is an AMP WordPress theme that is minimal and fast with best Performance & high Pagespeed score with active development.
 
 == Installation ==
 
@@ -23,7 +23,7 @@ LevelUP WordPress theme is a minimal and fast theme that makes your AMP and Non-
 We have tested this theme with majority of the plugins and it works flawlessly with them. If you face any compatibility issues with our theme, then let us know, we will help you fix them.
 
 = How to display the AMP version of this theme? =
-The AMP compatibility will be added with you install the LevelUP and AMP for WP plugin.
+The AMP compatibility will be added with you install the AMP for WP plugin.
 
 == Copyright ==
 
@@ -66,9 +66,13 @@ Font Awesome Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL)
 In the Font Awesome Free download, the SIL OLF license applies to all icons
 packaged as web and desktop font files.
 
-skip-link-focus-fix.js, Copyright _s (Automattic)
-License: MIT
-Source: https://git.io/vWdr2
+TGM Plugin Activation, Copyright LukyVj
+License: GPL-2.0 or later
+Source: https://github.com/TGMPA/TGM-Plugin-Activation
+
+Font Poppins, Copyright Indian Type Foundry
+License: SIL Open Font License, Version 1.1
+Source: http://scripts.sil.org/OFL_web
 
 Image used in screenshot:
 https://pixabay.com/en/girl-smartphone-iphone-1192032/
@@ -77,8 +81,8 @@ https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
 
-= 1.3 - June 23 2019 =
-* Code improvements
+= 1.3 - July 07 2019 =
+* AMP Support improved 
 
 = 1.2.1 - Feb 12 2019 =
 * Theme Home URL updated
