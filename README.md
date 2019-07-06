@@ -81,8 +81,8 @@ https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
 
-= 1.3 - Feb 12 2019 =
-* AMP Support improved
+= 1.3 - July 07 2019 =
+* AMP Support improved 
 
 = 1.2.1 - Feb 12 2019 =
 * Theme Home URL updated
