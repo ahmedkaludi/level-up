@@ -16,7 +16,13 @@ if ( ! function_exists( 'levelup_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function levelup_setup() {
-		/*
+        /*
+		 * Enable AMP Theme Support
+		 */
+        
+        add_theme_support( 'amp-template-mode' );
+
+        /*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on levelup, use a find and replace
@@ -97,7 +103,7 @@ add_action( 'after_setup_theme', 'levelup_setup' );
  * @global int $content_width
  */
 function levelup_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'levelup_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'levelup_content_width', 960 );
 }
 add_action( 'after_setup_theme', 'levelup_content_width', 0 );
 
@@ -125,7 +131,6 @@ add_action( 'widgets_init', 'levelup_widgets_init' );
  */
 function levelup_scripts() {
 	wp_enqueue_style( 'levelup-style', get_stylesheet_uri() );
-
 }
 add_action( 'wp_enqueue_scripts', 'levelup_scripts' );
 
@@ -179,7 +184,7 @@ function levelup_custom_wp_admin_style() {
 add_action( 'admin_enqueue_scripts', 'levelup_custom_wp_admin_style' );
 
 /*****
-* Levelup theme upload
+* Levelup required plugin
 * Start
 *****/
 function levelup_make_html_attributes( $attrs = array() ){
@@ -271,7 +276,7 @@ function levelup_core_plugin_notice(){
 ?>
     <div class="updated levelup-message levelup-notice-wrapper levelup-notice-install-now">
         <h3 class=""><?php printf( __( 'Thanks for choosing %s', 'level-up' ), 'Level UP' ); ?></h3>
-        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme and enabling demo importer, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
+        <p class="levelup-notice-description"><?php printf( __( 'To take full advantages of LevelUP theme, please install %s plugin.', 'level-up' ), '<strong>'. $plugin_title .'</strong>' ); ?></p>
         <p class="submit">
             <a <?php echo levelup_make_html_attributes( $links_attrs ); ?> ><?php echo $button_label; ?></a>
             <a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'levelup-hide-core-plugin-notice', 'install' ), 'levelup_hide_notices_nonce', '_notice_nonce' ) ); ?>" class="notice-dismiss levelup-close-notice"><span class="screen-reader-text"><?php _e( 'Skip', 'level-up' ); ?></span></a>
@@ -340,9 +345,8 @@ function levelup_core_plugin_notice(){
 }
 add_action( 'admin_notices', 'levelup_core_plugin_notice' );
 /*****
-* END Levelup theme upload
+* END Levelup required plugin
 *****/
-
 
 /*****
 * Start Levelup theme AMP

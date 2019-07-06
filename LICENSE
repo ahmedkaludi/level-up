@@ -1,4 +1,4 @@
-                    GNU GENERAL PUBLIC LICENSE
+﻿                    GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
  Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
@@ -348,29 +348,9 @@ Underscores , Copyright Automattic, Inc
 License: GPLv2 or later
 Source: https://underscores.me
 
-icomoon Icon Font, Copyright Keyamoon
-License: GPL / CC BY 4.0
-Source: https://github.com/Keyamoon/IcoMoon-Free/
-
-TGM Plugin Activation, Copyright LukyVj
-License: GPL-2.0 or later
-Source: https://github.com/TGMPA/TGM-Plugin-Activation
-
-drawer.js & drawer.min.js, Copyright blivesta <design@blivesta.com> (http://blivesta.com/)
-License: MIT
-Source: http://git.blivesta.com/drawer
-
 skip-link-focus-fix.js, Copyright _s (Automattic)
 License: MIT
 Source: https://git.io/vWdr2
-
-iScroll, Copyright Matteo Spinelli  
-License: MIT
-Source: https://github.com/cubiq/iscroll
-
-Font Poppins, Copyright Indian Type Foundry
-License: SIL Open Font License, Version 1.1
-Source: http://scripts.sil.org/OFL_web
 
 Image used in screenshot.png, by Sarah Götze
 License: CC0 license (https://unsplash.com/license)

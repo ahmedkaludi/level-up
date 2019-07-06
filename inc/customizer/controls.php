@@ -201,6 +201,4 @@ class Levelup_Customizer_Select2_Google_Fonts extends WP_Customize_Control {
 	}
 
 }
-
-
 ?>
