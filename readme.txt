@@ -3,7 +3,7 @@ Contributors: ahmedkaludi
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
 Requires at least: 4.0
 Tested up to: 5.2.2
-Stable tag: 1.3
+Stable tag: 1.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
@@ -80,6 +80,9 @@ https://pixabay.com/en/office-notes-notepad-entrepreneur-620817/
 https://pixabay.com/en/office-business-accountant-620822/
 
 == Changelog ==
+
+= 1.4 - July 07 2019 =
+* Fatal error fixed 
 
 = 1.3 - July 07 2019 =
 * AMP Support improved 

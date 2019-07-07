@@ -17,7 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); 
-	ampforwp_head(); ?>
+    if(function_exists('ampforwp_head')) {
+        ampforwp_head();
+    } ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
@@ -38,16 +40,9 @@
 		                      wp_nav_menu(array(
 		                    	'theme_location' => 'header-menu',
 								'menu_class'        => 'mob-menu',
-								'walker' => new Ampforwp_Walker_Nav_Menu()
 		                    ));
 		                    } ?>
-						<?php
-							// wp_nav_menu( array(
-							// 	'theme_location' => 'primary-menu',
-							// 	'menu_class'        => 'mob-menu',
-							// 	'walker' => new Ampforwp_Walker_Nav_Menu()
-							// ) );
-						?>
+
 					</nav><!--end slide-menu -->
 	            </div><!-- /m-scrl -->
 			</aside>
