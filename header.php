@@ -22,6 +22,7 @@
     } ?>
 </head>
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 <div id="page" class="site">
 	<?php
 	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
