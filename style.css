@@ -953,9 +953,38 @@ body{
     margin:0;
 }
 /** IOS Menu **/
-.ios-menu{
-    display: none;
+.scrollToheader {
+  	z-index: 9;
+  	position: fixed;
+  	opacity: 0;
+  	visibility: hidden;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	background:#fff;
+	top:0;
+	box-shadow: 0 1px 3px rgba(0,0,0,.12);
+	animation: mymove 5s infinite;
 }
+.ios-menu{
+    width: 1170px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ios-menu amp-img{
+	max-width:59px;
+}
+.ios-menu .d-menu li a {
+    padding: 17px 10px;
+}
+.ios-menu .d-menu .current-menu-item a{
+	color:#0ab596;
+}
+
 .mbl-menu, .m-ctr, .tg{display:none;}
 
 /** Footer CSS **/
@@ -1634,7 +1663,7 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 
 
 @media(max-width:1170px){
-	.container{
+	.container, .ios-menu{
 		max-width:100%;
 		padding:0px 10px;
 	}

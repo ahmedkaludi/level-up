@@ -449,6 +449,9 @@ function levelup_bottom_to_top_scripts($data){
     if ( empty( $data['amp_component_scripts']['amp-position-observer'] ) ) {
         $data['amp_component_scripts']['amp-position-observer'] = 'https://cdn.ampproject.org/v0/amp-position-observer-0.1.js';
     }
+    if ( empty( $data['amp_component_scripts']['amp-animation'] ) ) {
+        $data['amp_component_scripts']['amp-animation'] = 'https://cdn.ampproject.org/v0/amp-animation-0.1.js';
+    }
     if ( empty( $data['amp_component_scripts']['amp-selector'] ) ) {
         $data['amp_component_scripts']['amp-selector'] = 'https://cdn.ampproject.org/v0/amp-selector-0.1.js';
     }if ( empty( $data['amp_component_scripts']['amp-carousel'] ) ) {
@@ -461,6 +464,53 @@ function levelup_bottom_to_top_scripts($data){
         $data['amp_component_scripts']['amp-video-docking'] = 'https://cdn.ampproject.org/v0/amp-video-docking-0.1.js';
     }
     return $data;
+}
+
+add_action('wp_body_open', 'amp_animation_header');
+function amp_animation_header(){
+    ?>
+    <div><amp-position-observer
+      on="enter:hideAnimheader.start; exit:showAnimheader.start"
+      layout="nodisplay">
+    </amp-position-observer></div>
+
+    <amp-animation id="showAnimheader" layout="nodisplay">
+    <script type="application/json">
+      {
+        "duration": "400ms",
+         "fill": "both",
+         "iterations": "1",
+         "direction": "alternate",
+         "animations": [
+           {
+             "selector": "#scrollToheader",
+             "keyframes": [
+               { "opacity": "1", "visibility": "visible" }
+             ]
+           }
+         ]
+      }
+    </script>
+  </amp-animation>
+  <!-- ... and the second one is for adding the button.-->
+  <amp-animation id="hideAnimheader" layout="nodisplay">
+    <script type="application/json">
+      {
+       "duration": "200ms",
+         "fill": "both",
+         "iterations": "1",
+         "direction": "alternate",
+         "animations": [
+           {
+             "selector": "#scrollToheader",
+             "keyframes": [
+               { "opacity": "0", "visibility": "hidden" }
+             ]
+           }
+         ]
+     }
+    </script>
+  </amp-animation><?php
 }
 
 /*****

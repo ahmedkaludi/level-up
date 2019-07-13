@@ -20,6 +20,7 @@
 	ampforwp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="page" class="site">
 	<?php
 	if(!function_exists('levelup_check_hf_builder') || (function_exists('levelup_check_hf_builder') && !levelup_check_hf_builder('head'))){  ?>
@@ -88,22 +89,24 @@
 	</header><!-- #masthead -->
 	<div id="navbar">
 		<div class="container">
-			<div class="ios-menu">
-				<div class="ios-logo">
-					<?php 
-	               	if ( has_custom_logo() ) {       	
-	                     echo get_custom_logo();
-	                 } else {
-	                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
-	                 } ?>
-				</div>
-				<div class="ios-nav">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary-menu',
-							'menu_class'        => 'd-menu',
-						) );
-					 ?>
+			<div id="scrollToheader" class="scrollToheader">
+				<div class="ios-menu">
+					<div class="ios-logo">
+						<?php 
+		               	if ( has_custom_logo() ) {       	
+		                     echo get_custom_logo();
+		                 } else {
+		                     echo '<a href="'. esc_url( home_url() ).'"><h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1><span>'. esc_attr( get_bloginfo( 'description', 'display' ) ) .'</span> </a>';
+		                 } ?>
+					</div>
+					<div class="ios-nav">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'primary-menu',
+								'menu_class'        => 'd-menu',
+							) );
+						 ?>
+					</div>
 				</div>
 			</div>
 		</div>
